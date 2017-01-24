@@ -185,7 +185,7 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0450(Bloco0 bloco0){
 		Registro0450 registro0450 = new Registro0450();
-		registro0450.setCod_inf("1");
+		registro0450.setCod_inf("2");
 		registro0450.setTxt("Relacao ECF(S):");
 		bloco0.getRegistro0450().add(registro0450);
 		

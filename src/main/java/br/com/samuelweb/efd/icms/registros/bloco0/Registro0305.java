@@ -10,7 +10,7 @@ package br.com.samuelweb.efd.icms.registros.bloco0;
 public class Registro0305 {
 	
 
-	private final String reg = "0";
+	private final String reg = "0305";
 	private String cod_ccus;
 	private String func;
 	private String vida_util;
