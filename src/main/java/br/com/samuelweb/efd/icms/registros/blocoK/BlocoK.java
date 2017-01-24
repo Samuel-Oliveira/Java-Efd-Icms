@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author Samuel Oliveira
+ * @author Samuel Oliveira / Yuri
  *
  */
 public class BlocoK {
