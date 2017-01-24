@@ -33,7 +33,7 @@ public class Bloco0Test {
 		efdIcms.setBloco0(preencheBloco0());
 		sb = GerarEfdIcms.gerar(efdIcms, sb);
 		System.out.println(sb.toString());
-		Assert.assertEquals(sb.toString(),Resultados.resultadoBloco0());
+		Assert.assertEquals(Resultados.resultadoBloco0(),sb.toString());
 	}
 	
 	public Bloco0 preencheBloco0(){
@@ -52,17 +52,17 @@ public class Bloco0Test {
 
 	public Bloco0 preencheRegistro0000(Bloco0 bloco0){
 		Registro0000 registro0000 = new Registro0000();
-		registro0000.setCod_ver("010");
-		registro0000.setCod_fin("0");
-		registro0000.setDt_ini("01082016");
-		registro0000.setDt_fin("31082016");
-		registro0000.setNome("FERREIRA COM DE DER DE PETROLEO LTDA");
-		registro0000.setCnpj("08381059000774");
-		registro0000.setUf("TO");
-		registro0000.setIe("294434763");
-		registro0000.setCod_mun("1706258");
-		registro0000.setInd_perfil("A");
-		registro0000.setInd_ativ("1");
+		registro0000.setCod_ver("2");
+		registro0000.setCod_fin("3");
+		registro0000.setDt_ini("4");
+		registro0000.setDt_fin("5");
+		registro0000.setNome("6");
+		registro0000.setCnpj("7");
+		registro0000.setUf("9");
+		registro0000.setIe("10");
+		registro0000.setCod_mun("11");
+		registro0000.setInd_perfil("14");
+		registro0000.setInd_ativ("15");
 		bloco0.setRegistro0000(registro0000);
 		
 		return bloco0;
@@ -78,14 +78,14 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0005(Bloco0 bloco0){
 		Registro0005 registro0005 = new Registro0005();
-		registro0005.setFantasia("POSTO SAO JORGE");
-		registro0005.setCep("77463000");
-		registro0005.setEnd("RODOVIA BR 153");
-		registro0005.setNum("S/N");
-		registro0005.setCompl("KM608");
-		registro0005.setBairro("ZONA RURAL");
-		registro0005.setFone("6333521135");
-		registro0005.setEmail("agenorferreira10@hotmail.com");
+		registro0005.setFantasia("2");
+		registro0005.setCep("3");
+		registro0005.setEnd("4");
+		registro0005.setNum("5");
+		registro0005.setCompl("6");
+		registro0005.setBairro("7");
+		registro0005.setFone("8");
+		registro0005.setEmail("10");
 		bloco0.setRegistro0005(registro0005);
 		
 		return bloco0;
@@ -93,17 +93,17 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0100(Bloco0 bloco0){
 		Registro0100 registro0100 = new Registro0100();
-		registro0100.setNome("MARLENE GONÇALVES DE CAMARGO OLIVEIRA");
-		registro0100.setCpf("51513676172");
-		registro0100.setCrc("11479");
-		registro0100.setCep("74320070");
-		registro0100.setEnd("RUA E 1");
-		registro0100.setNum("00002");
-		registro0100.setBairro("VILA LUCY");
-		registro0100.setFone("6232876383");
-		registro0100.setFax("6232876383");
-		registro0100.setEmail("camargoassessoriacontabil@gmail.com");
-		registro0100.setCod_mun("5208707");
+		registro0100.setNome("2");
+		registro0100.setCpf("3");
+		registro0100.setCrc("4");
+		registro0100.setCep("6");
+		registro0100.setEnd("7");
+		registro0100.setNum("8");
+		registro0100.setBairro("10");
+		registro0100.setFone("11");
+		registro0100.setFax("12");
+		registro0100.setEmail("13");
+		registro0100.setCod_mun("14");
 		bloco0.setRegistro0100(registro0100);
 		
 		return bloco0;
@@ -111,43 +111,43 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0150(Bloco0 bloco0){
 		Registro0150 registro0150 = new Registro0150();
-		registro0150.setCod_part("51786192934");
-		registro0150.setNome("FAZENDA CJL");
-		registro0150.setCod_pais("1058");
-		registro0150.setCpf("51786192934");
-		registro0150.setCod_mun("1706258");
-		registro0150.setEnd("FAZENDA CJL S/N");
-		registro0150.setNum("S/N");
-		registro0150.setBairro("ZONA RURAL");
+		registro0150.setCod_part("2");
+		registro0150.setNome("3");
+		registro0150.setCod_pais("4");
+		registro0150.setCpf("6");
+		registro0150.setCod_mun("8");
+		registro0150.setEnd("10");
+		registro0150.setNum("11");
+		registro0150.setBairro("13");
 		bloco0.getRegistro0150().add(registro0150);
 		
 			Registro0175 registro0175 = new Registro0175();
-			registro0175.setDt_alt("10082016");
-			registro0175.setNr_campo("10");
-			registro0175.setCont_ant("Rua Anterior");
+			registro0175.setDt_alt("2");
+			registro0175.setNr_campo("3");
+			registro0175.setCont_ant("4");
 			registro0150.getRegistro0175().add(registro0175);
 		
 		registro0150 = new Registro0150();
-		registro0150.setCod_part("00001");
-		registro0150.setNome("BR - PETROBRAS");
-		registro0150.setCod_pais("1058");
-		registro0150.setCnpj("34274233023811");
-		registro0150.setIe("294509577");
-		registro0150.setCod_mun("1718204");
-		registro0150.setEnd("RODOVIA TO-80 KM23 LT12");
-		registro0150.setNum("SN");
-		registro0150.setBairro("PATIO MULTIMODAL");
+		registro0150.setCod_part("2");
+		registro0150.setNome("3");
+		registro0150.setCod_pais("4");
+		registro0150.setCnpj("5");
+		registro0150.setIe("7");
+		registro0150.setCod_mun("8");
+		registro0150.setEnd("10");
+		registro0150.setNum("11");
+		registro0150.setBairro("13");
 		
 			registro0175 = new Registro0175();
-			registro0175.setDt_alt("10082016");
-			registro0175.setNr_campo("10");
-			registro0175.setCont_ant("Rua Anterior");
+			registro0175.setDt_alt("2");
+			registro0175.setNr_campo("3");
+			registro0175.setCont_ant("4");
 			registro0150.getRegistro0175().add(registro0175);
 		
 			registro0175 = new Registro0175();
-			registro0175.setDt_alt("11082016");
-			registro0175.setNr_campo("11");
-			registro0175.setCont_ant("123");
+			registro0175.setDt_alt("2");
+			registro0175.setNr_campo("3");
+			registro0175.setCont_ant("4");
 			registro0150.getRegistro0175().add(registro0175);
 			
 		bloco0.getRegistro0150().add(registro0150);
@@ -157,8 +157,8 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0190(Bloco0 bloco0){
 		Registro0190 registro0190 = new Registro0190();
-		registro0190.setUnid("LT");
-		registro0190.setDescr("LT.");
+		registro0190.setUnid("2");
+		registro0190.setDescr("3");
 		bloco0.getRegistro0190().add(registro0190);
 		
 		return bloco0;
@@ -166,16 +166,16 @@ public class Bloco0Test {
 	
 	public Bloco0 preencheRegistro0200(Bloco0 bloco0){
 		Registro0200 registro0200 = new Registro0200();
-		registro0200.setCod_item("810101001");
-		registro0200.setDescr_item("ETANOL HIDRATADO COMBUSTIVEL-COMUM");
-		registro0200.setUnid_inv("LT");
-		registro0200.setTipo_item("00");
-		registro0200.setCod_ncm("22071090");
-		registro0200.setAliq_icms("0");
-		registro0200.setCest("012345");
+		registro0200.setCod_item("2");
+		registro0200.setDescr_item("3");
+		registro0200.setUnid_inv("6");
+		registro0200.setTipo_item("7");
+		registro0200.setCod_ncm("8");
+		registro0200.setAliq_icms("12");
+		registro0200.setCest("13");
 		
 			Registro0206 registro0206 = new Registro0206();
-			registro0206.setCod_comb("810101001");
+			registro0206.setCod_comb("2");
 			registro0200.setRegistro0206(registro0206);
 		
 		bloco0.getRegistro0200().add(registro0200);
