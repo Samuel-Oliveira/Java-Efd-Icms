@@ -9,7 +9,7 @@ package br.com.samuelweb.efd.icms.registros.blocoC;
  */
 public class RegistroC115 {
 	
-private final String reg = "C115";
+	private final String reg = "C115";
 	private String ind_carga;
 	private String cnpj_col;
 	private String ie_col;
