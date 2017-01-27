@@ -1,4 +1,5 @@
 package br.com.samuelweb.efd.icms.bo.blocoC;
+
 import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC600;
 import br.com.samuelweb.efd.icms.util.Util;
 
@@ -6,9 +7,9 @@ import br.com.samuelweb.efd.icms.util.Util;
  * @author Samuel Oliveira
  */
 public class GerarRegistroC600 {
-	
-	public static StringBuilder gerar(RegistroC600 registroC600, StringBuilder sb){
-		
+
+	public static StringBuilder gerar(RegistroC600 registroC600, StringBuilder sb) {
+
 		sb.append("|").append(Util.preencheRegistro(registroC600.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC600.getCod_mod()));
 		sb.append("|").append(Util.preencheRegistro(registroC600.getCod_mun()));
@@ -30,9 +31,9 @@ public class GerarRegistroC600 {
 		sb.append("|").append(Util.preencheRegistro(registroC600.getVl_bc_icms_st()));
 		sb.append("|").append(Util.preencheRegistro(registroC600.getVl_icms_st()));
 		sb.append("|").append(Util.preencheRegistro(registroC600.getVl_pis()));
-		sb.append("|").append(Util.preencheRegistro(registroC600.getVl_cofinss()));
-    	sb.append("|").append('\n');
-		
+		sb.append("|").append(Util.preencheRegistro(registroC600.getVl_cofins()));
+		sb.append("|").append('\n');
+
 		return sb;
 	}
 }

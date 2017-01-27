@@ -1,4 +1,5 @@
 package br.com.samuelweb.efd.icms.bo.blocoC;
+
 import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC510;
 import br.com.samuelweb.efd.icms.util.Util;
 
@@ -6,9 +7,9 @@ import br.com.samuelweb.efd.icms.util.Util;
  * @author Samuel Oliveira
  */
 public class GerarRegistroC510 {
-	
-	public static StringBuilder gerar(RegistroC510 registroC510, StringBuilder sb){
-		
+
+	public static StringBuilder gerar(RegistroC510 registroC510, StringBuilder sb) {
+
 		sb.append("|").append(Util.preencheRegistro(registroC510.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC510.getNum_item()));
 		sb.append("|").append(Util.preencheRegistro(registroC510.getCod_item()));
@@ -30,8 +31,8 @@ public class GerarRegistroC510 {
 		sb.append("|").append(Util.preencheRegistro(registroC510.getVl_pis()));
 		sb.append("|").append(Util.preencheRegistro(registroC510.getVl_cofins()));
 		sb.append("|").append(Util.preencheRegistro(registroC510.getCod_cta()));
-    	sb.append("|").append('\n');
-		
+		sb.append("|").append('\n');
+
 		return sb;
 	}
 }

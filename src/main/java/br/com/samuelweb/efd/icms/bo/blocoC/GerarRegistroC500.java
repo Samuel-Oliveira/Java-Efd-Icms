@@ -1,4 +1,5 @@
 package br.com.samuelweb.efd.icms.bo.blocoC;
+
 import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC500;
 import br.com.samuelweb.efd.icms.util.Util;
 
@@ -6,9 +7,9 @@ import br.com.samuelweb.efd.icms.util.Util;
  * @author Samuel Oliveira
  */
 public class GerarRegistroC500 {
-	
-	public static StringBuilder gerar(RegistroC500 registroC500, StringBuilder sb){
-		
+
+	public static StringBuilder gerar(RegistroC500 registroC500, StringBuilder sb) {
+
 		sb.append("|").append(Util.preencheRegistro(registroC500.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getInd_oper()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getInd_emit()));
@@ -20,7 +21,7 @@ public class GerarRegistroC500 {
 		sb.append("|").append(Util.preencheRegistro(registroC500.getCod_cons()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getNum_doc()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getDt_doc()));
-		sb.append("|").append(Util.preencheRegistro(registroC500.getdT_e_s()));
+		sb.append("|").append(Util.preencheRegistro(registroC500.getDt_e_s()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getVl_doc()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getVl_desc()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getVl_forn()));
@@ -36,8 +37,8 @@ public class GerarRegistroC500 {
 		sb.append("|").append(Util.preencheRegistro(registroC500.getVl_cofins()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getTp_ligacao()));
 		sb.append("|").append(Util.preencheRegistro(registroC500.getCod_grupo_tensao()));
-    	sb.append("|").append('\n');
-		
+		sb.append("|").append('\n');
+
 		return sb;
 	}
 }

@@ -1,4 +1,5 @@
 package br.com.samuelweb.efd.icms.bo.blocoC;
+
 import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC590;
 import br.com.samuelweb.efd.icms.util.Util;
 
@@ -6,9 +7,9 @@ import br.com.samuelweb.efd.icms.util.Util;
  * @author Samuel Oliveira
  */
 public class GerarRegistroC590 {
-	
-	public static StringBuilder gerar(RegistroC590 registroC590, StringBuilder sb){
-		
+
+	public static StringBuilder gerar(RegistroC590 registroC590, StringBuilder sb) {
+
 		sb.append("|").append(Util.preencheRegistro(registroC590.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC590.getCst_icms()));
 		sb.append("|").append(Util.preencheRegistro(registroC590.getCfop()));
@@ -20,8 +21,8 @@ public class GerarRegistroC590 {
 		sb.append("|").append(Util.preencheRegistro(registroC590.getVl_icms_st()));
 		sb.append("|").append(Util.preencheRegistro(registroC590.getVl_red_bc()));
 		sb.append("|").append(Util.preencheRegistro(registroC590.getCod_obs()));
-    	sb.append("|").append('\n');
-		
+		sb.append("|").append('\n');
+
 		return sb;
 	}
 }
