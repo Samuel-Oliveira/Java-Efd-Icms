@@ -1,4 +1,5 @@
 package br.com.samuelweb.efd.icms.bo.blocoC;
+
 import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC800;
 import br.com.samuelweb.efd.icms.util.Util;
 
@@ -6,9 +7,9 @@ import br.com.samuelweb.efd.icms.util.Util;
  * @author Samuel Oliveira
  */
 public class GerarRegistroC800 {
-	
-	public static StringBuilder gerar(RegistroC800 registroC800, StringBuilder sb){
-		
+
+	public static StringBuilder gerar(RegistroC800 registroC800, StringBuilder sb) {
+
 		sb.append("|").append(Util.preencheRegistro(registroC800.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registroC800.getCod_mod()));
 		sb.append("|").append(Util.preencheRegistro(registroC800.getCod_sit()));
@@ -26,8 +27,8 @@ public class GerarRegistroC800 {
 		sb.append("|").append(Util.preencheRegistro(registroC800.getVl_icms()));
 		sb.append("|").append(Util.preencheRegistro(registroC800.getVl_pis_st()));
 		sb.append("|").append(Util.preencheRegistro(registroC800.getVl_cofins_st()));
-    	sb.append("|").append('\n');
-		
+		sb.append("|").append('\n');
+
 		return sb;
 	}
 }

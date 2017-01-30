@@ -10,8 +10,8 @@ import java.util.List;
  * @author Samuel Oliveira
  */
 public class RegistroD100 {
-	
-private final String reg = "D100";
+
+	private final String reg = "D100";
 	private String ind_oper;
 	private String ind_emit;
 	private String cod_part;
@@ -44,325 +44,404 @@ private final String reg = "D100";
 	private List<RegistroD180> registroD180;
 	private List<RegistroD190> registroD190;
 	private List<RegistroD195> registroD195;
-	
+
 	/**
 	 * @return the ind_oper
 	 */
 	public String getInd_oper() {
 		return ind_oper;
 	}
+
 	/**
-	 * @param ind_oper the ind_oper to set
+	 * @param ind_oper
+	 *            the ind_oper to set
 	 */
 	public void setInd_oper(String ind_oper) {
 		this.ind_oper = ind_oper;
 	}
+
 	/**
 	 * @return the ind_emit
 	 */
 	public String getInd_emit() {
 		return ind_emit;
 	}
+
 	/**
-	 * @param ind_emit the ind_emit to set
+	 * @param ind_emit
+	 *            the ind_emit to set
 	 */
 	public void setInd_emit(String ind_emit) {
 		this.ind_emit = ind_emit;
 	}
+
 	/**
 	 * @return the cod_part
 	 */
 	public String getCod_part() {
 		return cod_part;
 	}
+
 	/**
-	 * @param cod_part the cod_part to set
+	 * @param cod_part
+	 *            the cod_part to set
 	 */
 	public void setCod_part(String cod_part) {
 		this.cod_part = cod_part;
 	}
+
 	/**
 	 * @return the cod_mod
 	 */
 	public String getCod_mod() {
 		return cod_mod;
 	}
+
 	/**
-	 * @param cod_mod the cod_mod to set
+	 * @param cod_mod
+	 *            the cod_mod to set
 	 */
 	public void setCod_mod(String cod_mod) {
 		this.cod_mod = cod_mod;
 	}
+
 	/**
 	 * @return the cod_sit
 	 */
 	public String getCod_sit() {
 		return cod_sit;
 	}
+
 	/**
-	 * @param cod_sit the cod_sit to set
+	 * @param cod_sit
+	 *            the cod_sit to set
 	 */
 	public void setCod_sit(String cod_sit) {
 		this.cod_sit = cod_sit;
 	}
+
 	/**
 	 * @return the ser
 	 */
 	public String getSer() {
 		return ser;
 	}
+
 	/**
-	 * @param ser the ser to set
+	 * @param ser
+	 *            the ser to set
 	 */
 	public void setSer(String ser) {
 		this.ser = ser;
 	}
+
 	/**
 	 * @return the sub
 	 */
 	public String getSub() {
 		return sub;
 	}
+
 	/**
-	 * @param sub the sub to set
+	 * @param sub
+	 *            the sub to set
 	 */
 	public void setSub(String sub) {
 		this.sub = sub;
 	}
+
 	/**
 	 * @return the num_doc
 	 */
 	public String getNum_doc() {
 		return num_doc;
 	}
+
 	/**
-	 * @param num_doc the num_doc to set
+	 * @param num_doc
+	 *            the num_doc to set
 	 */
 	public void setNum_doc(String num_doc) {
 		this.num_doc = num_doc;
 	}
+
 	/**
 	 * @return the chv_cte
 	 */
 	public String getChv_cte() {
 		return chv_cte;
 	}
+
 	/**
-	 * @param chv_cte the chv_cte to set
+	 * @param chv_cte
+	 *            the chv_cte to set
 	 */
 	public void setChv_cte(String chv_cte) {
 		this.chv_cte = chv_cte;
 	}
+
 	/**
 	 * @return the dt_doc
 	 */
 	public String getDt_doc() {
 		return dt_doc;
 	}
+
 	/**
-	 * @param dt_doc the dt_doc to set
+	 * @param dt_doc
+	 *            the dt_doc to set
 	 */
 	public void setDt_doc(String dt_doc) {
 		this.dt_doc = dt_doc;
 	}
+
 	/**
 	 * @return the dt_a_p
 	 */
 	public String getDt_a_p() {
 		return dt_a_p;
 	}
+
 	/**
-	 * @param dt_a_p the dt_a_p to set
+	 * @param dt_a_p
+	 *            the dt_a_p to set
 	 */
 	public void setDt_a_p(String dt_a_p) {
 		this.dt_a_p = dt_a_p;
 	}
+
 	/**
 	 * @return the tp_cte
 	 */
 	public String getTp_cte() {
 		return tp_cte;
 	}
+
 	/**
-	 * @param tp_cte the tp_cte to set
+	 * @param tp_cte
+	 *            the tp_cte to set
 	 */
 	public void setTp_cte(String tp_cte) {
 		this.tp_cte = tp_cte;
 	}
+
 	/**
 	 * @return the chv_cte_ref
 	 */
 	public String getChv_cte_ref() {
 		return chv_cte_ref;
 	}
+
 	/**
-	 * @param chv_cte_ref the chv_cte_ref to set
+	 * @param chv_cte_ref
+	 *            the chv_cte_ref to set
 	 */
 	public void setChv_cte_ref(String chv_cte_ref) {
 		this.chv_cte_ref = chv_cte_ref;
 	}
+
 	/**
 	 * @return the vl_doc
 	 */
 	public String getVl_doc() {
 		return vl_doc;
 	}
+
 	/**
-	 * @param vl_doc the vl_doc to set
+	 * @param vl_doc
+	 *            the vl_doc to set
 	 */
 	public void setVl_doc(String vl_doc) {
 		this.vl_doc = vl_doc;
 	}
+
 	/**
 	 * @return the vl_desc
 	 */
 	public String getVl_desc() {
 		return vl_desc;
 	}
+
 	/**
-	 * @param vl_desc the vl_desc to set
+	 * @param vl_desc
+	 *            the vl_desc to set
 	 */
 	public void setVl_desc(String vl_desc) {
 		this.vl_desc = vl_desc;
 	}
+
 	/**
 	 * @return the ind_frt
 	 */
 	public String getInd_frt() {
 		return ind_frt;
 	}
+
 	/**
-	 * @param ind_frt the ind_frt to set
+	 * @param ind_frt
+	 *            the ind_frt to set
 	 */
 	public void setInd_frt(String ind_frt) {
 		this.ind_frt = ind_frt;
 	}
+
 	/**
 	 * @return the vl_serv
 	 */
 	public String getVl_serv() {
 		return vl_serv;
 	}
+
 	/**
-	 * @param vl_serv the vl_serv to set
+	 * @param vl_serv
+	 *            the vl_serv to set
 	 */
 	public void setVl_serv(String vl_serv) {
 		this.vl_serv = vl_serv;
 	}
+
 	/**
 	 * @return the vl_bc_icms
 	 */
 	public String getVl_bc_icms() {
 		return vl_bc_icms;
 	}
+
 	/**
-	 * @param vl_bc_icms the vl_bc_icms to set
+	 * @param vl_bc_icms
+	 *            the vl_bc_icms to set
 	 */
 	public void setVl_bc_icms(String vl_bc_icms) {
 		this.vl_bc_icms = vl_bc_icms;
 	}
+
 	/**
 	 * @return the vl_icms
 	 */
 	public String getVl_icms() {
 		return vl_icms;
 	}
+
 	/**
-	 * @param vl_icms the vl_icms to set
+	 * @param vl_icms
+	 *            the vl_icms to set
 	 */
 	public void setVl_icms(String vl_icms) {
 		this.vl_icms = vl_icms;
 	}
+
 	/**
 	 * @return the vl_nt
 	 */
 	public String getVl_nt() {
 		return vl_nt;
 	}
+
 	/**
-	 * @param vl_nt the vl_nt to set
+	 * @param vl_nt
+	 *            the vl_nt to set
 	 */
 	public void setVl_nt(String vl_nt) {
 		this.vl_nt = vl_nt;
 	}
+
 	/**
 	 * @return the cod_inf
 	 */
 	public String getCod_inf() {
 		return cod_inf;
 	}
+
 	/**
-	 * @param cod_inf the cod_inf to set
+	 * @param cod_inf
+	 *            the cod_inf to set
 	 */
 	public void setCod_inf(String cod_inf) {
 		this.cod_inf = cod_inf;
 	}
+
 	/**
 	 * @return the cod_cta
 	 */
 	public String getCod_cta() {
 		return cod_cta;
 	}
+
 	/**
-	 * @param cod_cta the cod_cta to set
+	 * @param cod_cta
+	 *            the cod_cta to set
 	 */
 	public void setCod_cta(String cod_cta) {
 		this.cod_cta = cod_cta;
 	}
+
 	/**
 	 * @return the reg
 	 */
 	public String getReg() {
 		return reg;
 	}
+
 	/**
 	 * @return the registroD101
 	 */
 	public RegistroD101 getRegistroD101() {
 		return registroD101;
 	}
+
 	/**
-	 * @param registroD101 the registroD101 to set
+	 * @param registroD101
+	 *            the registroD101 to set
 	 */
 	public void setRegistroD101(RegistroD101 registroD101) {
 		this.registroD101 = registroD101;
 	}
+
 	/**
 	 * @return the registroD140
 	 */
 	public RegistroD140 getRegistroD140() {
 		return registroD140;
 	}
+
 	/**
-	 * @param registroD140 the registroD140 to set
+	 * @param registroD140
+	 *            the registroD140 to set
 	 */
 	public void setRegistroD140(RegistroD140 registroD140) {
 		this.registroD140 = registroD140;
 	}
+
 	/**
 	 * @return the registroD150
 	 */
 	public RegistroD150 getRegistroD150() {
 		return registroD150;
 	}
+
 	/**
-	 * @param registroD150 the registroD150 to set
+	 * @param registroD150
+	 *            the registroD150 to set
 	 */
 	public void setRegistroD150(RegistroD150 registroD150) {
 		this.registroD150 = registroD150;
 	}
+
 	/**
 	 * @return the registroD170
 	 */
 	public RegistroD170 getRegistroD170() {
 		return registroD170;
 	}
+
 	/**
-	 * @param registroD170 the registroD170 to set
+	 * @param registroD170
+	 *            the registroD170 to set
 	 */
 	public void setRegistroD170(RegistroD170 registroD170) {
 		this.registroD170 = registroD170;
 	}
+
 	/**
 	 * @return the registroD110
 	 */
@@ -372,6 +451,7 @@ private final String reg = "D100";
 		}
 		return registroD110;
 	}
+
 	/**
 	 * @return the registroD130
 	 */
@@ -381,6 +461,7 @@ private final String reg = "D100";
 		}
 		return registroD130;
 	}
+
 	/**
 	 * @return the registroD160
 	 */
@@ -390,6 +471,7 @@ private final String reg = "D100";
 		}
 		return registroD160;
 	}
+
 	/**
 	 * @return the registroD180
 	 */
@@ -399,6 +481,7 @@ private final String reg = "D100";
 		}
 		return registroD180;
 	}
+
 	/**
 	 * @return the registroD190
 	 */
@@ -408,6 +491,7 @@ private final String reg = "D100";
 		}
 		return registroD190;
 	}
+
 	/**
 	 * @return the registroD195
 	 */
@@ -417,5 +501,5 @@ private final String reg = "D100";
 		}
 		return registroD195;
 	}
-	
+
 }
