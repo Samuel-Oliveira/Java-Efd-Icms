@@ -23,7 +23,7 @@ Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são ca
 > ### BlocoD :clock1230:
 
 - [x] Objetos
-- [ ] Gerar
+- [x] Gerar
 - [ ] Contadores de Registros
 
 > ### BlocoE :clock1230:
