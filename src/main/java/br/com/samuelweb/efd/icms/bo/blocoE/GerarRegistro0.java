@@ -6,10 +6,10 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistro0 {
 	
-//	public static StringBuilder gerar(RegistroE registroe, StringBuilder sb){
+//	public static StringBuilder gerar(RegistroE registroE, StringBuilder sb){
 //		
-//		sb.append("|").append(Util.preencheRegistro(registroe.getReg()));
-//		sb.append("|").append(Util.preencheRegistro(registroe.get));
+//		sb.append("|").append(Util.preencheRegistro(registroE.getReg()));
+//		sb.append("|").append(Util.preencheRegistro(registroE.get));
 //    	sb.append("|").append('\n');
 //		
 //		return sb;
