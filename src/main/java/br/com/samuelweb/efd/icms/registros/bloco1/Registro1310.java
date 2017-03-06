@@ -17,11 +17,11 @@ public class Registro1310 {
 	private String vol_entr;
 	private String vol_disp;
 	private String vol_saidas;
-	private String estoq_escr;
+	private String estq_escr;
 	private String val_aj_perda;
 	private String val_aj_ganho;
 	private String fech_fisico;
-	private List<Registro1920> registro1920;
+	private List<Registro1320> registro1320;
 	/**
 	 * @return the num_tanque
 	 */
@@ -83,16 +83,16 @@ public class Registro1310 {
 		this.vol_saidas = vol_saidas;
 	}
 	/**
-	 * @return the estoq_escr
+	 * @return the estq_escr
 	 */
-	public String getEstoq_escr() {
-		return estoq_escr;
+	public String getEstq_escr() {
+		return estq_escr;
 	}
 	/**
-	 * @param estoq_escr the estoq_escr to set
+	 * @param estq_escr the estq_escr to set
 	 */
-	public void setEstoq_escr(String estoq_escr) {
-		this.estoq_escr = estoq_escr;
+	public void setEstq_escr(String estq_escr) {
+		this.estq_escr = estq_escr;
 	}
 	/**
 	 * @return the val_aj_perda
@@ -137,13 +137,13 @@ public class Registro1310 {
 		return reg;
 	}
 	/**
-	 * @return the registro1920
+	 * @return the registro1320
 	 */
-	public List<Registro1920> getRegistro1920() {
-		if (registro1920 == null) {
-			registro1920 = new ArrayList<Registro1920>();
+	public List<Registro1320> getRegistro1320() {
+		if (registro1320 == null) {
+			registro1320 = new ArrayList<Registro1320>();
 		}
-		return registro1920;
+		return registro1320;
 	}
 	
 }
