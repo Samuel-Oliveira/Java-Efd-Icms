@@ -51,6 +51,10 @@ public class GerarBloco0 {
 		
 		//REGISTRO0015
 		if(!Util.isEmpty(bloco0.getRegistro0015())){
+//			bloco0.getRegistro0015().forEach(t -> {
+//				sb = GerarRegistro0015.gerar(t, sb);
+//				qtdRegistros++;
+//			});
 			for (Registro0015 registro0015 : bloco0.getRegistro0015()) {
 				sb = GerarRegistro0015.gerar(registro0015, sb);
 				qtdRegistros++;
