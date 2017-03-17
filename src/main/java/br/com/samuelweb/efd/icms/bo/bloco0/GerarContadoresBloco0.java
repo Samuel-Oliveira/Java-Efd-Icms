@@ -82,7 +82,7 @@ public class GerarContadoresBloco0 {
 				int cont0175 = bloco0.getRegistro0150()
 									 .stream()
 									 .filter( r -> !r.getRegistro0175().isEmpty())
-									 .map(t -> t.getRegistro0175())
+									 .map(t -> t.getRegistro0175().size())
 									 .collect(Collectors.toList()).size();
 				
 				if (cont0175 > 0) {
