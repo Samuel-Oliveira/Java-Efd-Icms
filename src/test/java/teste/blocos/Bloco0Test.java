@@ -12,6 +12,7 @@ import br.com.samuelweb.efd.icms.registros.bloco0.Bloco0;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0000;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0001;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0005;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0015;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0100;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0150;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0175;
@@ -41,6 +42,7 @@ public class Bloco0Test {
 		bloco0 = preencheRegistro0000(bloco0);
 		bloco0 = preencheRegistro0001(bloco0);
 		bloco0 = preencheRegistro0005(bloco0);
+		bloco0 = preencheRegistro0015(bloco0);
 		bloco0 = preencheRegistro0100(bloco0);
 		bloco0 = preencheRegistro0150(bloco0);
 		bloco0 = preencheRegistro0190(bloco0);
@@ -87,6 +89,19 @@ public class Bloco0Test {
 		registro0005.setFone("8");
 		registro0005.setEmail("10");
 		bloco0.setRegistro0005(registro0005);
+		
+		return bloco0;
+	}
+	
+	public Bloco0 preencheRegistro0015(Bloco0 bloco0){
+		Registro0015 registro0015 = new Registro0015();
+		registro0015.setIe_st("3");
+		
+		Registro0015 registro0015a = new Registro0015();
+		registro0015a.setUf_st("2");
+		
+		bloco0.getRegistro0015().add(registro0015a);
+		bloco0.getRegistro0015().add(registro0015);
 		
 		return bloco0;
 	}

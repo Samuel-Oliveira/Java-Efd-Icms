@@ -4,9 +4,6 @@
 package br.com.samuelweb.efd.icms.bo.bloco0;
 
 import br.com.samuelweb.efd.icms.registros.bloco0.Bloco0;
-import br.com.samuelweb.efd.icms.registros.bloco0.Registro0015;
-import br.com.samuelweb.efd.icms.registros.bloco0.Registro0150;
-import br.com.samuelweb.efd.icms.registros.bloco0.Registro0175;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0190;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0200;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0205;
@@ -29,7 +26,11 @@ public class GerarBloco0 {
 	
 	private static int qtdRegistros = 0;
 	
-	public static StringBuilder gerar(Bloco0 bloco0, StringBuilder sb){
+	private static StringBuilder sb = null;
+	
+	public static StringBuilder gerar(Bloco0 bloco0, StringBuilder sbr){
+		
+		sb = sbr ;
 		
 		//REGISTRO0000
 		if(!Util.isEmpty(bloco0.getRegistro0000())){
@@ -51,14 +52,21 @@ public class GerarBloco0 {
 		
 		//REGISTRO0015
 		if(!Util.isEmpty(bloco0.getRegistro0015())){
-//			bloco0.getRegistro0015().forEach(t -> {
-//				sb = GerarRegistro0015.gerar(t, sb);
+			
+//			for (Registro0015 registro0015 : bloco0.getRegistro0015()) {
+//				sb = GerarRegistro0015.gerar(registro0015, sb);
+//				qtdRegistros++;
+//			}
+
+//			bloco0.getRegistro0015().stream().forEach(registro0015 -> {
+//				sb = GerarRegistro0015.gerar(registro0015, sb);
 //				qtdRegistros++;
 //			});
-			for (Registro0015 registro0015 : bloco0.getRegistro0015()) {
+			
+			qtdRegistros += bloco0.getRegistro0015().stream().peek(registro0015 -> {
 				sb = GerarRegistro0015.gerar(registro0015, sb);
-				qtdRegistros++;
-			}
+			}).count();
+			
 		}
 		
 		//REGISTRO0100
@@ -70,18 +78,29 @@ public class GerarBloco0 {
 		
 		//REGISTRO0150
 		if(!Util.isEmpty(bloco0.getRegistro0150())){
-			for (Registro0150 registro0150 : bloco0.getRegistro0150()) {
+			
+			bloco0.getRegistro0150().stream().forEach(registro0150 -> {
 				sb = GerarRegistro0150.gerar(registro0150, sb);
-				qtdRegistros++;
-				
-				//REGISTRO0175
 				if(!Util.isEmpty(registro0150.getRegistro0175())){
-					for (Registro0175 registro0175 : registro0150.getRegistro0175()) {
+					qtdRegistros += registro0150.getRegistro0175().stream().peek(registro0175 -> {
 						sb = GerarRegistro0175.gerar(registro0175, sb);
-						qtdRegistros++;
-					}
+					}).count();
 				}
-			}
+				qtdRegistros ++;
+			});
+						
+//			for (Registro0150 registro0150 : bloco0.getRegistro0150()) {
+//				sb = GerarRegistro0150.gerar(registro0150, sb);
+//				qtdRegistros++;
+//				
+//				//REGISTRO0175
+//				if(!Util.isEmpty(registro0150.getRegistro0175())){
+//					for (Registro0175 registro0175 : registro0150.getRegistro0175()) {
+//						sb = GerarRegistro0175.gerar(registro0175, sb);
+//						qtdRegistros++;
+//					}
+//				}
+//			}
 		}
 		
 		//REGISTRO0190

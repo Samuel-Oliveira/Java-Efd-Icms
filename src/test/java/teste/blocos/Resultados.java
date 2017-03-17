@@ -14,6 +14,8 @@ public class Resultados {
 		resultado = "|0000|2|3|4|5|6|7||9|10|11|||14|15|".concat("\n");
 		resultado = resultado.concat("|0001|0|").concat("\n");
 		resultado = resultado.concat("|0005|2|3|4|5|6|7|8||10|").concat("\n");
+		resultado = resultado.concat("|0015|2||").concat("\n");
+		resultado = resultado.concat("|0015||3|").concat("\n");
 		resultado = resultado.concat("|0100|2|3|4||6|7|8||10|11|12|13|14|").concat("\n");
 		resultado = resultado.concat("|0150|2|3|4||6||8||10|11||13|").concat("\n");
 		resultado = resultado.concat("|0175|2|3|4|").concat("\n");
