@@ -54,11 +54,14 @@ public class GerarEfdIcms {
 		
 		//BLOCOC
 		if(Util.isEmpty(efdIcms.getBlocoC())){
-			BlocoC blocoC = new BlocoC();
-			RegistroC001 registroC001 = new RegistroC001();
-			registroC001.setInd_mov("1");
-			blocoC.setRegistroC001(registroC001);
-			efdIcms.setBlocoC(blocoC);
+			sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
+			efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
+			
+//			BlocoC blocoC = new BlocoC();
+//			RegistroC001 registroC001 = new RegistroC001();
+//			registroC001.setInd_mov("1");
+//			blocoC.setRegistroC001(registroC001);
+//			efdIcms.setBlocoC(blocoC);
 		}
 		sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
 		efdIcms = GerarContadoresBlocoC.gerar(efdIcms);

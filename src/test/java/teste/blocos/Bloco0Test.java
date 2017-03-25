@@ -18,7 +18,13 @@ import br.com.samuelweb.efd.icms.registros.bloco0.Registro0150;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0175;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0190;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0200;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0205;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0206;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0210;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0220;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0300;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0305;
+import br.com.samuelweb.efd.icms.registros.bloco0.Registro0400;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0450;
 
 /**
@@ -32,9 +38,10 @@ public class Bloco0Test {
 		StringBuilder sb = new StringBuilder();
 		EfdIcms efdIcms = new EfdIcms();
 		efdIcms.setBloco0(preencheBloco0());
+		efdIcms.setBlocoC(BlocoCTest.preencheBlocoC());
 		sb = GerarEfdIcms.gerar(efdIcms, sb);
 		System.out.println(sb.toString());
-		Assert.assertEquals(Resultados.resultadoBloco0(),sb.toString());
+		Assert.assertEquals(Resultados.resultadoBlocos(),sb.toString());
 	}
 	
 	public Bloco0 preencheBloco0(){
@@ -47,6 +54,8 @@ public class Bloco0Test {
 		bloco0 = preencheRegistro0150(bloco0);
 		bloco0 = preencheRegistro0190(bloco0);
 		bloco0 = preencheRegistro0200(bloco0);
+		bloco0 = preencheRegistro0300(bloco0);
+		bloco0 = preencheRegistro0400(bloco0);
 		bloco0 = preencheRegistro0450(bloco0);
 		
 		return bloco0;
@@ -188,13 +197,63 @@ public class Bloco0Test {
 		registro0200.setCod_ncm("8");
 		registro0200.setAliq_icms("12");
 		registro0200.setCest("13");
-		
+			
+			Registro0205 registro0205 = new Registro0205();
+			registro0205.setDesc_ant_item("2");
+			registro0205.setDt_ini("3");
+			registro0205.setDt_fim("4");
+			registro0205.setCod_ant_item("5");
+			registro0200.getRegistro0205().add(registro0205);
+			
 			Registro0206 registro0206 = new Registro0206();
 			registro0206.setCod_comb("2");
 			registro0200.setRegistro0206(registro0206);
+			
+			Registro0210 registro0210 = new Registro0210();
+			registro0210.setCod_item_comp("2");
+			registro0210.setQtd_comp("3");
+			registro0210.setPerda("4");
+			registro0200.getRegistro0210().add(registro0210);
+			
+			Registro0220 registro0220 = new Registro0220();
+			registro0220.setUnid_conv("2");
+			registro0220.setFat_conv("3");
+			registro0200.getRegistro0220().add(registro0220);
 		
 		bloco0.getRegistro0200().add(registro0200);
 		
+		return bloco0;
+	}
+	
+	public Bloco0 preencheRegistro0300(Bloco0 bloco0){
+		Registro0300 registro0300 = new Registro0300();
+		registro0300.setCod_ind_bem("2");
+		registro0300.setIdent_merc("3");
+		registro0300.setDescr_item("4");
+		registro0300.setCod_prnc("5");
+		registro0300.setCod_cta("6");
+		registro0300.setNr_parc("7");
+		
+			Registro0305 registro0305 = new Registro0305();
+			registro0305.setCod_ccus("2");
+			registro0305.setFunc("3");
+			registro0305.setVida_util("4");
+			registro0300.setRegistro0305(registro0305);
+		
+		bloco0.getRegistro0300().add(registro0300);
+		return bloco0;
+	}
+	
+	public Bloco0 preencheRegistro0400(Bloco0 bloco0){
+		Registro0400 registro0400 = new Registro0400();
+		registro0400.setCod_nat("2");
+		registro0400.setDescr_nat("3");
+		bloco0.getRegistro0400().add(registro0400);
+		
+		registro0400 = new Registro0400();
+		registro0400.setCod_nat("2");
+		registro0400.setDescr_nat("3");
+		bloco0.getRegistro0400().add(registro0400);
 		return bloco0;
 	}
 	
