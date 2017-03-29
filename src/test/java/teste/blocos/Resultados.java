@@ -13,6 +13,8 @@ public class Resultados {
 		String resultado;
 		resultado = resultadoBloco0();
 		resultado = resultado.concat(resultadoBlocoC());
+		resultado = resultado.concat(resultadoBlocoD());
+		resultado = resultado.concat(resultadoBlocoE());
 		return resultado;
 	}
 	
@@ -52,6 +54,24 @@ public class Resultados {
 		resultado = resultado.concat("|C101|2|3|4|").concat("\n");
 		resultado = resultado.concat("|C110|2|3|").concat("\n");
 		resultado = resultado.concat("|C111|2|3|").concat("\n");
+		resultado = resultado.concat("|C990|6|").concat("\n");
+		return resultado;
+	}
+	
+	private static String resultadoBlocoD(){
+		String resultado;
+		
+		resultado = "|D001|0|".concat("\n");
+		resultado = resultado.concat("|D990|2|").concat("\n");
+		
+		return resultado;
+	}
+	
+	private static String resultadoBlocoE(){
+		String resultado;
+		
+		resultado = "|E001|0|".concat("\n");
+		
 		return resultado;
 	}
 
