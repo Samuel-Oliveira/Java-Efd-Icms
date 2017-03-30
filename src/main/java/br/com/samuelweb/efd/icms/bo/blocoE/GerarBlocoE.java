@@ -12,7 +12,7 @@ import br.com.samuelweb.efd.icms.registros.blocoE.RegistroE990;
 import br.com.samuelweb.efd.icms.util.Util;
 
 /**
- * @author Samuel Oliveira
+ * @author Samuel Oliveira, Yuri Lemes
  *
  */
 public class GerarBlocoE {
@@ -35,9 +35,9 @@ public class GerarBlocoE {
 				sb = GerarRegistroE100.gerar(registroE100, sb);
 				
 				//REGISTROE110
-				RegistroE110 registroE110 = registroE100.getRegistroE110();
 				if(!Util.isEmpty(registroE100.getRegistroE110())){
-					sb = GerarRegistroE110.gerar(registroE100.getRegistroE110(), sb);
+					RegistroE110 registroE110 = registroE100.getRegistroE110();
+					sb = GerarRegistroE110.gerar(registroE110, sb);
 					
 					//REGISTROE111
 					if(!Util.isEmpty(registroE110.getRegistroE111())){
@@ -76,6 +76,7 @@ public class GerarBlocoE {
 					}
 					qtdRegistros++;
 				}
+				qtdRegistros++;
 			});
 		}
 		
@@ -88,7 +89,7 @@ public class GerarBlocoE {
 				if(!Util.isEmpty(registroE200.getRegistroE210())){
 					RegistroE210 registroE210 = registroE200.getRegistroE210();
 					
-					sb = GerarRegistroE210.gerar(registroE200.getRegistroE210(), sb);
+					sb = GerarRegistroE210.gerar(registroE210, sb);
 					
 					//REGISTROE220
 					if(!Util.isEmpty(registroE210.getRegistroE220())){
@@ -120,6 +121,7 @@ public class GerarBlocoE {
 					}
 					qtdRegistros++;
 				}
+				qtdRegistros++;
 			});			
 		}
 			
@@ -132,7 +134,7 @@ public class GerarBlocoE {
 				if(!Util.isEmpty(registroE300.getRegistroE310())){
 					RegistroE310 registroE310 = registroE300.getRegistroE310();
 					
-					sb = GerarRegistroE310.gerar(registroE300.getRegistroE310(), sb);
+					sb = GerarRegistroE310.gerar(registroE310, sb);
 							
 					//REGISTROE311
 					if(!Util.isEmpty(registroE310.getRegistroE311())){
@@ -164,6 +166,7 @@ public class GerarBlocoE {
 					}
 					qtdRegistros++;
 				}
+				qtdRegistros++;
 			});
 		}
 		

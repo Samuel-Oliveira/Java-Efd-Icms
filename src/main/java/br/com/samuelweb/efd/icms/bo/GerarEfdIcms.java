@@ -70,7 +70,7 @@ public class GerarEfdIcms {
 		if(Util.isEmpty(efdIcms.getBlocoD())){
 			BlocoD blocoD = new BlocoD();
 			RegistroD001 registroD001 = new RegistroD001();
-			registroD001.setInd_mov("1");
+			registroD001.setInd_mov("0");
 			blocoD.setRegistroD001(registroD001);
 			efdIcms.setBlocoD(blocoD);
 		}
@@ -81,7 +81,7 @@ public class GerarEfdIcms {
 		if(Util.isEmpty(efdIcms.getBlocoE())){
 			BlocoE blocoE = new BlocoE();
 			RegistroE001 registroE001 = new RegistroE001();
-			registroE001.setInd_mov("1");
+			registroE001.setInd_mov("0");
 			blocoE.setRegistroE001(registroE001);
 			efdIcms.setBlocoE(blocoE);
 		}
