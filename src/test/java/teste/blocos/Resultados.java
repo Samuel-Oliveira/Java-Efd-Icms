@@ -72,6 +72,8 @@ public class Resultados {
 		
 		resultado = "|E001|0|".concat("\n");
 		
+		resultado = resultado.concat("|E990|2|").concat("\n");
+		
 		return resultado;
 	}
 

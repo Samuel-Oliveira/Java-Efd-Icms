@@ -39,6 +39,7 @@ public class Bloco0Test {
 		EfdIcms efdIcms = new EfdIcms();
 		efdIcms.setBloco0(preencheBloco0());
 		efdIcms.setBlocoC(BlocoCTest.preencheBlocoC());
+		efdIcms.setBlocoE(BlocoETest.preencheBlocoE());
 		sb = GerarEfdIcms.gerar(efdIcms, sb);
 		System.out.println(sb.toString());
 		Assert.assertEquals(Resultados.resultadoBlocos(),sb.toString());
