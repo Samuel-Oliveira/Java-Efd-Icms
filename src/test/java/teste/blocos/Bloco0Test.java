@@ -3,11 +3,6 @@
  */
 package teste.blocos;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-import br.com.samuelweb.efd.icms.bo.GerarEfdIcms;
-import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.bloco0.Bloco0;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0000;
 import br.com.samuelweb.efd.icms.registros.bloco0.Registro0001;
@@ -33,19 +28,8 @@ import br.com.samuelweb.efd.icms.registros.bloco0.Registro0450;
  */
 public class Bloco0Test {
 	
-	@Test
-	public void testaBloco0(){
-		StringBuilder sb = new StringBuilder();
-		EfdIcms efdIcms = new EfdIcms();
-		efdIcms.setBloco0(preencheBloco0());
-		efdIcms.setBlocoC(BlocoCTest.preencheBlocoC());
-		efdIcms.setBlocoE(BlocoETest.preencheBlocoE());
-		sb = GerarEfdIcms.gerar(efdIcms, sb);
-		System.out.println(sb.toString());
-		Assert.assertEquals(Resultados.resultadoBlocos(),sb.toString());
-	}
 	
-	public Bloco0 preencheBloco0(){
+	public static Bloco0 preencheBloco0(){
 		Bloco0 bloco0 = new Bloco0();
 		bloco0 = preencheRegistro0000(bloco0);
 		bloco0 = preencheRegistro0001(bloco0);
@@ -62,7 +46,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 
-	public Bloco0 preencheRegistro0000(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0000(Bloco0 bloco0){
 		Registro0000 registro0000 = new Registro0000();
 		registro0000.setCod_ver("2");
 		registro0000.setCod_fin("3");
@@ -80,7 +64,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0001(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0001(Bloco0 bloco0){
 		Registro0001 registro0001 = new Registro0001();
 		registro0001.setInd_mov("0");
 		bloco0.setRegistro0001(registro0001);
@@ -88,7 +72,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0005(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0005(Bloco0 bloco0){
 		Registro0005 registro0005 = new Registro0005();
 		registro0005.setFantasia("2");
 		registro0005.setCep("3");
@@ -103,7 +87,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0015(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0015(Bloco0 bloco0){
 		Registro0015 registro0015 = new Registro0015();
 		registro0015.setIe_st("3");
 		
@@ -116,7 +100,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0100(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0100(Bloco0 bloco0){
 		Registro0100 registro0100 = new Registro0100();
 		registro0100.setNome("2");
 		registro0100.setCpf("3");
@@ -134,7 +118,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0150(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0150(Bloco0 bloco0){
 		Registro0150 registro0150 = new Registro0150();
 		registro0150.setCod_part("2");
 		registro0150.setNome("3");
@@ -180,7 +164,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0190(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0190(Bloco0 bloco0){
 		Registro0190 registro0190 = new Registro0190();
 		registro0190.setUnid("2");
 		registro0190.setDescr("3");
@@ -189,7 +173,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0200(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0200(Bloco0 bloco0){
 		Registro0200 registro0200 = new Registro0200();
 		registro0200.setCod_item("2");
 		registro0200.setDescr_item("3");
@@ -226,7 +210,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0300(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0300(Bloco0 bloco0){
 		Registro0300 registro0300 = new Registro0300();
 		registro0300.setCod_ind_bem("2");
 		registro0300.setIdent_merc("3");
@@ -245,7 +229,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0400(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0400(Bloco0 bloco0){
 		Registro0400 registro0400 = new Registro0400();
 		registro0400.setCod_nat("2");
 		registro0400.setDescr_nat("3");
@@ -258,7 +242,7 @@ public class Bloco0Test {
 		return bloco0;
 	}
 	
-	public Bloco0 preencheRegistro0450(Bloco0 bloco0){
+	public static Bloco0 preencheRegistro0450(Bloco0 bloco0){
 		Registro0450 registro0450 = new Registro0450();
 		registro0450.setCod_inf("2");
 		registro0450.setTxt("Relacao ECF(S):");

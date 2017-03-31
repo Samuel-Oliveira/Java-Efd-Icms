@@ -53,7 +53,7 @@ public class GerarEfdIcms {
 		}
 		
 		//BLOCOC
-		if(Util.isEmpty(efdIcms.getBlocoC())){
+		if(!Util.isEmpty(efdIcms.getBlocoC())){
 			sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
 			efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
 			
@@ -63,16 +63,17 @@ public class GerarEfdIcms {
 //			blocoC.setRegistroC001(registroC001);
 //			efdIcms.setBlocoC(blocoC);
 		}
-		sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
-		efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
+//		sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
+//		efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
 		
 		//BLOCOD
 		if(Util.isEmpty(efdIcms.getBlocoD())){
-			BlocoD blocoD = new BlocoD();
-			RegistroD001 registroD001 = new RegistroD001();
-			registroD001.setInd_mov("0");
-			blocoD.setRegistroD001(registroD001);
-			efdIcms.setBlocoD(blocoD);
+			sb = GerarBlocoD.gerar(efdIcms.getBlocoD(), sb);
+			efdIcms = GerarContadoresBlocoD.gerar(efdIcms);
+//			RegistroD001 registroD001 = new RegistroD001();
+//			registroD001.setInd_mov("0");
+//			blocoD.setRegistroD001(registroD001);
+//			efdIcms.setBlocoD(blocoD);
 		}
 		sb = GerarBlocoD.gerar(efdIcms.getBlocoD(), sb);
 		efdIcms = GerarContadoresBlocoD.gerar(efdIcms);

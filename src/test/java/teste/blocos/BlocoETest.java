@@ -91,6 +91,8 @@ public class BlocoETest {
 				
 				registroE110.getRegistroE111().add(registroE111);
 			registroE100.setRegistroE110(registroE110);
+			
+			
 		blocoE.getRegistroE100().add(registroE100);
 		return blocoE;
 	}
