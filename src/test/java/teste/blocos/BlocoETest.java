@@ -68,9 +68,7 @@ public class BlocoETest {
 					
 					registroE112 = new RegistroE112();
 					registroE112.setNum_da("2");
-//					registroE112.setNum_proc("3");
 					registroE112.setInd_proc("4");
-//					registroE112.setProc("5");
 					registroE112.setTxt_compl("6");
 					registroE111.getRegistroE112().add(registroE112);
 					
@@ -83,7 +81,6 @@ public class BlocoETest {
 					
 					registroE113 = new RegistroE113();
 					registroE113.setCod_part("2");
-//					registroE113.setSer("4");
 					registroE113.setSub("5");
 					registroE113.setNum_doc("6");
 					registroE113.setChv_doc_e("10");
@@ -91,8 +88,55 @@ public class BlocoETest {
 				
 				registroE110.getRegistroE111().add(registroE111);
 			registroE100.setRegistroE110(registroE110);
-			
-			
+		blocoE.getRegistroE100().add(registroE100);
+		
+		
+		registroE100 = new RegistroE100();
+		registroE100.setDt_ini("2");
+		registroE100.setDt_fin("3");
+		
+			registroE110 = new RegistroE110();
+			registroE110.setVl_tot_debitos("2");
+			registroE110.setVl_aj_debitos("3");
+			registroE110.setVl_aj_creditos("7");
+			registroE110.setVl_sld_apurado("11");
+			registroE110.setVl_tot_ded("12");
+			registroE110.setDeb_esp("15");
+				
+				registroE111 = new RegistroE111();
+				registroE111.setCod_aj_apur("2");
+				registroE111.setDescr_compl_aj("3");
+				registroE111.setVl_aj_apur("4");
+				
+					registroE112 = new RegistroE112();
+					registroE112.setNum_da("2");
+					registroE112.setProc("5");
+					registroE112.setTxt_compl("6");
+					registroE111.getRegistroE112().add(registroE112);
+					
+					registroE112 = new RegistroE112();
+					registroE112.setNum_da("2");
+					registroE112.setNum_proc("3");
+					registroE112.setInd_proc("4");
+					registroE112.setTxt_compl("6");
+					registroE111.getRegistroE112().add(registroE112);
+					
+					registroE113 = new RegistroE113();
+					registroE113.setCod_part("2");
+					registroE113.setSer("4");
+					registroE113.setChv_doc_e("10");
+					registroE111.getRegistroE113().add(registroE113);
+					
+					registroE113 = new RegistroE113();
+					registroE113.setCod_part("2");
+					registroE113.setSer("4");
+					registroE113.setSub("5");
+					registroE113.setNum_doc("6");
+					registroE113.setChv_doc_e("10");
+					registroE111.getRegistroE113().add(registroE113);
+				
+				registroE110.getRegistroE111().add(registroE111);
+			registroE100.setRegistroE110(registroE110);
 		blocoE.getRegistroE100().add(registroE100);
 		return blocoE;
 	}

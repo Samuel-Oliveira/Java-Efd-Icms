@@ -16,7 +16,7 @@ import br.com.samuelweb.efd.icms.registros.EfdIcms;
 public class BlocosTest {
 
 	@Test
-	public void testaBloco0(){
+	public void testaBlocos(){
 		StringBuilder sb = new StringBuilder();
 		EfdIcms efdIcms = new EfdIcms();
 		efdIcms.setBloco0(Bloco0Test.preencheBloco0());

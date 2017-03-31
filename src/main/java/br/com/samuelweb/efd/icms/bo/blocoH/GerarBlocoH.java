@@ -8,19 +8,44 @@ import br.com.samuelweb.efd.icms.registros.blocoH.RegistroH990;
 import br.com.samuelweb.efd.icms.util.Util;
 
 /**
- * @author Samuel Oliveira
+ * @author Samuel Oliveira, Yuri Lemes
  *
  */
 public class GerarBlocoH {
 	
 	private static int qtdRegistros = 0;
 	
-	public static StringBuilder gerar(BlocoH blocoH, StringBuilder sb){
-		
+	private static StringBuilder sb = null;
+	
+	public static StringBuilder gerar(BlocoH blocoH, StringBuilder sbr){
+		sb = sbr;
 		//REGISTROH001
 		if(!Util.isEmpty(blocoH.getRegistroH001())){
 			sb = GerarRegistroH001.gerar(blocoH.getRegistroH001(), sb);
 			qtdRegistros++;
+		}
+		
+		//REGISTROH005
+		if(!Util.isEmpty(blocoH.getRegistroH005())){
+			blocoH.getRegistroH005().stream().forEach(registroH005 -> {
+				sb = GerarRegistroH005.gerar(registroH005, sb);
+				
+				//REGISTROH010
+				if(!Util.isEmpty(registroH005.getRegistroH010())){
+					registroH005.getRegistroH010().stream().forEach(registroH010 -> {
+						sb = GerarRegistroH010.gerar(registroH010, sb);
+						
+						//REGISTROH020
+						if(!Util.isEmpty(registroH010.getRegistroH020())){
+							qtdRegistros+=registroH010.getRegistroH020().stream().peek(registroH020 -> {
+								sb = GerarRegistroH020.gerar(registroH020, sb);
+							}).count();
+						}
+						qtdRegistros++;
+					});
+				}
+				qtdRegistros++;
+			});
 		}
 		
 //		//REGISTRO

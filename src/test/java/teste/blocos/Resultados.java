@@ -77,7 +77,14 @@ public class Resultados {
 		resultado = resultado.concat("|E112|2||4||6|").concat("\n");
 		resultado = resultado.concat("|E113|2||4|5|||||10|").concat("\n");
 		resultado = resultado.concat("|E113|2|||5|6||||10|").concat("\n");
-		resultado = resultado.concat("|E990|9|").concat("\n");
+		resultado = resultado.concat("|E100|2|3|").concat("\n");
+		resultado = resultado.concat("|E110|2|3||||7||||11|12|||15|").concat("\n");
+		resultado = resultado.concat("|E111|2|3|4|").concat("\n");
+		resultado = resultado.concat("|E112|2|||5|6|").concat("\n");
+		resultado = resultado.concat("|E112|2|3|4||6|").concat("\n");
+		resultado = resultado.concat("|E113|2||4||||||10|").concat("\n");
+		resultado = resultado.concat("|E113|2||4|5|6||||10|").concat("\n");
+		resultado = resultado.concat("|E990|16|").concat("\n");
 		
 		return resultado;
 	}
