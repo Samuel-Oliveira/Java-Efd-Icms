@@ -12,6 +12,8 @@ import br.com.samuelweb.efd.icms.registros.blocoE.BlocoE;
 import br.com.samuelweb.efd.icms.registros.blocoG.BlocoG;
 import br.com.samuelweb.efd.icms.registros.blocoH.BlocoH;
 import br.com.samuelweb.efd.icms.registros.blocoK.BlocoK;
+import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBloco0;
+import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoC;
 
 /**
  * @author Samuel Oliveira
@@ -28,6 +30,18 @@ public class EfdIcms {
 	private BlocoG blocoG;
 	private BlocoH blocoH;
 	private BlocoK blocoK ;
+	
+	private ContadoresBloco0 contadoresBloco0;
+	private ContadoresBlocoC contadoresBlocoC;
+	
+	/**
+	 * 
+	 */
+	public EfdIcms() {
+		this.contadoresBloco0 = new ContadoresBloco0();
+		this.contadoresBlocoC = new ContadoresBlocoC();
+	}
+	
 	/**
 	 * @return the bloco0
 	 */
@@ -136,5 +150,19 @@ public class EfdIcms {
 	public void setBlocoK(BlocoK blocoK) {
 		this.blocoK = blocoK;
 	}
-	
+
+	/**
+	 * @return the contadores
+	 */
+	public ContadoresBloco0 getContadoresBloco0() {
+		return contadoresBloco0;
+	}
+
+	/**
+	 * @return the contadoresBlocoC
+	 */
+	public ContadoresBlocoC getContadoresBlocoC() {
+		return contadoresBlocoC;
+	}
+
 }

@@ -34,13 +34,13 @@ public class GerarEfdIcms {
 		
 		//BLOCO0
 		if(!Util.isEmpty(efdIcms.getBloco0())){
-			sb = GerarBloco0.gerar(efdIcms.getBloco0(), sb);
+			sb = GerarBloco0.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBloco0.gerar(efdIcms);
 		}
 		
 		//BLOCOC
 		if(!Util.isEmpty(efdIcms.getBlocoC())){
-			sb = GerarBlocoC.gerar(efdIcms.getBlocoC(), sb);
+			sb = GerarBlocoC.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
 			
 		}

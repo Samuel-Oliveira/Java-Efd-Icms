@@ -3,11 +3,8 @@
  */
 package br.com.samuelweb.efd.icms.bo.bloco0;
 
-import java.util.stream.Collectors;
-
 import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.bloco0.Bloco0;
-import br.com.samuelweb.efd.icms.registros.bloco0.Registro0300;
 import br.com.samuelweb.efd.icms.registros.bloco9.Bloco9;
 import br.com.samuelweb.efd.icms.registros.bloco9.Registro9900;
 import br.com.samuelweb.efd.icms.registros.bloco9.Registro9999;
@@ -35,7 +32,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0000())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0000");
-				registro9900.setQtd_reg_blc("1");
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0000()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -43,7 +40,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0001())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0001");
-				registro9900.setQtd_reg_blc("1");
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0001()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -51,7 +48,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0005())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0005");
-				registro9900.setQtd_reg_blc("1");
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0005()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -59,7 +56,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0015())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0015");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0015().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0015()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -67,7 +64,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0100())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0100");
-				registro9900.setQtd_reg_blc("1");
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0100()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -75,16 +72,12 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0150())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0150");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0150().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0150()));
 				bloco9.getRegistro9900().add(registro9900);
 
 				// Qnt Registros Registro0175
-				int cont0175 = bloco0.getRegistro0150()
-									 .stream()
-									 .filter( r -> !r.getRegistro0175().isEmpty())
-									 .map(t -> t.getRegistro0175().size())
-									 .collect(Collectors.toList()).size();
-				
+				int cont0175 = efdIcms.getContadoresBloco0().getContRegistro0175();
+
 				if (cont0175 > 0) {
 					registro9900 = new Registro9900();
 					registro9900.setReg_blc("0175");
@@ -97,7 +90,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0190())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0190");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0190().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0190()));
 				bloco9.getRegistro9900().add(registro9900);
 			}
 
@@ -105,36 +98,20 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0200())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0200");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0200().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0200()));
 				bloco9.getRegistro9900().add(registro9900);
 
-				//Quantidade de Registros 0205
-				int cont0205 = bloco0.getRegistro0200()
-									 .stream()
-									 .filter(r -> !r.getRegistro0205().isEmpty())
-									 .map(t -> t.getRegistro0205())
-									 .collect(Collectors.toList()).size();
-				
-				//Quantidade de Registros 0206
-				int cont0206 = bloco0.getRegistro0200()
-									 .stream()
-									 .filter(r -> r.getRegistro0206() != null)
-									 .map(t -> t.getRegistro0206())
-									 .collect(Collectors.toList()).size();
-				
-				//Quantidade de Registros 0210
-				int cont0210 = bloco0.getRegistro0200()
-									 .stream()
-									 .filter(r -> !r.getRegistro0210().isEmpty())
-									 .map(t -> t.getRegistro0210())
-									 .collect(Collectors.toList()).size();
-				
-				//Quantidade de Registros 0220
-				int cont0220 = bloco0.getRegistro0200()
-									 .stream()
-									 .filter( r -> !r.getRegistro0220().isEmpty())
-									 .map(t -> t.getRegistro0220())
-									 .collect(Collectors.toList()).size();
+				// Quantidade de Registros 0205
+				int cont0205 = efdIcms.getContadoresBloco0().getContRegistro0205();
+
+				// Quantidade de Registros 0206
+				int cont0206 = efdIcms.getContadoresBloco0().getContRegistro0206();
+
+				// Quantidade de Registros 0210
+				int cont0210 = efdIcms.getContadoresBloco0().getContRegistro0210();
+
+				// Quantidade de Registros 0220
+				int cont0220 = efdIcms.getContadoresBloco0().getContRegistro0220();
 
 				if (cont0205 > 0) {
 					registro9900 = new Registro9900();
@@ -173,16 +150,11 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0300())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0300");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0300().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0300()));
 				bloco9.getRegistro9900().add(registro9900);
 
 				// Qnt Registros Registro0305
-				int cont0305 = 0;
-				for (Registro0300 registro0300 : bloco0.getRegistro0300()) {
-					if (!Util.isEmpty(registro0300.getRegistro0305())) {
-						cont0305++;
-					}
-				}
+				int cont0305 = efdIcms.getContadoresBloco0().getContRegistro0305();
 
 				if (cont0305 > 0) {
 					registro9900 = new Registro9900();
@@ -197,7 +169,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0400())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0400");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0400().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0400()));
 				bloco9.getRegistro9900().add(registro9900);
 
 			}
@@ -206,7 +178,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0450())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0450");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0450().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0450()));
 				bloco9.getRegistro9900().add(registro9900);
 
 			}
@@ -215,7 +187,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0460())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0460");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0460().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0460()));
 				bloco9.getRegistro9900().add(registro9900);
 
 			}
@@ -224,7 +196,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0500())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0500");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0500().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0500()));
 				bloco9.getRegistro9900().add(registro9900);
 
 			}
@@ -233,7 +205,7 @@ public class GerarContadoresBloco0 {
 			if (!Util.isEmpty(bloco0.getRegistro0600())) {
 				registro9900 = new Registro9900();
 				registro9900.setReg_blc("0600");
-				registro9900.setQtd_reg_blc(String.valueOf(bloco0.getRegistro0600().size()));
+				registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0600()));
 				bloco9.getRegistro9900().add(registro9900);
 
 			}
@@ -247,8 +219,7 @@ public class GerarContadoresBloco0 {
 
 			}
 
-			int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())
-					+ Integer.valueOf(bloco0.getRegistro0990().getQtd_lin_0());
+			int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(bloco0.getRegistro0990().getQtd_lin_0());
 			bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
 			efdIcms.setBloco9(bloco9);
