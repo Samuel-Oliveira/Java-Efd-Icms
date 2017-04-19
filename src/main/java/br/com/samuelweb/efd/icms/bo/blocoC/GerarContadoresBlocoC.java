@@ -3,15 +3,10 @@
  */
 package br.com.samuelweb.efd.icms.bo.blocoC;
 
-import java.util.stream.Collectors;
-
 import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.bloco9.Bloco9;
 import br.com.samuelweb.efd.icms.registros.bloco9.Registro9900;
 import br.com.samuelweb.efd.icms.registros.blocoC.BlocoC;
-import br.com.samuelweb.efd.icms.registros.blocoC.BlocoCEnum;
-import br.com.samuelweb.efd.icms.registros.blocoC.RegistroC990;
-import br.com.samuelweb.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira
@@ -218,257 +213,257 @@ public class GerarContadoresBlocoC {
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC190();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C190");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC190()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC195();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C195");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC195()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC198();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C198");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC198()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC197();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C197");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC197()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC300();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C300");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC300()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC310();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C310");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC310()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC320();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C320");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC320()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC321();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C321");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC321()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC350();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C350");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC350()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC370();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C370");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC370()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC390();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C390");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC390()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC400();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C400");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC400()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC405();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C405");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC405()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC410();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C410");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC410()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC420();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C420");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC420()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC425();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C425");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC425()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC460();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C460");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC460()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC465();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C465");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC465()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC470();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C470");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC470()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC490();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C490");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC490()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC495();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C495");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC495()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC500();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C500");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC500()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC510();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C510");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC510()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC590();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C590");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC590()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC600();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C600");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC600()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC601();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C601");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC601()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC610();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C610");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC610()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC690();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C690");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC690()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC700();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C700");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC700()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC790();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C790");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC790()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC791();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C791");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC791()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC800();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C800");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC800()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC850();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C850");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC850()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC860();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C860");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC860()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC890();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C890");
+			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC890()));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		cont = efdIcms.getContadoresBlocoC().getContRegistroC990();
 		if (cont > 0) {
 			registro9900 = new Registro9900();
-			registro9900.setReg_blc("C");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBlocoC().getContRegistroC()));
+			registro9900.setReg_blc("C990");
+			registro9900.setQtd_reg_blc("1");
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
-		int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(blocoC.getRegistroC990().getQtd_lin_c()));
+		int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(blocoC.getRegistroC990().getQtd_lin_c());
 		bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
 		efdIcms.setBloco9(bloco9);

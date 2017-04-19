@@ -54,7 +54,7 @@ public class GerarBlocoC {
 
 						// REGISTROC111
 						if (!Util.isEmpty(registroC110.getRegistroC111())) {
-							registroC110.getRegistroC111().stream().peek(registroC111 -> {
+							registroC110.getRegistroC111().stream().forEach(registroC111 -> {
 								sb = GerarRegistroC111.gerar(registroC111, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC111);
 							});
@@ -62,7 +62,7 @@ public class GerarBlocoC {
 
 						// REGISTROC112
 						if (!Util.isEmpty(registroC110.getRegistroC112())) {
-							registroC110.getRegistroC112().stream().peek(registroC112 -> {
+							registroC110.getRegistroC112().stream().forEach(registroC112 -> {
 								sb = GerarRegistroC112.gerar(registroC112, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC112);
 							});
@@ -70,7 +70,7 @@ public class GerarBlocoC {
 
 						// REGISTROC113
 						if (!Util.isEmpty(registroC110.getRegistroC113())) {
-							registroC110.getRegistroC113().stream().peek(registroC113 -> {
+							registroC110.getRegistroC113().stream().forEach(registroC113 -> {
 								sb = GerarRegistroC113.gerar(registroC113, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC113);
 							});
@@ -78,7 +78,7 @@ public class GerarBlocoC {
 
 						// REGISTROC114
 						if (!Util.isEmpty(registroC110.getRegistroC114())) {
-							registroC110.getRegistroC114().stream().peek(registroC114 -> {
+							registroC110.getRegistroC114().stream().forEach(registroC114 -> {
 								sb = GerarRegistroC114.gerar(registroC114, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC114);
 							});
@@ -86,7 +86,7 @@ public class GerarBlocoC {
 
 						// REGISTROC115
 						if (!Util.isEmpty(registroC110.getRegistroC115())) {
-							registroC110.getRegistroC115().stream().peek(registroC115 -> {
+							registroC110.getRegistroC115().stream().forEach(registroC115 -> {
 								sb = GerarRegistroC115.gerar(registroC115, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC115);
 							});
@@ -94,7 +94,7 @@ public class GerarBlocoC {
 
 						// REGISTROC116
 						if (!Util.isEmpty(registroC110.getRegistroC116())) {
-							registroC110.getRegistroC116().stream().peek(registroC116 -> {
+							registroC110.getRegistroC116().stream().forEach(registroC116 -> {
 								sb = GerarRegistroC116.gerar(registroC116, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC116);
 							});
@@ -104,7 +104,7 @@ public class GerarBlocoC {
 
 				// REGISTROC120
 				if (!Util.isEmpty(registroC100.getRegistroC120())) {
-					registroC100.getRegistroC120().stream().peek(registroC120 -> {
+					registroC100.getRegistroC120().stream().forEach(registroC120 -> {
 						sb = GerarRegistroC120.gerar(registroC120, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC120);
 					});
@@ -123,7 +123,7 @@ public class GerarBlocoC {
 
 					// REGISTRO141
 					if (!Util.isEmpty(registroC100.getRegistroC140().getRegistroC141())) {
-						registroC100.getRegistroC140().getRegistroC141().stream().peek(registroC141 -> {
+						registroC100.getRegistroC140().getRegistroC141().stream().forEach(registroC141 -> {
 							sb = GerarRegistroC141.gerar(registroC141, sb);
 							efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC141);
 						});
@@ -138,7 +138,7 @@ public class GerarBlocoC {
 
 				// REGISTROC165
 				if (!Util.isEmpty(registroC100.getRegistroC165())) {
-					registroC100.getRegistroC165().stream().peek(registroC165 -> {
+					registroC100.getRegistroC165().stream().forEach(registroC165 -> {
 						sb = GerarRegistroC165.gerar(registroC165, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC165);
 					});
@@ -152,7 +152,7 @@ public class GerarBlocoC {
 
 						// REGISTROC171
 						if (!Util.isEmpty(registroC170.getRegistroC171())) {
-							registroC170.getRegistroC171().stream().peek(registroC171 -> {
+							registroC170.getRegistroC171().stream().forEach(registroC171 -> {
 								sb = GerarRegistroC171.gerar(registroC171, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC171);
 							});
@@ -166,7 +166,7 @@ public class GerarBlocoC {
 
 						// REGISTROC173
 						if (!Util.isEmpty(registroC170.getRegistroC173())) {
-							registroC170.getRegistroC173().stream().peek(registroC173 -> {
+							registroC170.getRegistroC173().stream().forEach(registroC173 -> {
 								sb = GerarRegistroC173.gerar(registroC173, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC173);
 							});
@@ -174,7 +174,7 @@ public class GerarBlocoC {
 
 						// REGISTROC174
 						if (!Util.isEmpty(registroC170.getRegistroC174())) {
-							registroC170.getRegistroC174().stream().peek(registroC174 -> {
+							registroC170.getRegistroC174().stream().forEach(registroC174 -> {
 								sb = GerarRegistroC174.gerar(registroC174, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC174);
 							});
@@ -182,7 +182,7 @@ public class GerarBlocoC {
 
 						// REGISTROC175
 						if (!Util.isEmpty(registroC170.getRegistroC175())) {
-							registroC170.getRegistroC175().stream().peek(registroC175 -> {
+							registroC170.getRegistroC175().stream().forEach(registroC175 -> {
 								sb = GerarRegistroC175.gerar(registroC175, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC175);
 							});
@@ -190,7 +190,7 @@ public class GerarBlocoC {
 
 						// REGISTROC176
 						if (!Util.isEmpty(registroC170.getRegistroC176())) {
-							registroC170.getRegistroC176().stream().peek(registroC176 -> {
+							registroC170.getRegistroC176().stream().forEach(registroC176 -> {
 								sb = GerarRegistroC176.gerar(registroC176, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC176);
 							});
@@ -218,7 +218,7 @@ public class GerarBlocoC {
 
 				// REGISTROC190
 				if (!Util.isEmpty(registroC100.getRegistroC190())) {
-					registroC100.getRegistroC190().stream().peek(registroC190 -> {
+					registroC100.getRegistroC190().stream().forEach(registroC190 -> {
 						sb = GerarRegistroC190.gerar(registroC190, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC190);
 					});
@@ -232,7 +232,7 @@ public class GerarBlocoC {
 
 						// REGISTROC197
 						if (!Util.isEmpty(registroC195.getRegistroC197())) {
-							registroC195.getRegistroC197().stream().peek(registroC197 -> {
+							registroC195.getRegistroC197().stream().forEach(registroC197 -> {
 								sb = GerarRegistroC197.gerar(registroC197, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC197);
 							});
@@ -250,7 +250,7 @@ public class GerarBlocoC {
 
 				// REGISTROC310
 				if (!Util.isEmpty(registroC300.getRegistroC310())) {
-					registroC300.getRegistroC310().stream().peek(registroC310 -> {
+					registroC300.getRegistroC310().stream().forEach(registroC310 -> {
 						sb = GerarRegistroC310.gerar(registroC310, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC310);
 					});
@@ -264,7 +264,7 @@ public class GerarBlocoC {
 
 						// REGISTROC321
 						if (!Util.isEmpty(registroC320.getRegistroC321())) {
-							registroC320.getRegistroC321().stream().peek(registroC321 -> {
+							registroC320.getRegistroC321().stream().forEach(registroC321 -> {
 								sb = GerarRegistroC321.gerar(registroC321, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC321);
 							});
@@ -282,7 +282,7 @@ public class GerarBlocoC {
 
 				// REGISTROC370
 				if (!Util.isEmpty(registroC350.getRegistroC370())) {
-					registroC350.getRegistroC370().stream().peek(registroC370 -> {
+					registroC350.getRegistroC370().stream().forEach(registroC370 -> {
 						sb = GerarRegistroC370.gerar(registroC370, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC370);
 					});
@@ -290,7 +290,7 @@ public class GerarBlocoC {
 
 				// REGISTROC390
 				if (!Util.isEmpty(registroC350.getRegistroC390())) {
-					registroC350.getRegistroC390().stream().peek(registroC390 -> {
+					registroC350.getRegistroC390().stream().forEach(registroC390 -> {
 						sb = GerarRegistroC390.gerar(registroC390, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC390);
 					});
@@ -325,7 +325,7 @@ public class GerarBlocoC {
 
 								// REGISTROC425
 								if (!Util.isEmpty(registroC420.getRegistroC425())) {
-									registroC420.getRegistroC425().stream().peek(registroC425 -> {
+									registroC420.getRegistroC425().stream().forEach(registroC425 -> {
 										sb = GerarRegistroC425.gerar(registroC425, sb);
 										efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC425);
 									});
@@ -348,7 +348,7 @@ public class GerarBlocoC {
 
 								// REGISTROC470
 								if (!Util.isEmpty(registroC460.getRegistroC470())) {
-									registroC460.getRegistroC470().stream().peek(registroC470 -> {
+									registroC460.getRegistroC470().stream().forEach(registroC470 -> {
 										sb = GerarRegistroC470.gerar(registroC470, sb);
 										efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC470);
 									});
@@ -359,7 +359,7 @@ public class GerarBlocoC {
 
 						// REGISTROC490
 						if (!Util.isEmpty(registroC405.getRegistroC490())) {
-							registroC405.getRegistroC490().stream().peek(registroC490 -> {
+							registroC405.getRegistroC490().stream().forEach(registroC490 -> {
 								sb = GerarRegistroC490.gerar(registroC490, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC490);
 							});
@@ -372,7 +372,7 @@ public class GerarBlocoC {
 
 		// REGISTROC495
 		if (!Util.isEmpty(blocoC.getRegistroC495())) {
-			blocoC.getRegistroC495().stream().peek(registroC495 -> {
+			blocoC.getRegistroC495().stream().forEach(registroC495 -> {
 				sb = GerarRegistroC495.gerar(registroC495, sb);
 				efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC495);
 			});
@@ -386,7 +386,7 @@ public class GerarBlocoC {
 
 				// REGISTROC510
 				if (!Util.isEmpty(registroC500.getRegistroC510())) {
-					registroC500.getRegistroC510().stream().peek(registroC510 -> {
+					registroC500.getRegistroC510().stream().forEach(registroC510 -> {
 						sb = GerarRegistroC510.gerar(registroC510, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC510);
 					});
@@ -394,7 +394,7 @@ public class GerarBlocoC {
 
 				// REGISTROC590
 				if (!Util.isEmpty(registroC500.getRegistroC590())) {
-					registroC500.getRegistroC590().stream().peek(registroC590 -> {
+					registroC500.getRegistroC590().stream().forEach(registroC590 -> {
 						sb = GerarRegistroC590.gerar(registroC590, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC590);
 					});
@@ -411,7 +411,7 @@ public class GerarBlocoC {
 
 				// REGISTROC601
 				if (!Util.isEmpty(registroC600.getRegistroC601())) {
-					registroC600.getRegistroC601().stream().peek(registroC601 -> {
+					registroC600.getRegistroC601().stream().forEach(registroC601 -> {
 						sb = GerarRegistroC601.gerar(registroC601, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC601);
 					});
@@ -419,7 +419,7 @@ public class GerarBlocoC {
 
 				// REGISTROC610
 				if (!Util.isEmpty(registroC600.getRegistroC610())) {
-					registroC600.getRegistroC610().stream().peek(registroC610 -> {
+					registroC600.getRegistroC610().stream().forEach(registroC610 -> {
 						sb = GerarRegistroC610.gerar(registroC610, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC610);
 					});
@@ -427,7 +427,7 @@ public class GerarBlocoC {
 
 				// REGISTROC690
 				if (!Util.isEmpty(registroC600.getRegistroC690())) {
-					registroC600.getRegistroC690().stream().peek(registroC690 -> {
+					registroC600.getRegistroC690().stream().forEach(registroC690 -> {
 						sb = GerarRegistroC690.gerar(registroC690, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC690);
 					});
@@ -449,7 +449,7 @@ public class GerarBlocoC {
 
 						// REGISTROC791
 						if (!Util.isEmpty(registroC790.getRegistroC791())) {
-							registroC790.getRegistroC791().stream().peek(registroC791 -> {
+							registroC790.getRegistroC791().stream().forEach(registroC791 -> {
 								sb = GerarRegistroC791.gerar(registroC791, sb);
 								efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC791);
 							});
@@ -468,7 +468,7 @@ public class GerarBlocoC {
 
 				// REGISTROC850
 				if (!Util.isEmpty(registroC800.getRegistroC850())) {
-					registroC800.getRegistroC850().stream().peek(registroC850 -> {
+					registroC800.getRegistroC850().stream().forEach(registroC850 -> {
 						sb = GerarRegistroC850.gerar(registroC850, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC850);
 					});
@@ -484,7 +484,7 @@ public class GerarBlocoC {
 
 				// REGISTROC890
 				if (!Util.isEmpty(registroC860.getRegistroC890())) {
-					registroC860.getRegistroC890().stream().peek(registroC890 -> {
+					registroC860.getRegistroC890().stream().forEach(registroC890 -> {
 						sb = GerarRegistroC890.gerar(registroC890, sb);
 						efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC890);
 					});

@@ -42,7 +42,6 @@ public class GerarEfdIcms {
 		if(!Util.isEmpty(efdIcms.getBlocoC())){
 			sb = GerarBlocoC.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
-			
 		}
 		
 		//BLOCOD
