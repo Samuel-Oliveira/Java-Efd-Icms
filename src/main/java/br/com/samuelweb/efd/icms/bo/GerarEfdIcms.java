@@ -52,7 +52,7 @@ public class GerarEfdIcms {
 		
 		//BLOCOE
 		if(!Util.isEmpty(efdIcms.getBlocoE())){
-			sb = GerarBlocoE.gerar(efdIcms.getBlocoE(), sb);
+			sb = GerarBlocoE.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoE.gerar(efdIcms);
 		}
 		
