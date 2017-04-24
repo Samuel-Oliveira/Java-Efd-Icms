@@ -58,25 +58,25 @@ public class GerarEfdIcms {
 		
 		//BLOCOG
 		if(!Util.isEmpty(efdIcms.getBlocoG())){
-			sb = GerarBlocoG.gerar(efdIcms.getBlocoG(), sb);
+			sb = GerarBlocoG.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoG.gerar(efdIcms);
 		}
 		
 		//BLOCOH
 		if(!Util.isEmpty(efdIcms.getBlocoH())){
-			sb = GerarBlocoH.gerar(efdIcms.getBlocoH(), sb);
+			sb = GerarBlocoH.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoH.gerar(efdIcms);
 		}
 		
 		//BLOCOK
 		if(!Util.isEmpty(efdIcms.getBlocoK())){
-			sb = GerarBlocoK.gerar(efdIcms.getBlocoK(), sb);
+			sb = GerarBlocoK.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBlocoK.gerar(efdIcms);
 		}
 		
 		//BLOCO1
 		if(!Util.isEmpty(efdIcms.getBloco1())){
-			sb = GerarBloco1.gerar(efdIcms.getBloco1(), sb);
+			sb = GerarBloco1.gerar(efdIcms, sb);
 			efdIcms = GerarContadoresBloco1.gerar(efdIcms);
 		}
 		

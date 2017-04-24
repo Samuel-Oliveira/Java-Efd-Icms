@@ -21,47 +21,49 @@ public class GerarContadoresBlocoG {
 		Bloco9 bloco9 = efdIcms.getBloco9();
 		Registro9900 registro9900 = new Registro9900();
 
-		// Qnt Registros RegistroG001
-		if (!Util.isEmpty(blocoG.getRegistroG001())) {
+		int cont = 0;
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG001();
+		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("G001");
-			registro9900.setQtd_reg_blc("1");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
-			
 		}
-
-//		// Qnt Registros Registro
-//		if (!Util.isEmpty(blocoG.getRegistro())) {
-//			registro9900 = new Registro9900();
-//			registro9900.setReg_blc("");
-//			registro9900.setQtd_reg_blc(String.valueOf(blocoG.getRegistro().get(blocoG.getRegistro().size() - 1).getQnt()));
-//			bloco9.getRegistro9900().add(registro9900);
-//			
-//		}
-//
-//		// Qnt Registros Registro
-//		if (!Util.isEmpty(blocoG.getRegistro())) {
-//			registro9900 = new Registro9900();
-//			registro9900.setReg_blc("");
-//			registro9900.setQtd_reg_blc(String.valueOf(blocoG.getRegistro().get(blocoG.getRegistro().size() - 1).getQnt()));
-//			bloco9.getRegistro9900().add(registro9900);
-//			
-//
-//			// Qnt Registros Registro
-//			int cont = 0
-//			for (Registro registro : blocoG.getRegistro()) {
-//				if (!Util.isEmpty(registro.getRegistro())) {
-//					cont += registro.getRegistro().get(registro.getRegistro().size() - 1).getQnt();
-//				}
-//			}
-//			if(cont >0){
-//				registro9900 = new Registro9900();
-//				registro9900.setReg_blc("");
-//				registro9900.setQtd_reg_blc(String.valueOf(cont));
-//				bloco9.getRegistro9900().add(registro9900);
-//				
-//			}
-//		}
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG110();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("G110");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG125();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("G125");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG126();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("G126");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG130();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("G130");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		cont = efdIcms.getContadoresBlocoG().getContRegistroG140();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("G140");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
 
 		// Qnt Registros RegistroG990
 		if (!Util.isEmpty(blocoG.getRegistroG990())) {

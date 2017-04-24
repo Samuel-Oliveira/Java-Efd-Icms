@@ -7,7 +7,7 @@ package br.com.samuelweb.efd.icms.registros.contadores;
  * @author Samuel Oliveira
  *
  */
-public class ContadoresBloco {
+public class ContadoresBlocoK {
 	
 	//Bloco 
 //	private int contRegistro = 0;
