@@ -13,10 +13,13 @@ import br.com.samuelweb.efd.icms.registros.blocoG.BlocoG;
 import br.com.samuelweb.efd.icms.registros.blocoH.BlocoH;
 import br.com.samuelweb.efd.icms.registros.blocoK.BlocoK;
 import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBloco0;
+import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBloco1;
 import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoC;
 import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoD;
 import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoE;
 import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoG;
+import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoH;
+import br.com.samuelweb.efd.icms.registros.contadores.ContadoresBlocoK;
 
 /**
  * @author Samuel Oliveira

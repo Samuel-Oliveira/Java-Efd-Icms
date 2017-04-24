@@ -3,6 +3,7 @@
  */
 package br.com.samuelweb.efd.icms.bo.blocoK;
 
+import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.blocoK.BlocoK;
 import br.com.samuelweb.efd.icms.registros.blocoK.RegistroK990;
 import br.com.samuelweb.efd.icms.util.Util;
@@ -17,7 +18,8 @@ public class GerarBlocoK {
 
 	private static StringBuilder sb = null;
 
-	public static StringBuilder gerar(BlocoK blocoK, StringBuilder sbr) {
+	public static StringBuilder gerar(EfdIcms efdIcms, StringBuilder sbr) {
+		BlocoK blocoK  = efdIcms.getBlocoK();
 		sb = sbr;
 		// REGISTROK001
 		if (!Util.isEmpty(blocoK.getRegistroK001())) {

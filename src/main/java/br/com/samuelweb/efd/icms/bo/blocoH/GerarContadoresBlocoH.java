@@ -21,55 +21,46 @@ public class GerarContadoresBlocoH {
 		Bloco9 bloco9 = efdIcms.getBloco9();
 		Registro9900 registro9900 = new Registro9900();
 
+		int cont = 0;
+
 		// Qnt Registros RegistroH001
-		if (!Util.isEmpty(blocoH.getRegistroH001())) {
+		cont = efdIcms.getContadoresBlocoH().getContRegistroH001();
+		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("H001");
-			registro9900.setQtd_reg_blc("1");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
-			
 		}
-
-//		// Qnt Registros Registro
-//		if (!Util.isEmpty(blocoH.getRegistro())) {
-//			registro9900 = new Registro9900();
-//			registro9900.setReg_blc("");
-//			registro9900.setQtd_reg_blc(String.valueOf(blocoH.getRegistro().get(blocoH.getRegistro().size() - 1).getQnt()));
-//			bloco9.getRegistro9900().add(registro9900);
-//			
-//		}
-//
-//		// Qnt Registros Registro
-//		if (!Util.isEmpty(blocoH.getRegistro())) {
-//			registro9900 = new Registro9900();
-//			registro9900.setReg_blc("");
-//			registro9900.setQtd_reg_blc(String.valueOf(blocoH.getRegistro().get(blocoH.getRegistro().size() - 1).getQnt()));
-//			bloco9.getRegistro9900().add(registro9900);
-//			
-//
-//			// Qnt Registros Registro
-//			int cont = 0
-//			for (Registro registro : blocoH.getRegistro()) {
-//				if (!Util.isEmpty(registro.getRegistro())) {
-//					cont += registro.getRegistro().get(registro.getRegistro().size() - 1).getQnt();
-//				}
-//			}
-//			if(cont >0){
-//				registro9900 = new Registro9900();
-//				registro9900.setReg_blc("");
-//				registro9900.setQtd_reg_blc(String.valueOf(cont));
-//				bloco9.getRegistro9900().add(registro9900);
-//				
-//			}
-//		}
-		
+		// Qnt Registros RegistroH005
+		cont = efdIcms.getContadoresBlocoH().getContRegistroH005();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("H005");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		// Qnt Registros RegistroH010
+		cont = efdIcms.getContadoresBlocoH().getContRegistroH010();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("H010");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
+		// Qnt Registros RegistroH020
+		cont = efdIcms.getContadoresBlocoH().getContRegistroH020();
+		if (cont > 0) {
+			registro9900 = new Registro9900();
+			registro9900.setReg_blc("H020");
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
+			bloco9.getRegistro9900().add(registro9900);
+		}
 		// Qnt Registros RegistroH990
 		if (!Util.isEmpty(blocoH.getRegistroH990())) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("H990");
 			registro9900.setQtd_reg_blc("1");
 			bloco9.getRegistro9900().add(registro9900);
-			
 		}
 
 		int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())

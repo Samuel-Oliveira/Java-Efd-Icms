@@ -3,6 +3,7 @@
  */
 package br.com.samuelweb.efd.icms.bo.bloco1;
 
+import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.bloco1.Bloco1;
 import br.com.samuelweb.efd.icms.registros.bloco1.Registro1920;
 import br.com.samuelweb.efd.icms.registros.bloco1.Registro1990;
@@ -18,7 +19,8 @@ public class GerarBloco1 {
 
 	private static StringBuilder sb = null;
 
-	public static StringBuilder gerar(Bloco1 bloco1, StringBuilder sbr) {
+	public static StringBuilder gerar(EfdIcms efdIcms, StringBuilder sbr) {
+		Bloco1 bloco1 = efdIcms.getBloco1();
 		sb = sbr;
 		// REGISTRO1001
 		if (!Util.isEmpty(bloco1.getRegistro1001())) {
