@@ -1,7 +1,11 @@
 package br.com.samuelweb.efd.icms.util;
 
+import java.io.File;
+import java.io.FileWriter;
 import java.time.LocalDate;
 import java.util.Collection;
+
+import br.com.samuelweb.efd.icms.exception.EfdException;
 
 public final class Util {
 	
@@ -42,6 +46,27 @@ public final class Util {
     
     public static boolean versao2_0_19(){
     	return LocalDate.now().isAfter(dataVersao2_0_19);
+    }
+    
+    /**
+     * Cria um arquivo com os dados passados 
+     * @throws Exception 
+     */
+    public static void criarPastaArquivo(String pasta, String arquivo , String conteudo ) throws EfdException {
+    	
+    	File folder = new File(pasta);
+    	if(!folder.exists()){
+    		folder.mkdirs();
+    	}
+    	
+    	FileWriter fileWriter;
+    	try {
+    		fileWriter = new FileWriter(new File(pasta+"/"+arquivo));
+    		fileWriter.write(conteudo);
+    		fileWriter.close();
+    	} catch (Exception e) {
+    		throw new EfdException("Erro ao Criar Arquivo "+e.getMessage());    		
+    	}
     }
     
    
