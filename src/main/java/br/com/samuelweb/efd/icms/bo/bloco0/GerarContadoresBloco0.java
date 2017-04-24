@@ -31,7 +31,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0000");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0000()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -40,7 +40,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0001");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0001()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -49,7 +49,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0005");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0005()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -58,7 +58,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0015");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0015()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -67,7 +67,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0100");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0100()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -76,7 +76,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0150");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0150()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		// Qnt Registros Registro0175
@@ -84,7 +84,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0175");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0175()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -93,7 +93,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0190");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0190()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 
@@ -102,7 +102,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0200");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0200()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -112,7 +112,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0205");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0205()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -122,7 +122,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0206");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0206()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -132,7 +132,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0210");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0210()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -142,7 +142,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0220");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0220()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -152,7 +152,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0300");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0300()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
 		// Qnt Registros Registro0305
@@ -160,7 +160,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0305");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0305()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -170,7 +170,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0400");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0400()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -180,7 +180,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0450");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0450()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -190,7 +190,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0460");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0460()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -200,7 +200,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0500");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0500()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
@@ -210,7 +210,7 @@ public class GerarContadoresBloco0 {
 		if (cont > 0) {
 			registro9900 = new Registro9900();
 			registro9900.setReg_blc("0600");
-			registro9900.setQtd_reg_blc(String.valueOf(efdIcms.getContadoresBloco0().getContRegistro0600()));
+			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 
 		}
