@@ -2,32 +2,18 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.samuelweb</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>2.0.20.0</version>
-  <name>Autocom EFD</name>
+  <version>2.0.20.1</version>
+  <name>Java Efd Icms</name>
     	<!-- Repositorios SVN Autocom -->
 	<repositories>
 		<repository>
-			<name>Repositorio Autocom Releases</name>
-			<id>Release</id>
-			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom-snapshot/</url>
-		</repository>
-		<repository>
-			<name>Repositorio Autocom SnapShot</name>
+			<name>Repositorio Autocom</name>
 			<id>Snapshot</id>
 			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
-		</repository>
-		<repository>
-			<name>Repositorio Autocom Proxy</name>
-			<id>Proxy</id>
-			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom-proxy/</url>
 		</repository>
 	</repositories>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>autocom-snapshot</id>
-			<url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom-snapshot/</url>
-		</snapshotRepository>
 		<repository>
 			<id>autocom</id>
 			<url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom/</url>

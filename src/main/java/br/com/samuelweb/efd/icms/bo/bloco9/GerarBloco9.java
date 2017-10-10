@@ -51,11 +51,7 @@ public class GerarBloco9 {
 			qtdRegistros += bloco9.getRegistro9900().stream().peek(registro_9900 -> {
 				sb = GerarRegistro9900.gerar(registro_9900, sb);
 			}).count();
-//			for (Registro9900 registro_9900 : bloco9.getRegistro9900()) {
-//				sb = GerarRegistro9900.gerar(registro_9900, sb);
-//				qtdRegistros++;
-//			}
-			
+
 		}
 		
 		//REGISTRO0990

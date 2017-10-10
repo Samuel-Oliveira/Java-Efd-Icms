@@ -11,7 +11,7 @@ public class GerarRegistro9999 {
 		
 		sb.append("|").append(Util.preencheRegistro(registro9999.getReg()));
 		sb.append("|").append(Util.preencheRegistro(registro9999.getQtd_lin()));
-    	sb.append("|").append('\n');
+    	sb.append("|");
 		
 		return sb;
 	}
