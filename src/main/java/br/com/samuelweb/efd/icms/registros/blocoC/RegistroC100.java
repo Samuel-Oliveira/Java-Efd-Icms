@@ -53,6 +53,16 @@ public class RegistroC100 {
 	private List<RegistroC190> registroC190;
 	private List<RegistroC195> registroC195;
 
+	private String uf;
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
+	}
+
 	/**
 	 * @return the ind_oper
 	 */
