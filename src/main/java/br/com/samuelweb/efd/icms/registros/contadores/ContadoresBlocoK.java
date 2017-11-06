@@ -27,6 +27,12 @@ public class ContadoresBlocoK {
 	private int contRegistroK270 = 0;
 	private int contRegistroK275 = 0;
 	private int contRegistroK280 = 0;
+	private int contRegistroK290 = 0;
+	private int contRegistroK291 = 0;
+	private int contRegistroK292 = 0;
+	private int contRegistroK300 = 0;
+	private int contRegistroK301 = 0;
+	private int contRegistroK302 = 0;
 	private int contRegistroK990 = 0;
 	
 	public void incrementar(BlocoKEnum bloco){
@@ -78,6 +84,24 @@ public class ContadoresBlocoK {
 				break;
 			case RegistroK280:
 				contRegistroK280++;
+				break;
+			case RegistroK290:
+				contRegistroK290++;
+				break;
+			case RegistroK291:
+				contRegistroK291++;
+				break;
+			case RegistroK292:
+				contRegistroK292++;
+				break;
+			case RegistroK300:
+				contRegistroK300++;
+				break;
+			case RegistroK301:
+				contRegistroK301++;
+				break;
+			case RegistroK302:
+				contRegistroK302++;
 				break;
 		default:
 			break;
@@ -182,6 +206,42 @@ public class ContadoresBlocoK {
 		return contRegistroK275;
 	}
 
+	/**
+	 * @return the contRegistroK290
+	 */
+	public int getContRegistroK290() {
+		return contRegistroK290;
+	}
+	/**
+	 * @return the contRegistroK291
+	 */
+	public int getContRegistroK291() {
+		return contRegistroK291;
+	}
+	/**
+	 * @return the contRegistroK292
+	 */
+	public int getContRegistroK292() {
+		return contRegistroK292;
+	}
+	/**
+	 * @return the contRegistroK300
+	 */
+	public int getContRegistroK300() {
+		return contRegistroK300;
+	}
+	/**
+	 * @return the contRegistroK301
+	 */
+	public int getContRegistroK301() {
+		return contRegistroK301;
+	}
+	/**
+	 * @return the contRegistroK302
+	 */
+	public int getContRegistroK302() {
+		return contRegistroK302;
+	}
 	/**
 	 * @return the contRegistroK280
 	 */

@@ -18,6 +18,8 @@ public class GerarBloco9 {
 	
 	private static StringBuilder sb = null;
 	public static StringBuilder gerar(Bloco9 bloco9, StringBuilder sbr){
+
+		qtdRegistros = 0;
 		sb = sbr;
 		//REGISTRO9001
 		if(!Util.isEmpty(bloco9.getRegistro9001())){

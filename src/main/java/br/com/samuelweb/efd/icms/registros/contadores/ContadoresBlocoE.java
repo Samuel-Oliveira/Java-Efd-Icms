@@ -36,6 +36,7 @@ public class ContadoresBlocoE {
 	private int contRegistroE510 = 0;
 	private int contRegistroE520 = 0;
 	private int contRegistroE530 = 0;
+	private int contRegistroE531 = 0;
 	private int contRegistroE990 = 0;
 
 	public void incrementar(BlocoEEnum bloco) {
@@ -114,6 +115,9 @@ public class ContadoresBlocoE {
 			break;
 		case RegistroE530:
 			contRegistroE530++;
+			break;
+		case RegistroE531:
+			contRegistroE531++;
 			break;
 		default:
 			break;
@@ -286,6 +290,13 @@ public class ContadoresBlocoE {
 	 */
 	public int getContRegistroE530() {
 		return contRegistroE530;
+	}
+
+	/**
+	 * @return the contRegistroE531
+	 */
+	public int getContRegistroE531() {
+		return contRegistroE531;
 	}
 
 	/**

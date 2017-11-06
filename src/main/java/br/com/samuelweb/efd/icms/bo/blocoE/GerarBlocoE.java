@@ -77,7 +77,7 @@ public class GerarBlocoE {
 
 					// REGISTROE116
 					if (!Util.isEmpty(registroE110.getRegistroE116())) {
-						registroE110.getRegistroE116().stream().forEach(registroE116 -> {
+						registroE110.getRegistroE116().forEach(registroE116 -> {
 							sb = GerarRegistroE116.gerar(registroE116, sb);
 							efdIcms.getContadoresBlocoE().incrementar(BlocoEEnum.RegistroE116);
 						});
@@ -207,6 +207,16 @@ public class GerarBlocoE {
 						registroE520.getRegistroE530().stream().forEach(registroE530 -> {
 							sb = GerarRegistroE530.gerar(registroE530, sb);
 							efdIcms.getContadoresBlocoE().incrementar(BlocoEEnum.RegistroE530);
+
+							if(Util.versao2018()){
+								// REGISTROE531
+								if (!Util.isEmpty(registroE530.getRegistroE531())) {
+									registroE530.getRegistroE531().stream().forEach(registroE531 -> {
+										sb = GerarRegistroE531.gerar(registroE531, sb);
+										efdIcms.getContadoresBlocoE().incrementar(BlocoEEnum.RegistroE531);
+									});
+								}
+							}
 						});
 					}
 				}

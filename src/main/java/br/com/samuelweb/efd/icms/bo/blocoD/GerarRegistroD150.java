@@ -1,7 +1,3 @@
-/**
- * Complemento do Conhecimento Aéreo (Código 10)
- * 
- */
 package br.com.samuelweb.efd.icms.bo.blocoD;
 
 import br.com.samuelweb.efd.icms.registros.blocoD.RegistroD150;

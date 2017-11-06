@@ -9,8 +9,9 @@ import br.com.samuelweb.efd.icms.exception.EfdException;
 
 public final class Util {
 	
-	private final static LocalDate dataVersao2_0_20 = LocalDate.of(2017, 01, 01);
-	
+	private final static LocalDate dataVersao2018 = LocalDate.of(2018, 01, 31);
+	private final static LocalDate dataVersao2019 = LocalDate.of(2019, 01, 31);
+
 	/**
 	 * Construtor privado para garantir o Singleton.
 	 */
@@ -44,10 +45,14 @@ public final class Util {
     	return Util.isEmpty(string)? "" : string;
 	}
     
-    public static boolean versao2_0_20(){
-    	return LocalDate.now().isAfter(dataVersao2_0_20);
+    public static boolean versao2018(){
+    	return LocalDate.now().isAfter(dataVersao2018);
     }
-    
+
+    public static boolean versao2019(){
+    	return LocalDate.now().isAfter(dataVersao2019);
+    }
+
     /**
      * Cria um arquivo com os dados passados 
      * @throws Exception 
@@ -68,6 +73,6 @@ public final class Util {
     		throw new EfdException("Erro ao Criar Arquivo "+e.getMessage());    		
     	}
     }
-    
-   
+
+
 }

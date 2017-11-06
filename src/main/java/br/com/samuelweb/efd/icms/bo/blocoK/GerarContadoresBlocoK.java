@@ -127,6 +127,51 @@ public class GerarContadoresBlocoK {
 			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
 		}
+
+		if(Util.versao2019()){
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK290();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K290");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK291();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K291");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK292();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K292");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK300();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K300");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK301();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K301");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+			cont = efdIcms.getContadoresBlocoK().getContRegistroK302();
+			if (cont > 0) {
+				registro9900 = new Registro9900();
+				registro9900.setReg_blc("K302");
+				registro9900.setQtd_reg_blc(String.valueOf(cont));
+				bloco9.getRegistro9900().add(registro9900);
+			}
+		}
 		
 		// Qnt Registros RegistroK001
 		if (!Util.isEmpty(blocoK.getRegistroK990())) {

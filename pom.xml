@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.samuelweb</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>2.0.20.2</version>
+  <version>2.0.21.1</version>
   <name>Java Efd Icms</name>
     	<!-- Repositorios SVN Autocom -->
 	<repositories>
 		<repository>
 			<name>Repositorio Autocom</name>
-			<id>Snapshot</id>
+			<id>autocom</id>
 			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
 		</repository>
 	</repositories>
