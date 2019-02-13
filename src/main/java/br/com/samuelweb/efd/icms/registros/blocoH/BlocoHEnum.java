@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.registros.blocoH;
 
@@ -8,11 +8,11 @@ package br.com.samuelweb.efd.icms.registros.blocoH;
  *
  */
 public enum BlocoHEnum {
-	
-	RegistroH001,
-	RegistroH005,
-	RegistroH010,
-	RegistroH020,
-	RegistroH990;
+
+    RegistroH001,
+    RegistroH005,
+    RegistroH010,
+    RegistroH020,
+    RegistroH990
 
 }

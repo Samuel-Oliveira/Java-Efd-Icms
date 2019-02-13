@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoK;
 
@@ -12,17 +12,17 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroK260 {
 
-	public static StringBuilder gerar(RegistroK260 registroK260, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroK260 registroK260, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroK260.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getCod_op_os()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getCod_item()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getDt_saida()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getQtd_saida()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getDt_ret()));
-		sb.append("|").append(Util.preencheRegistro(registroK260.getQtd_ret()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroK260.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getCod_op_os()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getCod_item()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getDt_saida()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getQtd_saida()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getDt_ret()));
+        sb.append("|").append(Util.preencheRegistro(registroK260.getQtd_ret()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

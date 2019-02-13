@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.registros.blocoC;
 
@@ -12,152 +12,144 @@ import java.util.List;
  */
 public class RegistroC320 {
 
-	private final String reg = "C320";
-	private String cst_icms;
-	private String cfop;
-	private String aliq_icms;
-	private String vl_opr;
-	private String vl_bc_icms;
-	private String vl_icms;
-	private String vl_red_bc;
-	private String cod_obs;
-	private List<RegistroC321> registroC321;
+    private final String reg = "C320";
+    private String cst_icms;
+    private String cfop;
+    private String aliq_icms;
+    private String vl_opr;
+    private String vl_bc_icms;
+    private String vl_icms;
+    private String vl_red_bc;
+    private String cod_obs;
+    private List<RegistroC321> registroC321;
 
-	/**
-	 * @return the cst_icms
-	 */
-	public String getCst_icms() {
-		return cst_icms;
-	}
+    /**
+     * @return the cst_icms
+     */
+    public String getCst_icms() {
+        return cst_icms;
+    }
 
-	/**
-	 * @param cst_icms
-	 *            the cst_icms to set
-	 */
-	public void setCst_icms(String cst_icms) {
-		this.cst_icms = cst_icms;
-	}
+    /**
+     * @param cst_icms the cst_icms to set
+     */
+    public void setCst_icms(String cst_icms) {
+        this.cst_icms = cst_icms;
+    }
 
-	/**
-	 * @return the cfop
-	 */
-	public String getCfop() {
-		return cfop;
-	}
+    /**
+     * @return the cfop
+     */
+    public String getCfop() {
+        return cfop;
+    }
 
-	/**
-	 * @param cfop
-	 *            the cfop to set
-	 */
-	public void setCfop(String cfop) {
-		this.cfop = cfop;
-	}
+    /**
+     * @param cfop the cfop to set
+     */
+    public void setCfop(String cfop) {
+        this.cfop = cfop;
+    }
 
-	/**
-	 * @return the aliq_icms
-	 */
-	public String getAliq_icms() {
-		return aliq_icms;
-	}
+    /**
+     * @return the aliq_icms
+     */
+    public String getAliq_icms() {
+        return aliq_icms;
+    }
 
-	/**
-	 * @param aliq_icms
-	 *            the aliq_icms to set
-	 */
-	public void setAliq_icms(String aliq_icms) {
-		this.aliq_icms = aliq_icms;
-	}
+    /**
+     * @param aliq_icms the aliq_icms to set
+     */
+    public void setAliq_icms(String aliq_icms) {
+        this.aliq_icms = aliq_icms;
+    }
 
-	/**
-	 * @return the vl_opr
-	 */
-	public String getVl_opr() {
-		return vl_opr;
-	}
+    /**
+     * @return the vl_opr
+     */
+    public String getVl_opr() {
+        return vl_opr;
+    }
 
-	/**
-	 * @param vl_opr
-	 *            the vl_opr to set
-	 */
-	public void setVl_opr(String vl_opr) {
-		this.vl_opr = vl_opr;
-	}
+    /**
+     * @param vl_opr the vl_opr to set
+     */
+    public void setVl_opr(String vl_opr) {
+        this.vl_opr = vl_opr;
+    }
 
-	/**
-	 * @return the vl_bc_icms
-	 */
-	public String getVl_bc_icms() {
-		return vl_bc_icms;
-	}
+    /**
+     * @return the vl_bc_icms
+     */
+    public String getVl_bc_icms() {
+        return vl_bc_icms;
+    }
 
-	/**
-	 * @param vl_bc_icms
-	 *            the vl_bc_icms to set
-	 */
-	public void setVl_bc_icms(String vl_bc_icms) {
-		this.vl_bc_icms = vl_bc_icms;
-	}
+    /**
+     * @param vl_bc_icms the vl_bc_icms to set
+     */
+    public void setVl_bc_icms(String vl_bc_icms) {
+        this.vl_bc_icms = vl_bc_icms;
+    }
 
-	/**
-	 * @return the vl_icms
-	 */
-	public String getVl_icms() {
-		return vl_icms;
-	}
+    /**
+     * @return the vl_icms
+     */
+    public String getVl_icms() {
+        return vl_icms;
+    }
 
-	/**
-	 * @param vl_icms
-	 *            the vl_icms to set
-	 */
-	public void setVl_icms(String vl_icms) {
-		this.vl_icms = vl_icms;
-	}
+    /**
+     * @param vl_icms the vl_icms to set
+     */
+    public void setVl_icms(String vl_icms) {
+        this.vl_icms = vl_icms;
+    }
 
-	/**
-	 * @return the vl_red_bc
-	 */
-	public String getVl_red_bc() {
-		return vl_red_bc;
-	}
+    /**
+     * @return the vl_red_bc
+     */
+    public String getVl_red_bc() {
+        return vl_red_bc;
+    }
 
-	/**
-	 * @param vl_red_bc
-	 *            the vl_red_bc to set
-	 */
-	public void setVl_red_bc(String vl_red_bc) {
-		this.vl_red_bc = vl_red_bc;
-	}
+    /**
+     * @param vl_red_bc the vl_red_bc to set
+     */
+    public void setVl_red_bc(String vl_red_bc) {
+        this.vl_red_bc = vl_red_bc;
+    }
 
-	/**
-	 * @return the cod_obs
-	 */
-	public String getCod_obs() {
-		return cod_obs;
-	}
+    /**
+     * @return the cod_obs
+     */
+    public String getCod_obs() {
+        return cod_obs;
+    }
 
-	/**
-	 * @param cod_obs
-	 *            the cod_obs to set
-	 */
-	public void setCod_obs(String cod_obs) {
-		this.cod_obs = cod_obs;
-	}
+    /**
+     * @param cod_obs the cod_obs to set
+     */
+    public void setCod_obs(String cod_obs) {
+        this.cod_obs = cod_obs;
+    }
 
-	/**
-	 * @return the reg
-	 */
-	public String getReg() {
-		return reg;
-	}
+    /**
+     * @return the reg
+     */
+    public String getReg() {
+        return reg;
+    }
 
-	/**
-	 * @return the registroC321
-	 */
-	public List<RegistroC321> getRegistroC321() {
-		if (registroC321 == null) {
-			registroC321 = new ArrayList<RegistroC321>();
-		}
-		return registroC321;
-	}
+    /**
+     * @return the registroC321
+     */
+    public List<RegistroC321> getRegistroC321() {
+        if (registroC321 == null) {
+            registroC321 = new ArrayList<RegistroC321>();
+        }
+        return registroC321;
+    }
 
 }

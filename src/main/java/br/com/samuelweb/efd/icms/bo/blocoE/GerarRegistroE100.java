@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoE;
 
@@ -12,13 +12,13 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroE100 {
 
-	public static StringBuilder gerar(RegistroE100 registroE100, StringBuilder sb){
-		
-		sb.append("|").append(Util.preencheRegistro(registroE100.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroE100.getDt_ini()));
-		sb.append("|").append(Util.preencheRegistro(registroE100.getDt_fin()));
-    	sb.append("|").append('\n');
-		
-		return sb;
-	}
+    public static StringBuilder gerar(RegistroE100 registroE100, StringBuilder sb) {
+
+        sb.append("|").append(Util.preencheRegistro(registroE100.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroE100.getDt_ini()));
+        sb.append("|").append(Util.preencheRegistro(registroE100.getDt_fin()));
+        sb.append("|").append('\n');
+
+        return sb;
+    }
 }

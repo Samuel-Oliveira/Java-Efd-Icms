@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.samuelweb</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>2.0.21.1</version>
+    <version>3.0.1.0</version>
     <name>Java Efd Icms</name>
     <!-- Repositorios SVN Autocom -->
     <repositories>

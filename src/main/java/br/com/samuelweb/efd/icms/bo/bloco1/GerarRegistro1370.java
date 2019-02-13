@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.bloco1;
 
@@ -12,14 +12,14 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistro1370 {
 
-	public static StringBuilder gerar(Registro1370 registro1370, StringBuilder sb){
-		
-		sb.append("|").append(Util.preencheRegistro(registro1370.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registro1370.getNum_bico()));
-		sb.append("|").append(Util.preencheRegistro(registro1370.getCod_item()));
-		sb.append("|").append(Util.preencheRegistro(registro1370.getNum_tanque()));
-    	sb.append("|").append('\n');
-		
-		return sb;
-	}
+    public static StringBuilder gerar(Registro1370 registro1370, StringBuilder sb) {
+
+        sb.append("|").append(Util.preencheRegistro(registro1370.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registro1370.getNum_bico()));
+        sb.append("|").append(Util.preencheRegistro(registro1370.getCod_item()));
+        sb.append("|").append(Util.preencheRegistro(registro1370.getNum_tanque()));
+        sb.append("|").append('\n');
+
+        return sb;
+    }
 }

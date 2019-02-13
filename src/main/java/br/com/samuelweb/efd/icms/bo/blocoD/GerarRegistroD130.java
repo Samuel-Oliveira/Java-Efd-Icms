@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoD;
 
@@ -12,24 +12,24 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroD130 {
 
-	public static StringBuilder gerar(RegistroD130 registroD130, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroD130 registroD130, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroD130.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getCod_part_consg()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getCod_part_red()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getInd_frt_red()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getCod_mun_orig()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getCod_mun_dest()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVeic_id()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_liq_frt()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_sec_cat()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_desp()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_pedg()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_out()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getVl_frt()));
-		sb.append("|").append(Util.preencheRegistro(registroD130.getUf_id()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroD130.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getCod_part_consg()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getCod_part_red()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getInd_frt_red()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getCod_mun_orig()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getCod_mun_dest()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVeic_id()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_liq_frt()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_sec_cat()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_desp()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_pedg()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_out()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getVl_frt()));
+        sb.append("|").append(Util.preencheRegistro(registroD130.getUf_id()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

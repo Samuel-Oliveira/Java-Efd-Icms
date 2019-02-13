@@ -8,13 +8,13 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroC410 {
 
-	public static StringBuilder gerar(RegistroC410 registroC410, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroC410 registroC410, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroC410.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroC410.getVl_pis()));
-		sb.append("|").append(Util.preencheRegistro(registroC410.getVl_cofins()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroC410.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroC410.getVl_pis()));
+        sb.append("|").append(Util.preencheRegistro(registroC410.getVl_cofins()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

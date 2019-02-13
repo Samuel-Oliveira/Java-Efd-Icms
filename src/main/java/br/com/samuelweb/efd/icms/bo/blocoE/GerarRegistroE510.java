@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoE;
 
@@ -12,16 +12,16 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroE510 {
 
-	public static StringBuilder gerar(RegistroE510 registroE510, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroE510 registroE510, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroE510.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroE510.getCfop()));
-		sb.append("|").append(Util.preencheRegistro(registroE510.getCst_ipi()));
-		sb.append("|").append(Util.preencheRegistro(registroE510.getVl_cont_ipi()));
-		sb.append("|").append(Util.preencheRegistro(registroE510.getVl_bc_ipi()));
-		sb.append("|").append(Util.preencheRegistro(registroE510.getVl_ipi()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroE510.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroE510.getCfop()));
+        sb.append("|").append(Util.preencheRegistro(registroE510.getCst_ipi()));
+        sb.append("|").append(Util.preencheRegistro(registroE510.getVl_cont_ipi()));
+        sb.append("|").append(Util.preencheRegistro(registroE510.getVl_bc_ipi()));
+        sb.append("|").append(Util.preencheRegistro(registroE510.getVl_ipi()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

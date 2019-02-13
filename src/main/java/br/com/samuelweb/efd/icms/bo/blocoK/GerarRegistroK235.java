@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoK;
 
@@ -12,15 +12,15 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroK235 {
 
-	public static StringBuilder gerar(RegistroK235 registroK235, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroK235 registroK235, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroK235.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroK235.getDt_saida()));
-		sb.append("|").append(Util.preencheRegistro(registroK235.getCod_item()));
-		sb.append("|").append(Util.preencheRegistro(registroK235.getQtd()));
-		sb.append("|").append(Util.preencheRegistro(registroK235.getCod_ins_subst()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroK235.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroK235.getDt_saida()));
+        sb.append("|").append(Util.preencheRegistro(registroK235.getCod_item()));
+        sb.append("|").append(Util.preencheRegistro(registroK235.getQtd()));
+        sb.append("|").append(Util.preencheRegistro(registroK235.getCod_ins_subst()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

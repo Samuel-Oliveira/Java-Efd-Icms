@@ -8,12 +8,12 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroC601 {
 
-	public static StringBuilder gerar(RegistroC601 registroC601, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroC601 registroC601, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroC601.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroC601.getNum_doc_canc()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroC601.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroC601.getNum_doc_canc()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }

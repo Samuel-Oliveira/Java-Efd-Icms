@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package br.com.samuelweb.efd.icms.bo.blocoK;
 
@@ -12,14 +12,14 @@ import br.com.samuelweb.efd.icms.util.Util;
  */
 public class GerarRegistroK265 {
 
-	public static StringBuilder gerar(RegistroK265 registroK265, StringBuilder sb) {
+    public static StringBuilder gerar(RegistroK265 registroK265, StringBuilder sb) {
 
-		sb.append("|").append(Util.preencheRegistro(registroK265.getReg()));
-		sb.append("|").append(Util.preencheRegistro(registroK265.getCod_item()));
-		sb.append("|").append(Util.preencheRegistro(registroK265.getQtd_cons()));
-		sb.append("|").append(Util.preencheRegistro(registroK265.getQtd_ret()));
-		sb.append("|").append('\n');
+        sb.append("|").append(Util.preencheRegistro(registroK265.getReg()));
+        sb.append("|").append(Util.preencheRegistro(registroK265.getCod_item()));
+        sb.append("|").append(Util.preencheRegistro(registroK265.getQtd_cons()));
+        sb.append("|").append(Util.preencheRegistro(registroK265.getQtd_ret()));
+        sb.append("|").append('\n');
 
-		return sb;
-	}
+        return sb;
+    }
 }
