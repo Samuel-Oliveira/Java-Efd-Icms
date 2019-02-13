@@ -12,8 +12,7 @@ public class RegistroK220 {
 	private String dt_mov;
 	private String cod_item_ori;
 	private String cod_item_dest;
-	private String qtd_ori;
-	private String qtd_dest;
+    private String qtd;
 
 	/**
 	 * @return the dt_mov
@@ -61,18 +60,18 @@ public class RegistroK220 {
 	}
 
 	/**
-	 * @return the qtd_ori
+     * @return the qtd
 	 */
-	public String getQtd_ori() {
-		return qtd_ori;
+    public String getQtd() {
+        return qtd;
 	}
 
 	/**
-	 * @param qtd_ori
-	 *            the qtd_ori to set
+     * @param qtd
+     *            the qtd to set
 	 */
-	public void setQtd_ori(String qtd_ori) {
-		this.qtd_ori = qtd_ori;
+    public void setQtd(String qtd) {
+        this.qtd = qtd;
 	}
 
 	/**
@@ -82,11 +81,4 @@ public class RegistroK220 {
 		return reg;
 	}
 
-	public String getQtd_dest() {
-		return qtd_dest;
-	}
-
-	public void setQtd_dest(String qtd_dest) {
-		this.qtd_dest = qtd_dest;
-	}
 }

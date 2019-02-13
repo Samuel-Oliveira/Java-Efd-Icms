@@ -1,17 +1,16 @@
 package br.com.samuelweb.efd.icms.util;
 
+import br.com.samuelweb.efd.icms.exception.EfdException;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.time.LocalDate;
 import java.util.Collection;
 
-import br.com.samuelweb.efd.icms.exception.EfdException;
-
 public final class Util {
-	
-	private final static LocalDate dataVersao2018 = LocalDate.of(2018, 01, 31);
-	private final static LocalDate dataVersao2019 = LocalDate.of(2019, 01, 31);
 
+    private final static LocalDate dataVersao2_0_20 = LocalDate.of(2017, 01, 01);
+	
 	/**
 	 * Construtor privado para garantir o Singleton.
 	 */
@@ -44,13 +43,9 @@ public final class Util {
     public static String preencheRegistro(String string) {
     	return Util.isEmpty(string)? "" : string;
 	}
-    
-    public static boolean versao2018(){
-    	return LocalDate.now().isAfter(dataVersao2018);
-    }
 
-    public static boolean versao2019(){
-    	return LocalDate.now().isAfter(dataVersao2019);
+    public static boolean versao2_0_20() {
+        return LocalDate.now().isAfter(dataVersao2_0_20);
     }
 
     /**

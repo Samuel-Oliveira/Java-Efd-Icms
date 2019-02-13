@@ -34,8 +34,6 @@ public class RegistroD100 {
 	private String vl_nt;
 	private String cod_inf;
 	private String cod_cta;
-	private String cod_mun_orig;
-	private String cod_mun_dest;
 	private RegistroD101 registroD101;
 	private RegistroD140 registroD140;
 	private RegistroD150 registroD150;
@@ -442,22 +440,6 @@ public class RegistroD100 {
 	 */
 	public void setRegistroD170(RegistroD170 registroD170) {
 		this.registroD170 = registroD170;
-	}
-
-	public String getCod_mun_orig() {
-		return cod_mun_orig;
-	}
-
-	public void setCod_mun_orig(String cod_mun_orig) {
-		this.cod_mun_orig = cod_mun_orig;
-	}
-
-	public String getCod_mun_dest() {
-		return cod_mun_dest;
-	}
-
-	public void setCod_mun_dest(String cod_mun_dest) {
-		this.cod_mun_dest = cod_mun_dest;
 	}
 
 	/**

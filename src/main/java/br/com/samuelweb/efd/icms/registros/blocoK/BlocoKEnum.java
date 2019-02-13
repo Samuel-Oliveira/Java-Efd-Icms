@@ -24,12 +24,6 @@ public enum BlocoKEnum {
 	RegistroK270,
 	RegistroK275,
 	RegistroK280,
-	RegistroK290,
-	RegistroK291,
-	RegistroK292,
-	RegistroK300,
-	RegistroK301,
-	RegistroK302,
-	RegistroK990;
+    RegistroK990
 
 }

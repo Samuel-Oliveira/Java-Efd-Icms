@@ -20,7 +20,9 @@ public class GerarRegistro0200 {
 		sb.append("|").append(Util.preencheRegistro(registro0200.getCod_gen()));
 		sb.append("|").append(Util.preencheRegistro(registro0200.getCod_lst()));
 		sb.append("|").append(Util.preencheRegistro(registro0200.getAliq_icms()));
-		sb.append("|").append(Util.preencheRegistro(registro0200.getCest()));
+        if (Util.versao2_0_20()) {
+            sb.append("|").append(Util.preencheRegistro(registro0200.getCest()));
+        }
     	sb.append("|").append('\n');
 		
 		return sb;

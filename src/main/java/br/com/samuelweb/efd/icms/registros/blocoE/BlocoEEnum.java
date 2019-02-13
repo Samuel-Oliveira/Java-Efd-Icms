@@ -33,7 +33,6 @@ public enum BlocoEEnum {
 	RegistroE510,
 	RegistroE520,
 	RegistroE530,
-	RegistroE531,
-	RegistroE990;
+    RegistroE990
 
 }

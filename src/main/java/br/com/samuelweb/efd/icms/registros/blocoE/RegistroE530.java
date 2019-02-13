@@ -3,9 +3,6 @@
  */
 package br.com.samuelweb.efd.icms.registros.blocoE;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author Samuel Oliveira
  */
@@ -18,7 +15,6 @@ public class RegistroE530 {
 	private String ind_doc;
 	private String num_doc;
 	private String descr_aj;
-	private List<RegistroE531> registroE531;
 
 	/**
 	 * @return the ind_aj
@@ -116,16 +112,5 @@ public class RegistroE530 {
 	public String getReg() {
 		return reg;
 	}
-
-	/**
-	 * @return the registroE531
-	 */
-	public List<RegistroE531> getRegistroE531() {
-		if (registroE531 == null) {
-			registroE531 = new ArrayList<RegistroE531>();
-		}
-		return registroE531;
-	}
-
 
 }

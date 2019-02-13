@@ -7,7 +7,6 @@ import br.com.samuelweb.efd.icms.registros.EfdIcms;
 import br.com.samuelweb.efd.icms.registros.bloco9.Bloco9;
 import br.com.samuelweb.efd.icms.registros.bloco9.Registro9900;
 import br.com.samuelweb.efd.icms.registros.blocoE.BlocoE;
-import br.com.samuelweb.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira
@@ -189,15 +188,6 @@ public class GerarContadoresBlocoE {
 			registro9900.setReg_blc("E530");
 			registro9900.setQtd_reg_blc(String.valueOf(cont));
 			bloco9.getRegistro9900().add(registro9900);
-		}
-		if(Util.versao2018()){
-			cont = efdIcms.getContadoresBlocoE().getContRegistroE531();
-			if (cont > 0) {
-				registro9900 = new Registro9900();
-				registro9900.setReg_blc("E531");
-				registro9900.setQtd_reg_blc(String.valueOf(cont));
-				bloco9.getRegistro9900().add(registro9900);
-			}
 		}
 		cont = efdIcms.getContadoresBlocoE().getContRegistroE990();
 		if (cont > 0) {

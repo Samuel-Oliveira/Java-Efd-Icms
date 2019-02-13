@@ -41,6 +41,7 @@ public class RegistroC100 {
 	private String vl_cofins;
 	private String vl_pis_st;
 	private String vl_cofins_st;
+    private String uf;
 	private RegistroC101 registroC101;
 	private RegistroC105 registroC105;
 	private RegistroC130 registroC130;
@@ -52,16 +53,6 @@ public class RegistroC100 {
 	private List<RegistroC170> registroC170;
 	private List<RegistroC190> registroC190;
 	private List<RegistroC195> registroC195;
-
-	private String uf;
-
-	public String getUf() {
-		return uf;
-	}
-
-	public void setUf(String uf) {
-		this.uf = uf;
-	}
 
 	/**
 	 * @return the ind_oper
@@ -624,5 +615,19 @@ public class RegistroC100 {
 		}
 		return registroC110;
 	}
+
+    /**
+     * @return the uf
+     */
+    public String getUf() {
+        return uf;
+    }
+
+    /**
+     * @param uf the uf to set
+     */
+    public void setUf(String uf) {
+        this.uf = uf;
+    }
 
 }

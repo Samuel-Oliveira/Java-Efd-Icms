@@ -1,30 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.samuelweb</groupId>
-  <artifactId>java-efd-icms</artifactId>
-  <version>2.0.21.1</version>
-  <name>Java Efd Icms</name>
-    	<!-- Repositorios SVN Autocom -->
-	<repositories>
-		<repository>
-			<name>Repositorio Autocom</name>
-			<id>autocom</id>
-			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
-		</repository>
-	</repositories>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>br.com.samuelweb</groupId>
+    <artifactId>java-efd-icms</artifactId>
+    <version>2.0.21.1</version>
+    <name>Java Efd Icms</name>
+    <!-- Repositorios SVN Autocom -->
+    <repositories>
+        <repository>
+            <name>Repositorio Autocom</name>
+            <id>autocom</id>
+            <url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
+        </repository>
+    </repositories>
 
-	<distributionManagement>
-		<repository>
-			<id>autocom</id>
-			<url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom/</url>
-		</repository>
-	</distributionManagement>
-  <properties>
+    <distributionManagement>
+        <repository>
+            <id>autocom</id>
+            <url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom/</url>
+        </repository>
+    </distributionManagement>
+    <properties>
         <java.version>1.8</java.version>
     </properties>
-	<build>
-		<plugins>
-		 <plugin>
+    <build>
+        <plugins>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
@@ -33,6 +34,6 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 </project>

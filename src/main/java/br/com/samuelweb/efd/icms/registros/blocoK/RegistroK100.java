@@ -22,8 +22,6 @@ public class RegistroK100 {
 	private List<RegistroK260> registroK260;
 	private List<RegistroK270> registroK270;
 	private List<RegistroK280> registroK280;
-	private List<RegistroK290> registroK290;
-	private List<RegistroK300> registroK300;
 
 	/**
 	 * @return the dt_ini
@@ -140,26 +138,6 @@ public class RegistroK100 {
 			registroK280 = new ArrayList<RegistroK280>();
 		}
 		return registroK280;
-	}
-
-	/**
-	 * @return the registroK290
-	 */
-	public List<RegistroK290> getRegistroK290() {
-		if (registroK290 == null) {
-			registroK290 = new ArrayList<RegistroK290>();
-		}
-		return registroK290;
-	}
-
-	/**
-	 * @return the registroK300
-	 */
-	public List<RegistroK300> getRegistroK300() {
-		if (registroK300 == null) {
-			registroK300 = new ArrayList<RegistroK300>();
-		}
-		return registroK300;
 	}
 
 }

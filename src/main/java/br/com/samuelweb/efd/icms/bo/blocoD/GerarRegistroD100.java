@@ -34,10 +34,6 @@ public class GerarRegistroD100 {
 		sb.append("|").append(Util.preencheRegistro(registroD100.getVl_nt()));
 		sb.append("|").append(Util.preencheRegistro(registroD100.getCod_inf()));
 		sb.append("|").append(Util.preencheRegistro(registroD100.getCod_cta()));
-		if(Util.versao2018()){
-			sb.append("|").append(Util.preencheRegistro(registroD100.getCod_mun_orig()));
-			sb.append("|").append(Util.preencheRegistro(registroD100.getCod_mun_dest()));
-		}
 		sb.append("|").append('\n');
 
 		return sb;
