@@ -1,7 +1,8 @@
-# Java-Efd-Icms [![Build Status](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms.svg?branch=master)](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms)
+# Java-Efd-Icms [![Build Status](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms.svg?branch=master)](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms) [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.0.1.0/jar)
 Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) em ambientes Java de Forma Facilitada.
 
-JavaDoc -> https://samuel-oliveira.github.io/Java-Efd-Icms/
+## Dúvidas, Sugestões ou Consultoria
+Entre no Discord do Projeto: https://discord.gg/ZXpqnaV
 
 ## Gostou do Projeto? Dê sua colaboração: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TX9K693QQYA6W)
 
@@ -10,26 +11,26 @@ Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são ca
 
 
 Para Iniciar : 
-- Baixe o java-efd-icms-2.0.21.1.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-2.0.21.1.jar) e o adicione às bibliotecas de Seu Projeto.
+- Caso use Libs baixe o java-efd-icms-3.0.1.0.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.0.1.0.jar) e o adicione às bibliotecas de Seu Projeto.
+
 - Aqui Você encontra um Exemplo para preencher e Gerar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/Exemplo-Java-Efd-Icms.rar).
 
-- Maven :
+- Caso use Maven :
 ```
-	    <repository>
-			<name>Repositorio Autocom</name>
-			<id>autocom</id>
-			<url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
-		</repository>
-		<dependency>
-			<groupId>br.com.samuelweb</groupId>
-			<artifactId>java-efd-icms</artifactId>
-			<version>2.0.21.1</version>
-		</dependency>
+<dependency>
+    <groupId>br.com.swconsultoria</groupId>
+    <artifactId>java-efd-icms</artifactId>
+    <version>3.0.1.0</version>
+</dependency>
 ```
 
 Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um Tutorial Completo.
+________________________________________________________________________________________________
 
 # Historico de Versões
+
+## v3.0.1.0 - 13-02-2019
+- Upgrade para versão 3.0.1
 
 ## v2.0.21.1 - 06-11-2017
 - Corrigido Erro de COntador Statico no Bloco 9
@@ -42,5 +43,3 @@ Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um T
 ## v2.0.20.0 - 24-04-2017
 - Versão Inicial
 - Ja Engloba a Versão Atual(2.0.20) do Manual.
-
-Outras Duvidas Entrar em Contato samuk.exe@hotmail.com

@@ -1,28 +1,64 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>br.com.samuelweb</groupId>
+    <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.0.1.0</version>
+    <version>3.0.1.0-SNAPSHOT</version>
     <name>Java Efd Icms</name>
+    <description>API Java para gerar arquivo do Efd Icms</description>
+    <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
     <!-- Repositorios SVN Autocom -->
-    <repositories>
-        <repository>
-            <name>Repositorio Autocom</name>
-            <id>autocom</id>
-            <url>http://www.autocomsistemas.com.br:8081/nexus/content/repositories/autocom/</url>
-        </repository>
-    </repositories>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
-    <distributionManagement>
-        <repository>
-            <id>autocom</id>
-            <url>http://nexus.autocomsistemas.com.br/nexus/content/repositories/autocom/</url>
-        </repository>
-    </distributionManagement>
+    <scm>
+        <url>https://github.com/Samuel-Oliveira/Java_CTe</url>
+        <connection>scm:git:git@github.com:Samuel-Oliveira/Java_CTe.git</connection>
+        <developerConnection>scm:git:git@github.com:Samuel-Oliveira/Java_CTe.git</developerConnection>
+        <tag>java-cte-3.00.4</tag>
+    </scm>
+
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
     </properties>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
+
+    <developers>
+        <developer>
+            <id>Samuel-Oliveira</id>
+            <name>Samuel Borges de Oliveira</name>
+            <url>https://github.com/Samuel-Oliveira</url>
+        </developer>
+        <developer>
+            <id>YuriLemes</id>
+            <name>Yuri Lemes</name>
+            <url>https://github.com/YuriLemes</url>
+        </developer>
+        <developer>
+            <id>sidneiklein83</id>
+            <name>Sidnei Samuel Klein</name>
+            <url>https://github.com/sidneiklein83</url>
+        </developer>
+    </developers>
     <build>
         <plugins>
             <plugin>
@@ -30,8 +66,17 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <pushChanges>false</pushChanges>
+                    <localCheckout>true</localCheckout>
                 </configuration>
             </plugin>
         </plugins>
