@@ -20,7 +20,7 @@ Para Iniciar :
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.01.1</version>
+    <version>3.01.1-SNAPSHOT</version>
 </dependency>
 ```
 
