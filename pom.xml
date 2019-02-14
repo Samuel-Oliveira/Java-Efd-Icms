@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.0.1.0</version>
+    <version>3.0.1.1-SNAPSHOT</version>
     <name>Java Efd Icms</name>
     <description>API Java para gerar arquivo do Efd Icms</description>
     <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
@@ -19,7 +19,7 @@
         <url>https://github.com/Samuel-Oliveira/Java_CTe</url>
         <connection>scm:git:git@github.com:Samuel-Oliveira/Java_CTe.git</connection>
         <developerConnection>scm:git:git@github.com:Samuel-Oliveira/Java_CTe.git</developerConnection>
-        <tag>java-efd-icms-3.0.1.0</tag>
+        <tag>java-cte-3.00.4</tag>
     </scm>
 
     <properties>
