@@ -18,9 +18,9 @@ Para Iniciar :
 - Caso use Maven :
 ```
 <dependency>
-    <groupId>br.com.swconsultoria</groupId>
-    <artifactId>java-efd-icms</artifactId>
-    <version>3.01.1</version>
+  <groupId>br.com.swconsultoria</groupId>
+  <artifactId>java-efd-icms</artifactId>
+  <version>3.01.1-SNAPSHOT</version>
 </dependency>
 ```
 
