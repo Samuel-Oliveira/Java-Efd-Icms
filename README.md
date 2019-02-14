@@ -11,7 +11,7 @@ Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são ca
 
 
 Para Iniciar : 
-- Caso use Libs baixe o java-efd-icms-3.0.1.0.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.0.1.0.jar) e o adicione às bibliotecas de Seu Projeto.
+- Caso use Libs baixe o java-efd-icms-3.01.1.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.01.1.jar) e o adicione às bibliotecas de Seu Projeto.
 
 - Aqui Você encontra um Exemplo para preencher e Gerar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/Exemplo-Java-Efd-Icms.rar).
 
@@ -20,7 +20,7 @@ Para Iniciar :
 <dependency>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.0.1.0</version>
+    <version>3.01.1</version>
 </dependency>
 ```
 
@@ -29,7 +29,7 @@ ________________________________________________________________________________
 
 # Historico de Versões
 
-## v3.0.1.0 - 13-02-2019
+## v3.01.1 - 13-02-2019
 - Upgrade para versão 3.0.1
 
 ## v2.0.21.1 - 06-11-2017
