@@ -15,7 +15,6 @@ public class RegistroK250 {
     private String dt_prod;
     private String cod_item;
     private String qtd;
-    private String cod_ins_subst;
 
     private List<RegistroK255> registroK255;
 
@@ -78,17 +77,4 @@ public class RegistroK250 {
         return registroK255;
     }
 
-    /**
-     * @return the cod_ins_subst
-     */
-    public String getCod_ins_subst() {
-        return cod_ins_subst;
-    }
-
-    /**
-     * @param cod_ins_subst the cod_ins_subst to set
-     */
-    public void setCod_ins_subst(String cod_ins_subst) {
-        this.cod_ins_subst = cod_ins_subst;
-    }
 }
