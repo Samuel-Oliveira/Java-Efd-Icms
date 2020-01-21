@@ -16,6 +16,7 @@ public class Bloco1 {
     private Registro1010 registro1010;
     private List<Registro1100> registro1100;
     private List<Registro1200> registro1200;
+    private Registro1250 registro1250;
     private List<Registro1300> registro1300;
     private List<Registro1350> registro1350;
     private List<Registro1390> registro1390;
@@ -29,6 +30,14 @@ public class Bloco1 {
     private List<Registro1970> registro1970; //add v3_0_1
     private Registro1980 registro1980; //add v3_0_1
     private Registro1990 registro1990;
+
+    public Registro1250 getRegistro1250() {
+        return registro1250;
+    }
+
+    public void setRegistro1250(Registro1250 registro1250) {
+        this.registro1250 = registro1250;
+    }
 
     /**
      * @return the registro1001

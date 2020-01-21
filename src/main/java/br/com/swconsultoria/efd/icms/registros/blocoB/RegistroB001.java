@@ -14,7 +14,7 @@ public class RegistroB001 {
     private final String reg = "B001";
     private String ind_dad;
 
-    private RegistroB020 registroB020;
+    private List<RegistroB020> registroB020;
     private List<RegistroB030> registroB030;
     private List<RegistroB350> registroB350;
     private List<RegistroB420> registroB420;
@@ -47,14 +47,17 @@ public class RegistroB001 {
     /**
      * @return the registroB020
      */
-    public RegistroB020 getRegistroB020() {
+    public List<RegistroB020> getRegistroB020() {
         return registroB020;
     }
 
     /**
      * @param registroB020 the registroB020 to set
      */
-    public void setRegistroB020(RegistroB020 registroB020) {
+    public void setRegistroB020(List<RegistroB020> registroB020) {
+        if (registroB020 == null) {
+            registroB020 = new ArrayList<>();
+        }
         this.registroB020 = registroB020;
     }
 

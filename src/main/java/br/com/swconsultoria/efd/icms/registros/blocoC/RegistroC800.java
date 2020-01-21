@@ -28,6 +28,7 @@ public class RegistroC800 {
     private String vl_icms;
     private String vl_pis_st;
     private String vl_cofins_st;
+    private List<RegistroC810> registroC810;
     private List<RegistroC850> registroC850;
 
     /**
@@ -259,6 +260,16 @@ public class RegistroC800 {
      */
     public String getReg() {
         return reg;
+    }
+
+    /**
+     * @return the registroC810
+     */
+    public List<RegistroC810> getRegistroC810() {
+        if (registroC810 == null) {
+            registroC810 = new ArrayList<RegistroC810>();
+        }
+        return registroC810;
     }
 
     /**

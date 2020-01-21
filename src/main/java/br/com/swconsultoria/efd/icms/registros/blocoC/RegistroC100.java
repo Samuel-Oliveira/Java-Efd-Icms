@@ -50,6 +50,7 @@ public class RegistroC100 {
     private List<RegistroC120> registroC120;
     private List<RegistroC165> registroC165;
     private List<RegistroC170> registroC170;
+    private List<RegistroC185> registroC185;
     private List<RegistroC190> registroC190;
     private List<RegistroC195> registroC195;
 
@@ -560,6 +561,16 @@ public class RegistroC100 {
             registroC170 = new ArrayList<RegistroC170>();
         }
         return registroC170;
+    }
+
+    /**
+     * @return the registroC185
+     */
+    public List<RegistroC185> getRegistroC185() {
+        if (registroC185 == null) {
+            registroC185 = new ArrayList<RegistroC185>();
+        }
+        return registroC185;
     }
 
     /**

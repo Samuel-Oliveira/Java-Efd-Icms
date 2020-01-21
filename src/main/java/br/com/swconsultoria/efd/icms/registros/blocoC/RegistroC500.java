@@ -39,8 +39,15 @@ public class RegistroC500 {
     private String vl_cofins;
     private String tp_ligacao;
     private String cod_grupo_tensao;
+    private String chv_doc_e;
+    private String fin_doc_e;
+    private String chv_doc_e_ref;
+    private String ind_dest;
+    private String cod_mun_dest;
+    private String cod_cta;
     private List<RegistroC510> registroC510;
     private List<RegistroC590> registroC590;
+    private List<RegistroC595> registroC595;
 
     /**
      * @return the ind_oper
@@ -433,4 +440,61 @@ public class RegistroC500 {
         return registroC590;
     }
 
+    /**
+     * @return the registroC590
+     */
+    public List<RegistroC595> getRegistroC595() {
+        if (registroC595 == null) {
+            registroC595 = new ArrayList<RegistroC595>();
+        }
+        return registroC595;
+    }
+
+    public String getChv_doc_e() {
+        return chv_doc_e;
+    }
+
+    public void setChv_doc_e(String chv_doc_e) {
+        this.chv_doc_e = chv_doc_e;
+    }
+
+    public String getFin_doc_e() {
+        return fin_doc_e;
+    }
+
+    public void setFin_doc_e(String fin_doc_e) {
+        this.fin_doc_e = fin_doc_e;
+    }
+
+    public String getChv_doc_e_ref() {
+        return chv_doc_e_ref;
+    }
+
+    public void setChv_doc_e_ref(String chv_doc_e_ref) {
+        this.chv_doc_e_ref = chv_doc_e_ref;
+    }
+
+    public String getInd_dest() {
+        return ind_dest;
+    }
+
+    public void setInd_dest(String ind_dest) {
+        this.ind_dest = ind_dest;
+    }
+
+    public String getCod_mun_dest() {
+        return cod_mun_dest;
+    }
+
+    public void setCod_mun_dest(String cod_mun_dest) {
+        this.cod_mun_dest = cod_mun_dest;
+    }
+
+    public String getCod_cta() {
+        return cod_cta;
+    }
+
+    public void setCod_cta(String cod_cta) {
+        this.cod_cta = cod_cta;
+    }
 }

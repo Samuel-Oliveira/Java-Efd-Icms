@@ -21,6 +21,7 @@ public class Registro1010 {
     private String ind_giaf1;
     private String ind_giaf3;
     private String ind_giaf4;
+    private String ind_rest_ressarc_compl_icms;
 
     /**
      * @return the ind_exp
@@ -197,4 +198,11 @@ public class Registro1010 {
         this.ind_giaf4 = ind_giaf4;
     }
 
+    public String getInd_rest_ressarc_compl_icms() {
+        return ind_rest_ressarc_compl_icms;
+    }
+
+    public void setInd_rest_ressarc_compl_icms(String ind_rest_ressarc_compl_icms) {
+        this.ind_rest_ressarc_compl_icms = ind_rest_ressarc_compl_icms;
+    }
 }

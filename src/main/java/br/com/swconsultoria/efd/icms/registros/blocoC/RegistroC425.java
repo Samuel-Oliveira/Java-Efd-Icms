@@ -16,6 +16,15 @@ public class RegistroC425 {
     private String vl_item;
     private String vl_pis;
     private String vl_cofins;
+    private RegistroC430 registroC430;
+
+    public RegistroC430 getRegistroC430() {
+        return registroC430;
+    }
+
+    public void setRegistroC430(RegistroC430 registroC430) {
+        this.registroC430 = registroC430;
+    }
 
     /**
      * @return the cod_item

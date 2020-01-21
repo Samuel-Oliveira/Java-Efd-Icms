@@ -25,6 +25,33 @@ public class Registro1391 {
     private String util_mel;
     private String prod_alc_mel;
     private String obs;
+    private String cod_item;
+    private String tp_residuo;
+    private String qtd_residuo;
+
+    public String getCod_item() {
+        return cod_item;
+    }
+
+    public void setCod_item(String cod_item) {
+        this.cod_item = cod_item;
+    }
+
+    public String getTp_residuo() {
+        return tp_residuo;
+    }
+
+    public void setTp_residuo(String tp_residuo) {
+        this.tp_residuo = tp_residuo;
+    }
+
+    public String getQtd_residuo() {
+        return qtd_residuo;
+    }
+
+    public void setQtd_residuo(String qtd_residuo) {
+        this.qtd_residuo = qtd_residuo;
+    }
 
     /**
      * @return the dt_registro

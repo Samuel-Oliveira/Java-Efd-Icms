@@ -9,7 +9,6 @@ package br.com.swconsultoria.efd.icms.registros.bloco0;
 public class Registro0000 {
 
     private final String reg = "0000";
-    private String cod_ver;
     private String cod_fin;
     private String dt_ini;
     private String dt_fin;
@@ -29,20 +28,6 @@ public class Registro0000 {
      */
     public String getReg() {
         return reg;
-    }
-
-    /**
-     * @return the cod_ver
-     */
-    public String getCod_ver() {
-        return cod_ver;
-    }
-
-    /**
-     * @param cod_ver the cod_ver to set
-     */
-    public void setCod_ver(String cod_ver) {
-        this.cod_ver = cod_ver;
     }
 
     /**

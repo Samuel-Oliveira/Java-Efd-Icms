@@ -3,9 +3,10 @@
  */
 package br.com.swconsultoria.efd.icms.bo.blocoB;
 
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
+import br.com.swconsultoria.efd.icms.registros.blocoB.BlocoB;
 
 /**
  * @author Sidnei Klein
@@ -13,7 +14,7 @@ import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
  */
 public class GerarContadoresBlocoB {
 
-    public static EfdIcms_v3_0_1 gerar(EfdIcms_v3_0_1 efdIcms) {
+    public static EfdIcms gerar(EfdIcms efdIcms) {
 
         BlocoB blocoB = efdIcms.getBlocoB();
         Bloco9 bloco9 = efdIcms.getBloco9();

@@ -1,5 +1,6 @@
 package br.com.swconsultoria.efd.icms.bo.bloco0;
 
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco0.Registro0000;
 import br.com.swconsultoria.efd.icms.util.Util;
 
@@ -8,10 +9,10 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarRegistro0000 {
 
-    public static StringBuilder gerar(Registro0000 registro0000, StringBuilder sb) {
+    public static StringBuilder gerar(EfdIcms efdIcms, Registro0000 registro0000, StringBuilder sb) {
 
         sb.append("|").append(Util.preencheRegistro(registro0000.getReg()));
-        sb.append("|").append(Util.preencheRegistro(registro0000.getCod_ver()));
+        sb.append("|").append(Util.preencheRegistro(Util.getCodVersao(efdIcms)));
         sb.append("|").append(Util.preencheRegistro(registro0000.getCod_fin()));
         sb.append("|").append(Util.preencheRegistro(registro0000.getDt_ini()));
         sb.append("|").append(Util.preencheRegistro(registro0000.getDt_fin()));

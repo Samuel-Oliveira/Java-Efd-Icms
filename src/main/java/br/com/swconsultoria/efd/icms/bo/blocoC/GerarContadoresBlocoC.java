@@ -3,10 +3,11 @@
  */
 package br.com.swconsultoria.efd.icms.bo.blocoC;
 
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
 import br.com.swconsultoria.efd.icms.registros.blocoC.BlocoC;
+import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira, Sidnei Klein
@@ -14,13 +15,13 @@ import br.com.swconsultoria.efd.icms.registros.blocoC.BlocoC;
  */
 public class GerarContadoresBlocoC {
 
-    public static EfdIcms_v3_0_1 gerar(EfdIcms_v3_0_1 efdIcms) {
+    public static EfdIcms gerar(EfdIcms efdIcms) {
 
         BlocoC blocoC = efdIcms.getBlocoC();
         Bloco9 bloco9 = efdIcms.getBloco9();
-        Registro9900 registro9900 = new Registro9900();
+        Registro9900 registro9900;
 
-        int cont = 0;
+        int cont;
         cont = efdIcms.getContadoresBlocoC().getContRegistroC001();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -210,6 +211,22 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC180();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C180");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC185();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C185");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC190();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -273,6 +290,15 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC330();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C330");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC350();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -286,6 +312,15 @@ public class GerarContadoresBlocoC {
             registro9900.setReg_blc("C370");
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
+        }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC380();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C380");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
         }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC390();
         if (cont > 0) {
@@ -322,6 +357,15 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC430();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C430");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC425();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -335,6 +379,15 @@ public class GerarContadoresBlocoC {
             registro9900.setReg_blc("C460");
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
+        }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC480();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C480");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
         }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC465();
         if (cont > 0) {
@@ -384,6 +437,29 @@ public class GerarContadoresBlocoC {
             registro9900.setReg_blc("C590");
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
+        }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC591();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C591");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC595();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C595");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC597();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C597");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
         }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC600();
         if (cont > 0) {
@@ -441,6 +517,36 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC810();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C810");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC815();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C815");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC870();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C870");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC880();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C880");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC850();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -470,7 +576,7 @@ public class GerarContadoresBlocoC {
             bloco9.getRegistro9900().add(registro9900);
         }
 
-        int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(blocoC.getRegistroC990().getQtd_lin_c());
+        int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin()) + Integer.parseInt(blocoC.getRegistroC990().getQtd_lin_c());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

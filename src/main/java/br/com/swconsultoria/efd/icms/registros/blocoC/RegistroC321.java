@@ -19,6 +19,7 @@ public class RegistroC321 {
     private String vl_icms;
     private String vl_pis;
     private String vl_cofins;
+    private RegistroC330 registroC330;
 
     /**
      * @return the cod_item
@@ -153,4 +154,11 @@ public class RegistroC321 {
         return reg;
     }
 
+    public RegistroC330 getRegistroC330() {
+        return registroC330;
+    }
+
+    public void setRegistroC330(RegistroC330 registroC330) {
+        this.registroC330 = registroC330;
+    }
 }

@@ -3,7 +3,7 @@
  */
 package br.com.swconsultoria.efd.icms.bo.blocoG;
 
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
 import br.com.swconsultoria.efd.icms.registros.blocoG.BlocoG;
@@ -15,7 +15,7 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarContadoresBlocoG {
 
-    public static EfdIcms_v3_0_1 gerar(EfdIcms_v3_0_1 efdIcms) {
+    public static EfdIcms gerar(EfdIcms efdIcms) {
 
         BlocoG blocoG = efdIcms.getBlocoG();
         Bloco9 bloco9 = efdIcms.getBloco9();

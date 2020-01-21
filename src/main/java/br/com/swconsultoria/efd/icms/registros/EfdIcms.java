@@ -3,10 +3,10 @@
  */
 package br.com.swconsultoria.efd.icms.registros;
 
-import br.com.swconsultoria.efd.icms.bo.blocoB.BlocoB;
 import br.com.swconsultoria.efd.icms.registros.bloco0.Bloco0;
 import br.com.swconsultoria.efd.icms.registros.bloco1.Bloco1;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
+import br.com.swconsultoria.efd.icms.registros.blocoB.BlocoB;
 import br.com.swconsultoria.efd.icms.registros.blocoC.BlocoC;
 import br.com.swconsultoria.efd.icms.registros.blocoD.BlocoD;
 import br.com.swconsultoria.efd.icms.registros.blocoE.BlocoE;
@@ -17,9 +17,8 @@ import br.com.swconsultoria.efd.icms.registros.contadores.*;
 
 /**
  * @author Sidnei Klein
- *
  */
-public class EfdIcms_v3_0_1 {
+public class EfdIcms {
 
     private Bloco0 bloco0;
     private BlocoB blocoB;
@@ -45,7 +44,7 @@ public class EfdIcms_v3_0_1 {
     /**
      *
      */
-    public EfdIcms_v3_0_1() {
+    public EfdIcms() {
         this.contadoresBloco0 = new ContadoresBloco0();
         this.contadoresBlocoB = new ContadoresBlocoB();
         this.contadoresBlocoC = new ContadoresBlocoC();

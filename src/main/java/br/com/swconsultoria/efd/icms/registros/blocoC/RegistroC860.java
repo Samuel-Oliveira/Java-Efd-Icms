@@ -17,6 +17,7 @@ public class RegistroC860 {
     private String dt_doc;
     private String doc_ini;
     private String doc_fim;
+    private List<RegistroC870> registroC870;
     private List<RegistroC890> registroC890;
 
     /**
@@ -104,6 +105,16 @@ public class RegistroC860 {
             registroC890 = new ArrayList<RegistroC890>();
         }
         return this.registroC890;
+    }
+
+    /**
+     * @return the registroC890
+     */
+    public List<RegistroC870> getRegistroC870() {
+        if (registroC870 == null) {
+            registroC870 = new ArrayList<RegistroC870>();
+        }
+        return this.registroC870;
     }
 
 }

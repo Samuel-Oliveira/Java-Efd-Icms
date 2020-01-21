@@ -16,6 +16,7 @@ public class ContadoresBlocoH {
     private int contRegistroH005 = 0;
     private int contRegistroH010 = 0;
     private int contRegistroH020 = 0;
+    private int contRegistroH030 = 0;
     private int contRegistroH990 = 0;
 
     public void incrementar(BlocoHEnum bloco) {
@@ -34,6 +35,9 @@ public class ContadoresBlocoH {
                 break;
             case RegistroH020:
                 contRegistroH020++;
+                break;
+            case RegistroH030:
+                contRegistroH030++;
                 break;
             default:
                 break;
@@ -75,4 +79,7 @@ public class ContadoresBlocoH {
         return contRegistroH990;
     }
 
+    public int getContRegistroH030() {
+        return contRegistroH030;
+    }
 }

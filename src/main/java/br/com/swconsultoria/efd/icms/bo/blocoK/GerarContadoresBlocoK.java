@@ -3,7 +3,7 @@
  */
 package br.com.swconsultoria.efd.icms.bo.blocoK;
 
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
 import br.com.swconsultoria.efd.icms.registros.blocoK.BlocoK;
@@ -15,14 +15,13 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarContadoresBlocoK {
 
-    public static EfdIcms_v3_0_1 gerar(EfdIcms_v3_0_1 efdIcms) {
+    public static EfdIcms gerar(EfdIcms efdIcms) {
 
         BlocoK blocoK = efdIcms.getBlocoK();
         Bloco9 bloco9 = efdIcms.getBloco9();
-        Registro9900 registro9900 = new Registro9900();
+        Registro9900 registro9900;
 
-        int cont = 0;
-        cont = efdIcms.getContadoresBlocoK().getContRegistroK001();
+        int cont = efdIcms.getContadoresBlocoK().getContRegistroK001();
         if (cont > 0) {
             registro9900 = new Registro9900();
             registro9900.setReg_blc("K001");
@@ -128,7 +127,7 @@ public class GerarContadoresBlocoK {
             bloco9.getRegistro9900().add(registro9900);
         }
 
-        if (Util.versao2019()) {
+        if (Util.versao2019(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             cont = efdIcms.getContadoresBlocoK().getContRegistroK290();
             if (cont > 0) {
                 registro9900 = new Registro9900();
@@ -182,8 +181,8 @@ public class GerarContadoresBlocoK {
 
         }
 
-        int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())
-                + Integer.valueOf(blocoK.getRegistroK990().getQtd_lin_k());
+        int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin())
+                + Integer.parseInt(blocoK.getRegistroK990().getQtd_lin_k());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

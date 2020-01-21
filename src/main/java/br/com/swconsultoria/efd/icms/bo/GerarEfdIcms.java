@@ -22,77 +22,76 @@ import br.com.swconsultoria.efd.icms.bo.blocoH.GerarBlocoH;
 import br.com.swconsultoria.efd.icms.bo.blocoH.GerarContadoresBlocoH;
 import br.com.swconsultoria.efd.icms.bo.blocoK.GerarBlocoK;
 import br.com.swconsultoria.efd.icms.bo.blocoK.GerarContadoresBlocoK;
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9001;
 import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
- * @author Sidnei Klein
- *
+ * @author Sameul Oliveira
  */
-public class GerarEfdIcms_v3_0_1 {
+public class GerarEfdIcms {
 
-    public static StringBuilder gerar(EfdIcms_v3_0_1 efdIcms, StringBuilder sb) {
+    public static StringBuilder gerar(EfdIcms efdIcms, StringBuilder sb) {
 
         //BLOCO0
         if (!Util.isEmpty(efdIcms.getBloco0())) {
-            sb = GerarBloco0.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBloco0.gerar(efdIcms);
+            GerarBloco0.gerar(efdIcms, sb);
+            GerarContadoresBloco0.gerar(efdIcms);
         }
 
         //BLOCOB
         if (!Util.isEmpty(efdIcms.getBlocoB())) {
-            sb = GerarBlocoB.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoB.gerar(efdIcms);
+            GerarBlocoB.gerar(efdIcms, sb);
+            GerarContadoresBlocoB.gerar(efdIcms);
         }
 
         //BLOCOC
         if (!Util.isEmpty(efdIcms.getBlocoC())) {
-            sb = GerarBlocoC.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoC.gerar(efdIcms);
+            GerarBlocoC.gerar(efdIcms, sb);
+            GerarContadoresBlocoC.gerar(efdIcms);
         }
 
         //BLOCOD
         if (!Util.isEmpty(efdIcms.getBlocoD())) {
-            sb = GerarBlocoD.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoD.gerar(efdIcms);
+            GerarBlocoD.gerar(efdIcms, sb);
+            GerarContadoresBlocoD.gerar(efdIcms);
         }
 
         //BLOCOE
         if (!Util.isEmpty(efdIcms.getBlocoE())) {
-            sb = GerarBlocoE.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoE.gerar(efdIcms);
+            GerarBlocoE.gerar(efdIcms, sb);
+            GerarContadoresBlocoE.gerar(efdIcms);
         }
 
         //BLOCOG
         if (!Util.isEmpty(efdIcms.getBlocoG())) {
-            sb = GerarBlocoG.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoG.gerar(efdIcms);
+            GerarBlocoG.gerar(efdIcms, sb);
+            GerarContadoresBlocoG.gerar(efdIcms);
         }
 
         //BLOCOH
         if (!Util.isEmpty(efdIcms.getBlocoH())) {
-            sb = GerarBlocoH.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoH.gerar(efdIcms);
+            GerarBlocoH.gerar(efdIcms, sb);
+            GerarContadoresBlocoH.gerar(efdIcms);
         }
 
         //BLOCOK
         if (!Util.isEmpty(efdIcms.getBlocoK())) {
-            sb = GerarBlocoK.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBlocoK.gerar(efdIcms);
+            GerarBlocoK.gerar(efdIcms, sb);
+            GerarContadoresBlocoK.gerar(efdIcms);
         }
 
         //BLOCO1
         if (!Util.isEmpty(efdIcms.getBloco1())) {
-            sb = GerarBloco1.gerar(efdIcms, sb);
-            efdIcms = GerarContadoresBloco1.gerar(efdIcms);
+            GerarBloco1.gerar(efdIcms, sb);
+            GerarContadoresBloco1.gerar(efdIcms);
         }
 
         //BLOCO9
         Registro9001 registro9001 = new Registro9001();
         registro9001.setInd_mov("0");
         efdIcms.getBloco9().setRegistro9001(registro9001);
-        sb = GerarBloco9.gerar(efdIcms.getBloco9(), sb);
+        GerarBloco9.gerar(efdIcms.getBloco9(), sb);
 
         //Nova Linha ao Final do Arquivo:
         sb.append(System.lineSeparator());

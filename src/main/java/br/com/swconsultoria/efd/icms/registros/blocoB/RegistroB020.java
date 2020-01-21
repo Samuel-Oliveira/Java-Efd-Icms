@@ -20,9 +20,10 @@ public class RegistroB020 {
     private String ser;
     private String num_doc;
     private String chv_nfe;
+    private String dt_doc;
     private String cod_mun_serv;
     private String vl_cont;
-    private String vl_mat_merc;
+    private String vl_mat_terc;
     private String vl_sub;
     private String vl_isnt_iss;
     private String vl_ded_bc;
@@ -184,15 +185,15 @@ public class RegistroB020 {
     /**
      * @return the vl_mat_merc
      */
-    public String getVl_mat_merc() {
-        return vl_mat_merc;
+    public String getVl_mat_terc() {
+        return vl_mat_terc;
     }
 
     /**
-     * @param vl_mat_merc the vl_mat_merc to set
+     * @param vl_mat_terc the vl_mat_merc to set
      */
-    public void setVl_mat_merc(String vl_mat_merc) {
-        this.vl_mat_merc = vl_mat_merc;
+    public void setVl_mat_terc(String vl_mat_terc) {
+        this.vl_mat_terc = vl_mat_terc;
     }
 
     /**
@@ -312,6 +313,14 @@ public class RegistroB020 {
      */
     public List<RegistroB025> getRegistroB025() {
         return registroB025;
+    }
+
+    public String getDt_doc() {
+        return dt_doc;
+    }
+
+    public void setDt_doc(String dt_doc) {
+        this.dt_doc = dt_doc;
     }
 
     /**

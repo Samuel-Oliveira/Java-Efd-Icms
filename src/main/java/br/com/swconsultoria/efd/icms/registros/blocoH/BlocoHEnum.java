@@ -5,7 +5,6 @@ package br.com.swconsultoria.efd.icms.registros.blocoH;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public enum BlocoHEnum {
 
@@ -13,6 +12,7 @@ public enum BlocoHEnum {
     RegistroH005,
     RegistroH010,
     RegistroH020,
+    RegistroH030,
     RegistroH990
 
 }

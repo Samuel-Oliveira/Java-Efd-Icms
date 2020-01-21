@@ -16,6 +16,7 @@ public class RegistroC370 {
     private String unid;
     private String vl_item;
     private String vl_desc;
+    private RegistroC380 registroC380;
 
     /**
      * @return the num_item
@@ -108,4 +109,11 @@ public class RegistroC370 {
         return reg;
     }
 
+    public RegistroC380 getRegistroC380() {
+        return registroC380;
+    }
+
+    public void setRegistroC380(RegistroC380 registroC380) {
+        this.registroC380 = registroC380;
+    }
 }

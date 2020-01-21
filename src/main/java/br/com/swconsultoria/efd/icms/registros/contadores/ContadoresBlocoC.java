@@ -4,7 +4,6 @@ import br.com.swconsultoria.efd.icms.registros.blocoC.BlocoCEnum;
 
 /**
  * @author Samuel Oliveira, Sidnei Klein
- *
  */
 public class ContadoresBlocoC {
 
@@ -36,31 +35,40 @@ public class ContadoresBlocoC {
     private int contRegistroC177 = 0;
     private int contRegistroC178 = 0;
     private int contRegistroC179 = 0;
+    private int contRegistroC180 = 0;
+    private int contRegistroC185 = 0;
     private int contRegistroC190 = 0;
-    private int contRegistroC191 = 0; //add v3_0_1
+    private int contRegistroC191 = 0;
     private int contRegistroC195 = 0;
     private int contRegistroC198 = 0;
     private int contRegistroC197 = 0;
     private int contRegistroC300 = 0;
     private int contRegistroC310 = 0;
     private int contRegistroC320 = 0;
+    private int contRegistroC330 = 0;
     private int contRegistroC321 = 0;
     private int contRegistroC350 = 0;
     private int contRegistroC370 = 0;
+    private int contRegistroC380 = 0;
     private int contRegistroC390 = 0;
     private int contRegistroC400 = 0;
     private int contRegistroC405 = 0;
     private int contRegistroC410 = 0;
     private int contRegistroC420 = 0;
     private int contRegistroC425 = 0;
+    private int contRegistroC430 = 0;
     private int contRegistroC460 = 0;
     private int contRegistroC465 = 0;
     private int contRegistroC470 = 0;
+    private int contRegistroC480 = 0;
     private int contRegistroC490 = 0;
     private int contRegistroC495 = 0;
     private int contRegistroC500 = 0;
     private int contRegistroC510 = 0;
     private int contRegistroC590 = 0;
+    private int contRegistroC591 = 0;
+    private int contRegistroC595 = 0;
+    private int contRegistroC597 = 0;
     private int contRegistroC600 = 0;
     private int contRegistroC601 = 0;
     private int contRegistroC610 = 0;
@@ -69,8 +77,12 @@ public class ContadoresBlocoC {
     private int contRegistroC790 = 0;
     private int contRegistroC791 = 0;
     private int contRegistroC800 = 0;
+    private int contRegistroC810 = 0;
+    private int contRegistroC815 = 0;
     private int contRegistroC850 = 0;
     private int contRegistroC860 = 0;
+    private int contRegistroC870 = 0;
+    private int contRegistroC880 = 0;
     private int contRegistroC890 = 0;
     private int contRegistroC990 = 0;
 
@@ -160,6 +172,12 @@ public class ContadoresBlocoC {
             case RegistroC179:
                 setContRegistroC179(getContRegistroC179() + 1);
                 break;
+            case RegistroC180:
+                setContRegistroC180(getContRegistroC180() + 1);
+                break;
+            case RegistroC185:
+                setContRegistroC185(getContRegistroC185() + 1);
+                break;
             case RegistroC190:
                 setContRegistroC190(getContRegistroC190() + 1);
                 break;
@@ -184,6 +202,9 @@ public class ContadoresBlocoC {
             case RegistroC320:
                 setContRegistroC320(getContRegistroC320() + 1);
                 break;
+            case RegistroC330:
+                setContRegistroC330(getContRegistroC330() + 1);
+                break;
             case RegistroC321:
                 setContRegistroC321(getContRegistroC321() + 1);
                 break;
@@ -192,6 +213,9 @@ public class ContadoresBlocoC {
                 break;
             case RegistroC370:
                 setContRegistroC370(getContRegistroC370() + 1);
+                break;
+            case RegistroC380:
+                setContRegistroC380(getContRegistroC380() + 1);
                 break;
             case RegistroC390:
                 setContRegistroC390(getContRegistroC390() + 1);
@@ -208,6 +232,9 @@ public class ContadoresBlocoC {
             case RegistroC420:
                 setContRegistroC420(getContRegistroC420() + 1);
                 break;
+            case RegistroC430:
+                setContRegistroC430(getContRegistroC430() + 1);
+                break;
             case RegistroC425:
                 setContRegistroC425(getContRegistroC425() + 1);
                 break;
@@ -219,6 +246,9 @@ public class ContadoresBlocoC {
                 break;
             case RegistroC470:
                 setContRegistroC470(getContRegistroC470() + 1);
+                break;
+            case RegistroC480:
+                setContRegistroC480(getContRegistroC480() + 1);
                 break;
             case RegistroC490:
                 setContRegistroC490(getContRegistroC490() + 1);
@@ -234,6 +264,15 @@ public class ContadoresBlocoC {
                 break;
             case RegistroC590:
                 setContRegistroC590(getContRegistroC590() + 1);
+                break;
+            case RegistroC591:
+                setContRegistroC591(getContRegistroC591() + 1);
+                break;
+            case RegistroC595:
+                setContRegistroC595(getContRegistroC595() + 1);
+                break;
+            case RegistroC597:
+                setContRegistroC597(getContRegistroC597() + 1);
                 break;
             case RegistroC600:
                 setContRegistroC600(getContRegistroC600() + 1);
@@ -256,6 +295,12 @@ public class ContadoresBlocoC {
             case RegistroC800:
                 setContRegistroC800(getContRegistroC800() + 1);
                 break;
+            case RegistroC810:
+                setContRegistroC810(getContRegistroC810() + 1);
+                break;
+            case RegistroC815:
+                setContRegistroC815(getContRegistroC815() + 1);
+                break;
             case RegistroC850:
                 setContRegistroC850(getContRegistroC850() + 1);
                 break;
@@ -264,6 +309,12 @@ public class ContadoresBlocoC {
                 break;
             case RegistroC860:
                 setContRegistroC860(getContRegistroC860() + 1);
+                break;
+            case RegistroC870:
+                setContRegistroC870(getContRegistroC870() + 1);
+                break;
+            case RegistroC880:
+                setContRegistroC880(getContRegistroC880() + 1);
                 break;
             case RegistroC890:
                 setContRegistroC890(getContRegistroC890() + 1);
@@ -315,6 +366,38 @@ public class ContadoresBlocoC {
         this.contRegistroC101 = contRegistroC101;
     }
 
+    public int getContRegistroC810() {
+        return contRegistroC810;
+    }
+
+    public void setContRegistroC810(int contRegistroC810) {
+        this.contRegistroC810 = contRegistroC810;
+    }
+
+    public int getContRegistroC815() {
+        return contRegistroC815;
+    }
+
+    public void setContRegistroC815(int contRegistroC815) {
+        this.contRegistroC815 = contRegistroC815;
+    }
+
+    public int getContRegistroC870() {
+        return contRegistroC870;
+    }
+
+    public void setContRegistroC870(int contRegistroC870) {
+        this.contRegistroC870 = contRegistroC870;
+    }
+
+    public int getContRegistroC880() {
+        return contRegistroC880;
+    }
+
+    public void setContRegistroC880(int contRegistroC880) {
+        this.contRegistroC880 = contRegistroC880;
+    }
+
     /**
      * @return the contRegistroC105
      */
@@ -329,6 +412,30 @@ public class ContadoresBlocoC {
         this.contRegistroC105 = contRegistroC105;
     }
 
+    public int getContRegistroC591() {
+        return contRegistroC591;
+    }
+
+    public void setContRegistroC591(int contRegistroC591) {
+        this.contRegistroC591 = contRegistroC591;
+    }
+
+    public int getContRegistroC595() {
+        return contRegistroC595;
+    }
+
+    public void setContRegistroC595(int contRegistroC595) {
+        this.contRegistroC595 = contRegistroC595;
+    }
+
+    public int getContRegistroC597() {
+        return contRegistroC597;
+    }
+
+    public void setContRegistroC597(int contRegistroC597) {
+        this.contRegistroC597 = contRegistroC597;
+    }
+
     /**
      * @return the contRegistroC110
      */
@@ -341,6 +448,22 @@ public class ContadoresBlocoC {
      */
     public void setContRegistroC110(int contRegistroC110) {
         this.contRegistroC110 = contRegistroC110;
+    }
+
+    public int getContRegistroC430() {
+        return contRegistroC430;
+    }
+
+    public void setContRegistroC430(int contRegistroC430) {
+        this.contRegistroC430 = contRegistroC430;
+    }
+
+    public int getContRegistroC480() {
+        return contRegistroC480;
+    }
+
+    public void setContRegistroC480(int contRegistroC480) {
+        this.contRegistroC480 = contRegistroC480;
     }
 
     /**
@@ -497,6 +620,22 @@ public class ContadoresBlocoC {
         this.contRegistroC160 = contRegistroC160;
     }
 
+    public int getContRegistroC330() {
+        return contRegistroC330;
+    }
+
+    public void setContRegistroC330(int contRegistroC330) {
+        this.contRegistroC330 = contRegistroC330;
+    }
+
+    public int getContRegistroC380() {
+        return contRegistroC380;
+    }
+
+    public void setContRegistroC380(int contRegistroC380) {
+        this.contRegistroC380 = contRegistroC380;
+    }
+
     /**
      * @return the contRegistroC165
      */
@@ -649,6 +788,22 @@ public class ContadoresBlocoC {
      */
     public void setContRegistroC179(int contRegistroC179) {
         this.contRegistroC179 = contRegistroC179;
+    }
+
+    public int getContRegistroC180() {
+        return contRegistroC180;
+    }
+
+    public void setContRegistroC180(int contRegistroC180) {
+        this.contRegistroC180 = contRegistroC180;
+    }
+
+    public int getContRegistroC185() {
+        return contRegistroC185;
+    }
+
+    public void setContRegistroC185(int contRegistroC185) {
+        this.contRegistroC185 = contRegistroC185;
     }
 
     /**

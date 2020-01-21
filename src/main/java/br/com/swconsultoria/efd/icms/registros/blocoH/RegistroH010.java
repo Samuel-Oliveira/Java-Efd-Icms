@@ -24,6 +24,16 @@ public class RegistroH010 {
     private String vl_item_ir;
     private List<RegistroH020> registroH020;
 
+    private RegistroH030 registroH030;
+
+    public RegistroH030 getRegistroH030() {
+        return registroH030;
+    }
+
+    public void setRegistroH030(RegistroH030 registroH030) {
+        this.registroH030 = registroH030;
+    }
+
     /**
      * @return the cod_item
      */

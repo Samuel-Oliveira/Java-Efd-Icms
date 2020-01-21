@@ -20,6 +20,15 @@ public class RegistroC470 {
     private String aliq_icms;
     private String vl_pis;
     private String vl_cofins;
+    private RegistroC480 registroC480;
+
+    public RegistroC480 getRegistroC480() {
+        return registroC480;
+    }
+
+    public void setRegistroC480(RegistroC480 registroC480) {
+        this.registroC480 = registroC480;
+    }
 
     /**
      * @return the cod_item

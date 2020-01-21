@@ -1,7 +1,7 @@
 /**
  *
  */
-package br.com.swconsultoria.efd.icms.bo.blocoB;
+package br.com.swconsultoria.efd.icms.registros.blocoB;
 
 /**
  * @author Sidnei Klein

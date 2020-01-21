@@ -1,5 +1,6 @@
 package br.com.swconsultoria.efd.icms.bo.blocoC;
 
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.blocoC.RegistroC500;
 import br.com.swconsultoria.efd.icms.util.Util;
 
@@ -8,7 +9,7 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarRegistroC500 {
 
-    public static StringBuilder gerar(RegistroC500 registroC500, StringBuilder sb) {
+    public static StringBuilder gerar(EfdIcms efdIcms, RegistroC500 registroC500, StringBuilder sb) {
 
         sb.append("|").append(Util.preencheRegistro(registroC500.getReg()));
         sb.append("|").append(Util.preencheRegistro(registroC500.getInd_oper()));
@@ -37,6 +38,14 @@ public class GerarRegistroC500 {
         sb.append("|").append(Util.preencheRegistro(registroC500.getVl_cofins()));
         sb.append("|").append(Util.preencheRegistro(registroC500.getTp_ligacao()));
         sb.append("|").append(Util.preencheRegistro(registroC500.getCod_grupo_tensao()));
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            sb.append("|").append(Util.preencheRegistro(registroC500.getChv_doc_e()));
+            sb.append("|").append(Util.preencheRegistro(registroC500.getFin_doc_e()));
+            sb.append("|").append(Util.preencheRegistro(registroC500.getChv_doc_e_ref()));
+            sb.append("|").append(Util.preencheRegistro(registroC500.getInd_dest()));
+            sb.append("|").append(Util.preencheRegistro(registroC500.getCod_mun_dest()));
+            sb.append("|").append(Util.preencheRegistro(registroC500.getCod_cta()));
+        }
         sb.append("|").append('\n');
 
         return sb;

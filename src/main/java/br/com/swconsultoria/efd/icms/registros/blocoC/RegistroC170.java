@@ -55,6 +55,7 @@ public class RegistroC170 {
     private RegistroC177 registroC177;
     private RegistroC178 registroC178;
     private RegistroC179 registroC179;
+    private RegistroC180 registroC180;
     private List<RegistroC171> registroC171;
     private List<RegistroC173> registroC173;
     private List<RegistroC174> registroC174;
@@ -692,4 +693,19 @@ public class RegistroC170 {
         this.vl_abat_nt = vl_abat_nt;
     }
 
+    public String getCod_cta() {
+        return cod_cta;
+    }
+
+    public void setCod_cta(String cod_cta) {
+        this.cod_cta = cod_cta;
+    }
+
+    public RegistroC180 getRegistroC180() {
+        return registroC180;
+    }
+
+    public void setRegistroC180(RegistroC180 registroC180) {
+        this.registroC180 = registroC180;
+    }
 }

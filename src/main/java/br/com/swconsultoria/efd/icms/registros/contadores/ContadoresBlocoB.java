@@ -1,6 +1,6 @@
 package br.com.swconsultoria.efd.icms.registros.contadores;
 
-import br.com.swconsultoria.efd.icms.bo.blocoB.BlocoBEnum;
+import br.com.swconsultoria.efd.icms.registros.blocoB.BlocoBEnum;
 
 /**
  * @author Sidnei Klein

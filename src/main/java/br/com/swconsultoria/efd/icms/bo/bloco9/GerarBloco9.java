@@ -24,7 +24,7 @@ public class GerarBloco9 {
         sb = sbr;
         //REGISTRO9001
         if (!Util.isEmpty(bloco9.getRegistro9001())) {
-            sb = GerarRegistro9001.gerar(bloco9.getRegistro9001(), sb);
+            GerarRegistro9001.gerar(bloco9.getRegistro9001(), sb);
             qtdRegistros++;
         }
 
@@ -52,7 +52,7 @@ public class GerarBloco9 {
         if (!Util.isEmpty(bloco9.getRegistro9900())) {
 
             qtdRegistros += bloco9.getRegistro9900().stream().peek(registro_9900 -> {
-                sb = GerarRegistro9900.gerar(registro_9900, sb);
+                GerarRegistro9900.gerar(registro_9900, sb);
             }).count();
 
         }
@@ -64,14 +64,14 @@ public class GerarBloco9 {
             registro9990.setQtd_lin_9(String.valueOf(qtdRegistros + 1));
 
             bloco9.setRegistro9990(registro9990);
-            sb = GerarRegistro9990.gerar(bloco9.getRegistro9990(), sb);
+            GerarRegistro9990.gerar(bloco9.getRegistro9990(), sb);
         }
 
         //REGISTRO9999
         if (!Util.isEmpty(bloco9.getRegistro9999())) {
             int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(bloco9.getRegistro9990().getQtd_lin_9());
             bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
-            sb = GerarRegistro9999.gerar(bloco9.getRegistro9999(), sb);
+            GerarRegistro9999.gerar(bloco9.getRegistro9999(), sb);
         }
 
         return sb;

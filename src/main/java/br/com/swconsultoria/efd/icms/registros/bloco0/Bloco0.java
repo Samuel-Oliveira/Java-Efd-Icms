@@ -14,6 +14,7 @@ public class Bloco0 {
 
     private Registro0000 registro0000;
     private Registro0001 registro0001;
+    private Registro0002 registro0002;
     private Registro0005 registro0005;
     private List<Registro0015> registro0015;
     private Registro0100 registro0100;
@@ -220,4 +221,11 @@ public class Bloco0 {
         this.registro0990 = registro0990;
     }
 
+    public Registro0002 getRegistro0002() {
+        return registro0002;
+    }
+
+    public void setRegistro0002(Registro0002 registro0002) {
+        this.registro0002 = registro0002;
+    }
 }

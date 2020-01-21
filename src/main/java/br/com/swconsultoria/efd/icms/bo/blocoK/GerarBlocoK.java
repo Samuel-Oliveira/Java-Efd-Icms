@@ -3,7 +3,7 @@
  */
 package br.com.swconsultoria.efd.icms.bo.blocoK;
 
-import br.com.swconsultoria.efd.icms.registros.EfdIcms_v3_0_1;
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.blocoK.BlocoK;
 import br.com.swconsultoria.efd.icms.registros.blocoK.BlocoKEnum;
 import br.com.swconsultoria.efd.icms.registros.blocoK.RegistroK990;
@@ -16,39 +16,39 @@ public class GerarBlocoK {
 
     private static StringBuilder sb = null;
 
-    public static StringBuilder gerar(EfdIcms_v3_0_1 efdIcms, StringBuilder sbr) {
+    public static StringBuilder gerar(EfdIcms efdIcms, StringBuilder sbr) {
         BlocoK blocoK = efdIcms.getBlocoK();
         sb = sbr;
         // REGISTROK001
         if (!Util.isEmpty(blocoK.getRegistroK001())) {
-            sb = GerarRegistroK001.gerar(blocoK.getRegistroK001(), sb);
+            GerarRegistroK001.gerar(blocoK.getRegistroK001(), sb);
             efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK001);
         }
 
         // REGISTROK100
         if (!Util.isEmpty(blocoK.getRegistroK100())) {
-            blocoK.getRegistroK100().stream().forEach(registroK100 -> {
-                sb = GerarRegistroK100.gerar(registroK100, sb);
+            blocoK.getRegistroK100().forEach(registroK100 -> {
+                GerarRegistroK100.gerar(registroK100, sb);
                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK100);
 
                 // REGISTROK200
                 if (!Util.isEmpty(registroK100.getRegistroK200())) {
-                    registroK100.getRegistroK200().stream().forEach(registroK200 -> {
-                        sb = GerarRegistroK200.gerar(registroK200, sb);
+                    registroK100.getRegistroK200().forEach(registroK200 -> {
+                        GerarRegistroK200.gerar(registroK200, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK200);
                     });
                 }
 
                 // REGISTROK210
                 if (!Util.isEmpty(registroK100.getRegistroK210())) {
-                    registroK100.getRegistroK210().stream().forEach(registroK210 -> {
-                        sb = GerarRegistroK210.gerar(registroK210, sb);
+                    registroK100.getRegistroK210().forEach(registroK210 -> {
+                        GerarRegistroK210.gerar(registroK210, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK210);
 
                         // REGISTROK215
                         if (!Util.isEmpty(registroK210.getRegistroK215())) {
-                            registroK210.getRegistroK215().stream().forEach(registroK215 -> {
-                                sb = GerarRegistroK215.gerar(registroK215, sb);
+                            registroK210.getRegistroK215().forEach(registroK215 -> {
+                                GerarRegistroK215.gerar(registroK215, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK215);
                             });
                         }
@@ -57,22 +57,22 @@ public class GerarBlocoK {
 
                 // REGISTROK220
                 if (!Util.isEmpty(registroK100.getRegistroK220())) {
-                    registroK100.getRegistroK220().stream().forEach(registroK220 -> {
-                        sb = GerarRegistroK220.gerar(registroK220, sb);
+                    registroK100.getRegistroK220().forEach(registroK220 -> {
+                        GerarRegistroK220.gerar(registroK220, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK220);
                     });
                 }
 
                 // REGISTROK230
                 if (!Util.isEmpty(registroK100.getRegistroK230())) {
-                    registroK100.getRegistroK230().stream().forEach(registroK230 -> {
-                        sb = GerarRegistroK230.gerar(registroK230, sb);
+                    registroK100.getRegistroK230().forEach(registroK230 -> {
+                        GerarRegistroK230.gerar(registroK230, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK230);
 
                         // REGISTROK235
                         if (!Util.isEmpty(registroK230.getRegistroK235())) {
-                            registroK230.getRegistroK235().stream().forEach(registroK235 -> {
-                                sb = GerarRegistroK235.gerar(registroK235, sb);
+                            registroK230.getRegistroK235().forEach(registroK235 -> {
+                                GerarRegistroK235.gerar(registroK235, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK235);
                             });
                         }
@@ -81,14 +81,14 @@ public class GerarBlocoK {
 
                 // REGISTROK250
                 if (!Util.isEmpty(registroK100.getRegistroK250())) {
-                    registroK100.getRegistroK250().stream().forEach(registroK250 -> {
-                        sb = GerarRegistroK250.gerar(registroK250, sb);
+                    registroK100.getRegistroK250().forEach(registroK250 -> {
+                        GerarRegistroK250.gerar(registroK250, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK250);
 
                         // REGISTROK255
                         if (!Util.isEmpty(registroK250.getRegistroK255())) {
-                            registroK250.getRegistroK255().stream().forEach(registroK255 -> {
-                                sb = GerarRegistroK255.gerar(registroK255, sb);
+                            registroK250.getRegistroK255().forEach(registroK255 -> {
+                                GerarRegistroK255.gerar(registroK255, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK255);
                             });
                         }
@@ -97,14 +97,14 @@ public class GerarBlocoK {
 
                 // REGISTROK260
                 if (!Util.isEmpty(registroK100.getRegistroK260())) {
-                    registroK100.getRegistroK260().stream().forEach(registroK260 -> {
-                        sb = GerarRegistroK260.gerar(registroK260, sb);
+                    registroK100.getRegistroK260().forEach(registroK260 -> {
+                        GerarRegistroK260.gerar(registroK260, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK260);
 
                         // REGISTROK265
                         if (!Util.isEmpty(registroK260.getRegistroK265())) {
-                            registroK260.getRegistroK265().stream().forEach(registroK265 -> {
-                                sb = GerarRegistroK265.gerar(registroK265, sb);
+                            registroK260.getRegistroK265().forEach(registroK265 -> {
+                                GerarRegistroK265.gerar(registroK265, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK265);
                             });
                         }
@@ -113,14 +113,14 @@ public class GerarBlocoK {
 
                 // REGISTROK270
                 if (!Util.isEmpty(registroK100.getRegistroK270())) {
-                    registroK100.getRegistroK270().stream().forEach(registroK270 -> {
-                        sb = GerarRegistroK270.gerar(registroK270, sb);
+                    registroK100.getRegistroK270().forEach(registroK270 -> {
+                        GerarRegistroK270.gerar(registroK270, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK270);
 
                         // REGISTROK235
                         if (!Util.isEmpty(registroK270.getRegistroK275())) {
-                            registroK270.getRegistroK275().stream().forEach(registroK275 -> {
-                                sb = GerarRegistroK275.gerar(registroK275, sb);
+                            registroK270.getRegistroK275().forEach(registroK275 -> {
+                                GerarRegistroK275.gerar(registroK275, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK275);
                             });
                         }
@@ -129,31 +129,31 @@ public class GerarBlocoK {
 
                 // REGISTROK280
                 if (!Util.isEmpty(registroK100.getRegistroK280())) {
-                    registroK100.getRegistroK280().stream().forEach(registroK280 -> {
-                        sb = GerarRegistroK280.gerar(registroK280, sb);
+                    registroK100.getRegistroK280().forEach(registroK280 -> {
+                        GerarRegistroK280.gerar(registroK280, sb);
                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK280);
                     });
                 }
 
-                if (Util.versao2019()) {
+                if (Util.versao2019(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
 
                     // REGISTROK290
                     if (!Util.isEmpty(registroK100.getRegistroK290())) {
-                        registroK100.getRegistroK290().stream().forEach(registroK290 -> {
-                            sb = GerarRegistroK290.gerar(registroK290, sb);
+                        registroK100.getRegistroK290().forEach(registroK290 -> {
+                            GerarRegistroK290.gerar(registroK290, sb);
                             efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK290);
 
                             // REGISTROK291
                             if (!Util.isEmpty(registroK290.getRegistroK291())) {
-                                registroK290.getRegistroK291().stream().forEach(registroK291 -> {
-                                    sb = GerarRegistroK291.gerar(registroK291, sb);
+                                registroK290.getRegistroK291().forEach(registroK291 -> {
+                                    GerarRegistroK291.gerar(registroK291, sb);
                                     efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK291);
                                 });
                             }
                             // REGISTROK292
                             if (!Util.isEmpty(registroK290.getRegistroK292())) {
-                                registroK290.getRegistroK292().stream().forEach(registroK292 -> {
-                                    sb = GerarRegistroK292.gerar(registroK292, sb);
+                                registroK290.getRegistroK292().forEach(registroK292 -> {
+                                    GerarRegistroK292.gerar(registroK292, sb);
                                     efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK292);
                                 });
                             }
@@ -161,22 +161,22 @@ public class GerarBlocoK {
 
                         // REGISTROK300
                         if (!Util.isEmpty(registroK100.getRegistroK300())) {
-                            registroK100.getRegistroK300().stream().forEach(registroK300 -> {
-                                sb = GerarRegistroK300.gerar(registroK300, sb);
+                            registroK100.getRegistroK300().forEach(registroK300 -> {
+                                GerarRegistroK300.gerar(registroK300, sb);
                                 efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK300);
 
                                 // REGISTROK301
                                 if (!Util.isEmpty(registroK300.getRegistroK301())) {
-                                    registroK300.getRegistroK301().stream().forEach(registroK301 -> {
-                                        sb = GerarRegistroK301.gerar(registroK301, sb);
+                                    registroK300.getRegistroK301().forEach(registroK301 -> {
+                                        GerarRegistroK301.gerar(registroK301, sb);
                                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK301);
                                     });
                                 }
 
                                 // REGISTROK302
                                 if (!Util.isEmpty(registroK300.getRegistroK302())) {
-                                    registroK300.getRegistroK302().stream().forEach(registroK302 -> {
-                                        sb = GerarRegistroK302.gerar(registroK302, sb);
+                                    registroK300.getRegistroK302().forEach(registroK302 -> {
+                                        GerarRegistroK302.gerar(registroK302, sb);
                                         efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK302);
                                     });
                                 }
@@ -193,7 +193,7 @@ public class GerarBlocoK {
             registroK990.setQtd_lin_k(String.valueOf(efdIcms.getContadoresBlocoK().getContRegistroK990() + 1));
 
             blocoK.setRegistroK990(registroK990);
-            sb = GerarRegistroK990.gerar(blocoK.getRegistroK990(), sb);
+            GerarRegistroK990.gerar(blocoK.getRegistroK990(), sb);
         }
 
         return sb;

@@ -20,6 +20,15 @@ public class RegistroC590 {
     private String vl_icms_st;
     private String vl_red_bc;
     private String cod_obs;
+    private RegistroC591 registroC591;
+
+    public RegistroC591 getRegistroC591() {
+        return registroC591;
+    }
+
+    public void setRegistroC591(RegistroC591 registroC591) {
+        this.registroC591 = registroC591;
+    }
 
     /**
      * @return the cst_icms

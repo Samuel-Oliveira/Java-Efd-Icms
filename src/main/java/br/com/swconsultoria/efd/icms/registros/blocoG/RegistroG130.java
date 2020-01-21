@@ -19,7 +19,16 @@ public class RegistroG130 {
     private String num_doc;
     private String chv_nfe_cte;
     private String dt_doc;
+    private String num_da;
     private List<RegistroG140> registroG140;
+
+    public String getNum_da() {
+        return num_da;
+    }
+
+    public void setNum_da(String num_da) {
+        this.num_da = num_da;
+    }
 
     /**
      * @return the ind_emit

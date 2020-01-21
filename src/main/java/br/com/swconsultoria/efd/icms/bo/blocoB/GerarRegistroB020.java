@@ -19,9 +19,10 @@ public class GerarRegistroB020 {
         sb.append("|").append(Util.preencheRegistro(reg.getSer()));
         sb.append("|").append(Util.preencheRegistro(reg.getNum_doc()));
         sb.append("|").append(Util.preencheRegistro(reg.getChv_nfe()));
+        sb.append("|").append(Util.preencheRegistro(reg.getDt_doc()));
         sb.append("|").append(Util.preencheRegistro(reg.getCod_mun_serv()));
         sb.append("|").append(Util.preencheRegistro(reg.getVl_cont()));
-        sb.append("|").append(Util.preencheRegistro(reg.getVl_mat_merc()));
+        sb.append("|").append(Util.preencheRegistro(reg.getVl_mat_terc()));
         sb.append("|").append(Util.preencheRegistro(reg.getVl_sub()));
         sb.append("|").append(Util.preencheRegistro(reg.getVl_isnt_iss()));
         sb.append("|").append(Util.preencheRegistro(reg.getVl_ded_bc()));

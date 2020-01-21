@@ -3,6 +3,7 @@
  */
 package br.com.swconsultoria.efd.icms.bo.bloco1;
 
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco1.Registro1391;
 import br.com.swconsultoria.efd.icms.util.Util;
 
@@ -12,7 +13,7 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarRegistro1391 {
 
-    public static StringBuilder gerar(Registro1391 registro1391, StringBuilder sb) {
+    public static StringBuilder gerar(EfdIcms efdIcms, Registro1391 registro1391, StringBuilder sb) {
 
         sb.append("|").append(Util.preencheRegistro(registro1391.getReg()));
         sb.append("|").append(Util.preencheRegistro(registro1391.getDt_registro()));
@@ -31,6 +32,11 @@ public class GerarRegistro1391 {
         sb.append("|").append(Util.preencheRegistro(registro1391.getUtil_mel()));
         sb.append("|").append(Util.preencheRegistro(registro1391.getProd_alc_mel()));
         sb.append("|").append(Util.preencheRegistro(registro1391.getObs()));
+        if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            sb.append("|").append(Util.preencheRegistro(registro1391.getCod_item()));
+            sb.append("|").append(Util.preencheRegistro(registro1391.getTp_residuo()));
+            sb.append("|").append(Util.preencheRegistro(registro1391.getQtd_residuo()));
+        }
         sb.append("|").append('\n');
 
         return sb;

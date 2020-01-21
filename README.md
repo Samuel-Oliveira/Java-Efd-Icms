@@ -20,7 +20,7 @@ Para Iniciar :
 <dependency>
   <groupId>br.com.swconsultoria</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>3.01.2</version>
+  <version>3.03.1</version>
 </dependency>
 ```
 
@@ -28,6 +28,9 @@ Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um T
 ________________________________________________________________________________________________
 
 # Historico de Versões
+
+## v3.03.1 - 21-01-2020
+- Adicionado Correções e novos registros relacionado ao manual 3.0.3
 
 ## v3.01.2 - 25-03-2019
 - Corrigido erro Registro K250
