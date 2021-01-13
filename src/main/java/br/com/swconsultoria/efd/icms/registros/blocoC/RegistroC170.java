@@ -61,6 +61,7 @@ public class RegistroC170 {
     private List<RegistroC174> registroC174;
     private List<RegistroC175> registroC175;
     private List<RegistroC176> registroC176;
+    private List<RegistroC181> registroC181;
 
     /**
      * @return the num_item
@@ -677,6 +678,16 @@ public class RegistroC170 {
             registroC176 = new ArrayList<RegistroC176>();
         }
         return registroC176;
+    }
+
+    /**
+     * @return the registroC181
+     */
+    public List<RegistroC181> getRegistroC181() {
+        if (registroC181 == null) {
+            registroC181 = new ArrayList<RegistroC181>();
+        }
+        return registroC181;
     }
 
     /**

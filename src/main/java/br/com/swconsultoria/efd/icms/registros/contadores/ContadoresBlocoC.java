@@ -36,7 +36,9 @@ public class ContadoresBlocoC {
     private int contRegistroC178 = 0;
     private int contRegistroC179 = 0;
     private int contRegistroC180 = 0;
+    private int contRegistroC181 = 0;
     private int contRegistroC185 = 0;
+    private int contRegistroC186 = 0;
     private int contRegistroC190 = 0;
     private int contRegistroC191 = 0;
     private int contRegistroC195 = 0;
@@ -175,8 +177,14 @@ public class ContadoresBlocoC {
             case RegistroC180:
                 setContRegistroC180(getContRegistroC180() + 1);
                 break;
+            case RegistroC181:
+                setContRegistroC181(getContRegistroC181() + 1);
+                break;
             case RegistroC185:
                 setContRegistroC185(getContRegistroC185() + 1);
+                break;
+            case RegistroC186:
+                setContRegistroC186(getContRegistroC186() + 1);
                 break;
             case RegistroC190:
                 setContRegistroC190(getContRegistroC190() + 1);
@@ -796,6 +804,22 @@ public class ContadoresBlocoC {
 
     public void setContRegistroC180(int contRegistroC180) {
         this.contRegistroC180 = contRegistroC180;
+    }
+
+    public int getContRegistroC181() {
+        return contRegistroC181;
+    }
+
+    public void setContRegistroC181(int contRegistroC181) {
+        this.contRegistroC181 = contRegistroC181;
+    }
+
+    public int getContRegistroC186() {
+        return contRegistroC186;
+    }
+
+    public void setContRegistroC186(int contRegistroC186) {
+        this.contRegistroC186 = contRegistroC186;
     }
 
     public int getContRegistroC185() {

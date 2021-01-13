@@ -26,16 +26,16 @@ public class TesteEfdIcms {
 		StringBuilder sb = new StringBuilder();
 		EfdIcms efdIcms = new EfdIcms();
 
-		efdIcms.setBloco0(Bloco0Test.preencheBloco0());
-		efdIcms.setBloco1(Bloco1Test.preencheBloco1());
-		efdIcms.setBlocoC(BlocoCTest.preencheBlocoC());
-		efdIcms.setBlocoD(BlocoDTest.preencheBlocoD());
-		efdIcms.setBlocoE(BlocoETest.preencheBlocoE());
-		efdIcms.setBlocoG(BlocoGTest.preencheBlocoG());
-		efdIcms.setBlocoH(BlocoHTest.preencheBlocoH());
-		efdIcms.setBlocoK(BlocoKTest.preencheBlocoK());
-		sb = GerarEfdIcms.gerar(efdIcms, sb);
-		System.out.println(sb.toString());
-		Util.criarPastaArquivo("d:/Teste", "efd.txt", sb.toString());
-	}
+        efdIcms.setBloco0(Bloco0Test.preencheBloco0());
+        efdIcms.setBloco1(Bloco1Test.preencheBloco1());
+        efdIcms.setBlocoC(BlocoCTest.preencheBlocoC());
+        efdIcms.setBlocoD(BlocoDTest.preencheBlocoD());
+        efdIcms.setBlocoE(BlocoETest.preencheBlocoE());
+        efdIcms.setBlocoG(BlocoGTest.preencheBlocoG());
+        efdIcms.setBlocoH(BlocoHTest.preencheBlocoH());
+        efdIcms.setBlocoK(BlocoKTest.preencheBlocoK());
+        sb = GerarEfdIcms.gerar(efdIcms, sb);
+        System.out.println(sb.toString());
+        Util.criarPastaArquivo("/d/Teste", "efd.txt", sb.toString());
+    }
 }

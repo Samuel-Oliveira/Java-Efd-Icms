@@ -226,6 +226,23 @@ public class GerarContadoresBlocoC {
                 registro9900.setQtd_reg_blc(String.valueOf(cont));
                 bloco9.getRegistro9900().add(registro9900);
             }
+            if (Util.versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+                cont = efdIcms.getContadoresBlocoC().getContRegistroC181();
+                if (cont > 0) {
+                    registro9900 = new Registro9900();
+                    registro9900.setReg_blc("C181");
+                    registro9900.setQtd_reg_blc(String.valueOf(cont));
+                    bloco9.getRegistro9900().add(registro9900);
+                }
+                cont = efdIcms.getContadoresBlocoC().getContRegistroC186();
+                if (cont > 0) {
+                    registro9900 = new Registro9900();
+                    registro9900.setReg_blc("C186");
+                    registro9900.setQtd_reg_blc(String.valueOf(cont));
+                    bloco9.getRegistro9900().add(registro9900);
+                }
+            }
+
         }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC190();
         if (cont > 0) {

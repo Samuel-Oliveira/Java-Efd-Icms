@@ -221,7 +221,26 @@ public class GerarBlocoC {
                                 efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC180);
                             }
                         }
+                        if (Util.versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+                            // REGISTROC181
+                            if (!Util.isEmpty(registroC170.getRegistroC181())) {
+                                registroC170.getRegistroC181().forEach(registroC181 -> {
+                                    GerarRegistroC181.gerar(registroC181, sb);
+                                    efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC181);
+                                });
+                            }
+                        }
                     });
+                }
+
+                if (Util.versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+                    // REGISTROC186
+                    if (!Util.isEmpty(registroC100.getRegistroC186())) {
+                        registroC100.getRegistroC186().forEach(registroC186 -> {
+                            GerarRegistroC186.gerar(registroC186, sb);
+                            efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC186);
+                        });
+                    }
                 }
 
                 // REGISTROC190

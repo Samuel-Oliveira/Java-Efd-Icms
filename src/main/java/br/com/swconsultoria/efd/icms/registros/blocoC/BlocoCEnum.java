@@ -37,9 +37,11 @@ public enum BlocoCEnum {
     RegistroC178,
     RegistroC179,
     RegistroC180,
+    RegistroC181,
     RegistroC185,
+    RegistroC186,
     RegistroC190,
-    RegistroC191, //add v3_0_1
+    RegistroC191,
     RegistroC195,
     RegistroC198,
     RegistroC197,
