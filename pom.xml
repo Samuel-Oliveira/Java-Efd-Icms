@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.06.1</version>
+    <version>3.06.2-SNAPSHOT</version>
     <name>Java Efd Icms</name>
     <description>API Java para gerar arquivo do Efd Icms</description>
     <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
@@ -18,7 +18,7 @@
         <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
         <connection>scm:git:git@github.com:Samuel-Oliveira/Java-Efd-Icms.git</connection>
         <developerConnection>scm:git:git@github.com:Samuel-Oliveira/Java-Efd-Icms.git</developerConnection>
-        <tag>3.06.1</tag>
+        <tag>3.06.1-SNAPSHOT</tag>
     </scm>
 
     <properties>
