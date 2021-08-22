@@ -4,11 +4,13 @@
 package br.com.swconsultoria.efd.icms.registros.contadores;
 
 import br.com.swconsultoria.efd.icms.registros.blocoD.BlocoDEnum;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author Samuel Oliveira
  *
  */
+@EqualsAndHashCode
 public class ContadoresBlocoD {
 
     //Bloco D

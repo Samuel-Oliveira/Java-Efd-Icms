@@ -3,12 +3,15 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoD;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author Samuel Oliveira / Yuri Lemes
  */
+@EqualsAndHashCode
 public class RegistroD400 {
 
     private final String reg = "D400";

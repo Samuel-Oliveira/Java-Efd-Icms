@@ -3,6 +3,8 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco0;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
  * @author Samuel Oliveira
  *
  */
+@EqualsAndHashCode
 public class Registro0150 {
 
     private final String reg = "0150";

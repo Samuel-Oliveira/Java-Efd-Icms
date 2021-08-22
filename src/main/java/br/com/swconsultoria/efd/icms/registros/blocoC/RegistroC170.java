@@ -3,6 +3,8 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoC;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
  * @author Samuel Oliveira, Sidnei Klein
  *
  */
+@EqualsAndHashCode
 public class RegistroC170 {
 
     private final String reg = "C170";

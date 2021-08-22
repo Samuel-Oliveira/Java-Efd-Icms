@@ -3,10 +3,13 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoC;
 
+import lombok.EqualsAndHashCode;
+
 /**
  * @author Samuel Oliveira
  *
  */
+@EqualsAndHashCode
 public class RegistroC370 {
 
     private final String reg = "C370";

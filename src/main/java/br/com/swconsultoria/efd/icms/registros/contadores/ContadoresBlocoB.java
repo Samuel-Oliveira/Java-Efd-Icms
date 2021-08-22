@@ -1,10 +1,12 @@
 package br.com.swconsultoria.efd.icms.registros.contadores;
 
 import br.com.swconsultoria.efd.icms.registros.blocoB.BlocoBEnum;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author Sidnei Klein
  */
+@EqualsAndHashCode
 public class ContadoresBlocoB {
 
     //Bloco B

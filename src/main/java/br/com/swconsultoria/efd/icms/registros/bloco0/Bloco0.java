@@ -3,13 +3,16 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco0;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author Samuel Oliveira
- *
  */
+
+@EqualsAndHashCode
 public class Bloco0 {
 
     private Registro0000 registro0000;
@@ -227,5 +230,55 @@ public class Bloco0 {
 
     public void setRegistro0002(Registro0002 registro0002) {
         this.registro0002 = registro0002;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Bloco0)) return false;
+
+        Bloco0 bloco0 = (Bloco0) o;
+
+        if (getRegistro0000() != null ? !getRegistro0000().equals(bloco0.getRegistro0000()) : bloco0.getRegistro0000() != null) return false;
+        if (getRegistro0001() != null ? !getRegistro0001().equals(bloco0.getRegistro0001()) : bloco0.getRegistro0001() != null) return false;
+        if (getRegistro0002() != null ? !getRegistro0002().equals(bloco0.getRegistro0002()) : bloco0.getRegistro0002() != null) return false;
+        if (getRegistro0005() != null ? !getRegistro0005().equals(bloco0.getRegistro0005()) : bloco0.getRegistro0005() != null) return false;
+        if (getRegistro0015() != null ? !getRegistro0015().equals(bloco0.getRegistro0015()) : bloco0.getRegistro0015() != null) return false;
+        if (getRegistro0100() != null ? !getRegistro0100().equals(bloco0.getRegistro0100()) : bloco0.getRegistro0100() != null) return false;
+        if (getRegistro0150() != null ? !getRegistro0150().equals(bloco0.getRegistro0150()) : bloco0.getRegistro0150() != null) return false;
+        if (getRegistro0190() != null ? !getRegistro0190().equals(bloco0.getRegistro0190()) : bloco0.getRegistro0190() != null) return false;
+        if (getRegistro0200() != null ? !getRegistro0200().equals(bloco0.getRegistro0200()) : bloco0.getRegistro0200() != null) return false;
+        if (getRegistro0210() != null ? !getRegistro0210().equals(bloco0.getRegistro0210()) : bloco0.getRegistro0210() != null) return false;
+        if (getRegistro0220() != null ? !getRegistro0220().equals(bloco0.getRegistro0220()) : bloco0.getRegistro0220() != null) return false;
+        if (getRegistro0300() != null ? !getRegistro0300().equals(bloco0.getRegistro0300()) : bloco0.getRegistro0300() != null) return false;
+        if (getRegistro0400() != null ? !getRegistro0400().equals(bloco0.getRegistro0400()) : bloco0.getRegistro0400() != null) return false;
+        if (getRegistro0450() != null ? !getRegistro0450().equals(bloco0.getRegistro0450()) : bloco0.getRegistro0450() != null) return false;
+        if (getRegistro0460() != null ? !getRegistro0460().equals(bloco0.getRegistro0460()) : bloco0.getRegistro0460() != null) return false;
+        if (getRegistro0500() != null ? !getRegistro0500().equals(bloco0.getRegistro0500()) : bloco0.getRegistro0500() != null) return false;
+        if (getRegistro0600() != null ? !getRegistro0600().equals(bloco0.getRegistro0600()) : bloco0.getRegistro0600() != null) return false;
+        return getRegistro0990() != null ? getRegistro0990().equals(bloco0.getRegistro0990()) : bloco0.getRegistro0990() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getRegistro0000() != null ? getRegistro0000().hashCode() : 0;
+        result = 31 * result + (getRegistro0001() != null ? getRegistro0001().hashCode() : 0);
+        result = 31 * result + (getRegistro0002() != null ? getRegistro0002().hashCode() : 0);
+        result = 31 * result + (getRegistro0005() != null ? getRegistro0005().hashCode() : 0);
+        result = 31 * result + (getRegistro0015() != null ? getRegistro0015().hashCode() : 0);
+        result = 31 * result + (getRegistro0100() != null ? getRegistro0100().hashCode() : 0);
+        result = 31 * result + (getRegistro0150() != null ? getRegistro0150().hashCode() : 0);
+        result = 31 * result + (getRegistro0190() != null ? getRegistro0190().hashCode() : 0);
+        result = 31 * result + (getRegistro0200() != null ? getRegistro0200().hashCode() : 0);
+        result = 31 * result + (getRegistro0210() != null ? getRegistro0210().hashCode() : 0);
+        result = 31 * result + (getRegistro0220() != null ? getRegistro0220().hashCode() : 0);
+        result = 31 * result + (getRegistro0300() != null ? getRegistro0300().hashCode() : 0);
+        result = 31 * result + (getRegistro0400() != null ? getRegistro0400().hashCode() : 0);
+        result = 31 * result + (getRegistro0450() != null ? getRegistro0450().hashCode() : 0);
+        result = 31 * result + (getRegistro0460() != null ? getRegistro0460().hashCode() : 0);
+        result = 31 * result + (getRegistro0500() != null ? getRegistro0500().hashCode() : 0);
+        result = 31 * result + (getRegistro0600() != null ? getRegistro0600().hashCode() : 0);
+        result = 31 * result + (getRegistro0990() != null ? getRegistro0990().hashCode() : 0);
+        return result;
     }
 }

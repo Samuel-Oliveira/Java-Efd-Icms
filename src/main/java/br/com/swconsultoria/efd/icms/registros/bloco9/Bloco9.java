@@ -3,6 +3,8 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco9;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +12,7 @@ import java.util.List;
  * @author Samuel Oliveira
  *
  */
+@EqualsAndHashCode
 public class Bloco9 {
 
     private Registro9001 registro9001;

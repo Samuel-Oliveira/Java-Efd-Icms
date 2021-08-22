@@ -14,10 +14,12 @@ import br.com.swconsultoria.efd.icms.registros.blocoG.BlocoG;
 import br.com.swconsultoria.efd.icms.registros.blocoH.BlocoH;
 import br.com.swconsultoria.efd.icms.registros.blocoK.BlocoK;
 import br.com.swconsultoria.efd.icms.registros.contadores.*;
+import lombok.EqualsAndHashCode;
 
 /**
  * @author Sidnei Klein
  */
+@EqualsAndHashCode
 public class EfdIcms {
 
     private Bloco0 bloco0;

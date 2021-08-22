@@ -3,10 +3,13 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoB;
 
+import lombok.EqualsAndHashCode;
+
 /**
  * @author Sidnei Klein
  *
  */
+@EqualsAndHashCode
 public class BlocoB {
 
     private RegistroB001 registroB001;

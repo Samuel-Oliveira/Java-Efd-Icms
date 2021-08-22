@@ -3,12 +3,15 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoB;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author Sidnei Klein
  */
+@EqualsAndHashCode
 public class RegistroB030 {
 
     private final String reg = "B030";

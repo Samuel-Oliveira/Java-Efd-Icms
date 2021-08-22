@@ -3,12 +3,15 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco1;
 
+import lombok.EqualsAndHashCode;
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * @author Sidnei Klein
  */
+@EqualsAndHashCode
 public class Registro1970 {
 
     private final String reg = "1970";
