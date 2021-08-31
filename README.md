@@ -30,13 +30,20 @@ ________________________________________________________________________________
 
 # Historico de Versões
 
+## v3.06.2-SNAPSHOT
+
+- Adiciona equals e Hashcode
+
 ## v3.06.1 - 21-01-2020
+
 - Adicionado Correções e novos registros relacionado ao manual 3.0.6
 
 ## v3.03.1 - 21-01-2020
+
 - Adicionado Correções e novos registros relacionado ao manual 3.0.3
 
 ## v3.01.2 - 25-03-2019
+
 - Corrigido erro Registro K250
 - Adicionado ao Maven Central
 

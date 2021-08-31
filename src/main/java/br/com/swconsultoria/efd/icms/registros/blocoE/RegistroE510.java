@@ -3,12 +3,9 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoE;
 
-import lombok.EqualsAndHashCode;
-
 /**
  * @author Samuel Oliveira
  */
-@EqualsAndHashCode
 public class RegistroE510 {
 
     private final String reg = "E510";
@@ -95,4 +92,21 @@ public class RegistroE510 {
         return reg;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof RegistroE510)) return false;
+
+        RegistroE510 that = (RegistroE510) o;
+
+        if (getCfop() != null ? !getCfop().equals(that.getCfop()) : that.getCfop() != null) return false;
+        return getCst_ipi() != null ? getCst_ipi().equals(that.getCst_ipi()) : that.getCst_ipi() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getCfop() != null ? getCfop().hashCode() : 0;
+        result = 31 * result + (getCst_ipi() != null ? getCst_ipi().hashCode() : 0);
+        return result;
+    }
 }

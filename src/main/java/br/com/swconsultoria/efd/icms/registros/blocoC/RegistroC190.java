@@ -3,13 +3,10 @@
  */
 package br.com.swconsultoria.efd.icms.registros.blocoC;
 
-import lombok.EqualsAndHashCode;
-
 /**
  * @author Samuel Oliveira, Sidnei Klein
  *
  */
-@EqualsAndHashCode
 public class RegistroC190 {
 
     private final String reg = "C190";
@@ -202,4 +199,23 @@ public class RegistroC190 {
         this.registroC191 = registroC191;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof RegistroC190)) return false;
+
+        RegistroC190 that = (RegistroC190) o;
+
+        if (getCst_icms() != null ? !getCst_icms().equals(that.getCst_icms()) : that.getCst_icms() != null) return false;
+        if (getCfop() != null ? !getCfop().equals(that.getCfop()) : that.getCfop() != null) return false;
+        return getAliq_icms() != null ? getAliq_icms().equals(that.getAliq_icms()) : that.getAliq_icms() == null;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getCst_icms() != null ? getCst_icms().hashCode() : 0;
+        result = 31 * result + (getCfop() != null ? getCfop().hashCode() : 0);
+        result = 31 * result + (getAliq_icms() != null ? getAliq_icms().hashCode() : 0);
+        return result;
+    }
 }
