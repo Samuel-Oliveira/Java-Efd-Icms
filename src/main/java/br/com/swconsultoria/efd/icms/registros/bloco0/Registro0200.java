@@ -30,6 +30,8 @@ public class Registro0200 {
     private String cest;
     private List<Registro0205> registro0205;
     private Registro0206 registro0206;
+    private List<Registro0210> registro0210;
+    private List<Registro0220> registro0220;
 
     /**
      * @return the reg
@@ -214,6 +216,26 @@ public class Registro0200 {
             registro0205 = new ArrayList<Registro0205>();
         }
         return this.registro0205;
+    }
+
+    /**
+     * @return the registro0210
+     */
+    public List<Registro0210> getRegistro0210() {
+        if (registro0210 == null) {
+            registro0210 = new ArrayList<Registro0210>();
+        }
+        return this.registro0210;
+    }
+
+    /**
+     * @return the registro0220
+     */
+    public List<Registro0220> getRegistro0220() {
+        if (registro0220 == null) {
+            registro0220 = new ArrayList<Registro0220>();
+        }
+        return this.registro0220;
     }
 
     /**

@@ -109,24 +109,26 @@ public class GerarBloco0 {
                     efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0206);
                 }
 
+                // REGISTRO0210
+                if (!Util.isEmpty(registro0200.getRegistro0210())) {
+                    registro0200.getRegistro0210().forEach(registro0210 -> {
+                        GerarRegistro0210.gerar(registro0210, sb);
+                        efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0210);
+                    });
+                }
+
+                // REGISTRO0220
+                if (!Util.isEmpty(registro0200.getRegistro0220())) {
+                    registro0200.getRegistro0220().forEach(registro0220 -> {
+                        GerarRegistro0220.gerar(registro0220, sb);
+                        efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0220);
+                    });
+                }
+
             });
 
         }
 
-        // REGISTRO0210
-        if (!Util.isEmpty(bloco0.getRegistro0210())) {
-            bloco0.getRegistro0210().forEach(registro0210 -> {
-                GerarRegistro0210.gerar(registro0210, sb);
-                efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0210);
-            });
-        }
-        // REGISTRO0220
-        if (!Util.isEmpty(bloco0.getRegistro0220())) {
-            bloco0.getRegistro0220().forEach(registro0220 -> {
-                GerarRegistro0220.gerar(registro0220, sb);
-                efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0220);
-            });
-        }
 
         // REGISTRO0300
         if (!Util.isEmpty(bloco0.getRegistro0300())) {

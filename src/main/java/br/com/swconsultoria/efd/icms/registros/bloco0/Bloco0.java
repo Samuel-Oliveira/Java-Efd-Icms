@@ -3,8 +3,6 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco0;
 
-import lombok.EqualsAndHashCode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +10,6 @@ import java.util.List;
  * @author Samuel Oliveira
  */
 
-@EqualsAndHashCode
 public class Bloco0 {
 
     private Registro0000 registro0000;
@@ -24,8 +21,6 @@ public class Bloco0 {
     private List<Registro0150> registro0150;
     private List<Registro0190> registro0190;
     private List<Registro0200> registro0200;
-    private List<Registro0210> registro0210;
-    private List<Registro0220> registro0220;
     private List<Registro0300> registro0300;
     private List<Registro0400> registro0400;
     private List<Registro0450> registro0450;
@@ -131,26 +126,6 @@ public class Bloco0 {
     }
 
     /**
-     * @return the registro0210
-     */
-    public List<Registro0210> getRegistro0210() {
-        if (registro0210 == null) {
-            registro0210 = new ArrayList<Registro0210>();
-        }
-        return this.registro0210;
-    }
-
-    /**
-     * @return the registro0220
-     */
-    public List<Registro0220> getRegistro0220() {
-        if (registro0220 == null) {
-            registro0220 = new ArrayList<Registro0220>();
-        }
-        return this.registro0220;
-    }
-
-    /**
      * @return the registro0300
      */
     public List<Registro0300> getRegistro0300() {
@@ -248,8 +223,6 @@ public class Bloco0 {
         if (getRegistro0150() != null ? !getRegistro0150().equals(bloco0.getRegistro0150()) : bloco0.getRegistro0150() != null) return false;
         if (getRegistro0190() != null ? !getRegistro0190().equals(bloco0.getRegistro0190()) : bloco0.getRegistro0190() != null) return false;
         if (getRegistro0200() != null ? !getRegistro0200().equals(bloco0.getRegistro0200()) : bloco0.getRegistro0200() != null) return false;
-        if (getRegistro0210() != null ? !getRegistro0210().equals(bloco0.getRegistro0210()) : bloco0.getRegistro0210() != null) return false;
-        if (getRegistro0220() != null ? !getRegistro0220().equals(bloco0.getRegistro0220()) : bloco0.getRegistro0220() != null) return false;
         if (getRegistro0300() != null ? !getRegistro0300().equals(bloco0.getRegistro0300()) : bloco0.getRegistro0300() != null) return false;
         if (getRegistro0400() != null ? !getRegistro0400().equals(bloco0.getRegistro0400()) : bloco0.getRegistro0400() != null) return false;
         if (getRegistro0450() != null ? !getRegistro0450().equals(bloco0.getRegistro0450()) : bloco0.getRegistro0450() != null) return false;
@@ -270,8 +243,6 @@ public class Bloco0 {
         result = 31 * result + (getRegistro0150() != null ? getRegistro0150().hashCode() : 0);
         result = 31 * result + (getRegistro0190() != null ? getRegistro0190().hashCode() : 0);
         result = 31 * result + (getRegistro0200() != null ? getRegistro0200().hashCode() : 0);
-        result = 31 * result + (getRegistro0210() != null ? getRegistro0210().hashCode() : 0);
-        result = 31 * result + (getRegistro0220() != null ? getRegistro0220().hashCode() : 0);
         result = 31 * result + (getRegistro0300() != null ? getRegistro0300().hashCode() : 0);
         result = 31 * result + (getRegistro0400() != null ? getRegistro0400().hashCode() : 0);
         result = 31 * result + (getRegistro0450() != null ? getRegistro0450().hashCode() : 0);
