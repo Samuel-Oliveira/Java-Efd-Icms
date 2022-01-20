@@ -45,6 +45,16 @@ public class GerarRegistroC500 {
             sb.append("|").append(Util.preencheRegistro(registroC500.getInd_dest()));
             sb.append("|").append(Util.preencheRegistro(registroC500.getCod_mun_dest()));
             sb.append("|").append(Util.preencheRegistro(registroC500.getCod_cta()));
+
+            if (Util.versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+                sb.append("|").append(Util.preencheRegistro(registroC500.getCod_mod_doc_ref()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getHash_doc_ref()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getSer_doc_ref()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getNum_doc_ref()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getMes_doc_ref()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getEner_injet()));
+                sb.append("|").append(Util.preencheRegistro(registroC500.getOutras_ded()));
+            }
         }
         sb.append("|").append('\n');
 

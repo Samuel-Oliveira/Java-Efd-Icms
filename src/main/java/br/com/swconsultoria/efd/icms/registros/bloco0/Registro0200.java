@@ -3,8 +3,6 @@
  */
 package br.com.swconsultoria.efd.icms.registros.bloco0;
 
-import lombok.EqualsAndHashCode;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +10,6 @@ import java.util.List;
  * @author Samuel Oliveira
  *
  */
-@EqualsAndHashCode
 public class Registro0200 {
 
     private final String reg = "0200";
@@ -250,5 +247,20 @@ public class Registro0200 {
      */
     public void setCest(String cest) {
         this.cest = cest;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Registro0200)) return false;
+
+        Registro0200 that = (Registro0200) o;
+
+        return getCod_item().equals(that.getCod_item());
+    }
+
+    @Override
+    public int hashCode() {
+        return getCod_item().hashCode();
     }
 }

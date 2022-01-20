@@ -10,6 +10,7 @@ import br.com.swconsultoria.efd.icms.util.Util;
  * @author Yuri Lemes
  *
  */
+@Deprecated
 public class GerarRegistro1600 {
 
     public static StringBuilder gerar(Registro1600 registro1600, StringBuilder sb) {

@@ -10,10 +10,11 @@ import java.util.Collection;
 
 public final class Util {
 
-    private final static LocalDate dataVersao2018 = LocalDate.of(2017, 12, 31);
-    private final static LocalDate dataVersao2019 = LocalDate.of(2018, 12, 31);
-    private final static LocalDate dataVersao2020 = LocalDate.of(2019, 12, 31);
-    private final static LocalDate dataVersao2021 = LocalDate.of(2020, 12, 31);
+    private static final LocalDate dataVersao2018 = LocalDate.of(2017, 12, 31);
+    private static final LocalDate dataVersao2019 = LocalDate.of(2018, 12, 31);
+    private static final LocalDate dataVersao2020 = LocalDate.of(2019, 12, 31);
+    private static final LocalDate dataVersao2021 = LocalDate.of(2020, 12, 31);
+    private static final LocalDate dataVersao2022 = LocalDate.of(2021, 12, 31);
 
     /**
      * Construtor privado para garantir o Singleton.
@@ -32,7 +33,7 @@ public final class Util {
         if (obj == null)
             return true;
         if (obj instanceof Collection)
-            return ((Collection<?>) obj).size() == 0;
+            return ((Collection<?>) obj).isEmpty();
 
         final String s = String.valueOf(obj).trim();
 
@@ -64,6 +65,10 @@ public final class Util {
         return strToDate(dataStr).isAfter(dataVersao2021);
     }
 
+    public static boolean versao2022(String dataStr) {
+        return strToDate(dataStr).isAfter(dataVersao2022);
+    }
+
     private static LocalDate strToDate(String dataStr) {
         return LocalDate.of(Integer.parseInt(dataStr.substring(4, 8)), Integer.parseInt(dataStr.substring(2, 4)), Integer.parseInt(dataStr.substring(0, 2)));
     }
@@ -91,7 +96,9 @@ public final class Util {
     }
 
     public static String getCodVersao(EfdIcms efdIcms) {
-        if (versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+        if (versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            return "012";
+        } else if (versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             return "015";
         } else if (versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             return "014";

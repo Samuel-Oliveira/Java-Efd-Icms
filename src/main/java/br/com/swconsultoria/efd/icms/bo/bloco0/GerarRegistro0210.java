@@ -6,6 +6,7 @@ import br.com.swconsultoria.efd.icms.util.Util;
 /**
  * @author Samuel Oliveira
  */
+@Deprecated
 public class GerarRegistro0210 {
 
     public static StringBuilder gerar(Registro0210 registro0210, StringBuilder sb) {

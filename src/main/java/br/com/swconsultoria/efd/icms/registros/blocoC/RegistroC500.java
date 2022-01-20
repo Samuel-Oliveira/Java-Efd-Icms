@@ -48,6 +48,13 @@ public class RegistroC500 {
     private String ind_dest;
     private String cod_mun_dest;
     private String cod_cta;
+    private String cod_mod_doc_ref;
+    private String hash_doc_ref;
+    private String ser_doc_ref;
+    private String num_doc_ref;
+    private String mes_doc_ref;
+    private String ener_injet;
+    private String outras_ded;
     private List<RegistroC510> registroC510;
     private List<RegistroC590> registroC590;
     private List<RegistroC595> registroC595;
@@ -499,5 +506,61 @@ public class RegistroC500 {
 
     public void setCod_cta(String cod_cta) {
         this.cod_cta = cod_cta;
+    }
+
+    public String getCod_mod_doc_ref() {
+        return cod_mod_doc_ref;
+    }
+
+    public void setCod_mod_doc_ref(String cod_mod_doc_ref) {
+        this.cod_mod_doc_ref = cod_mod_doc_ref;
+    }
+
+    public String getHash_doc_ref() {
+        return hash_doc_ref;
+    }
+
+    public void setHash_doc_ref(String hash_doc_ref) {
+        this.hash_doc_ref = hash_doc_ref;
+    }
+
+    public String getSer_doc_ref() {
+        return ser_doc_ref;
+    }
+
+    public void setSer_doc_ref(String ser_doc_ref) {
+        this.ser_doc_ref = ser_doc_ref;
+    }
+
+    public String getNum_doc_ref() {
+        return num_doc_ref;
+    }
+
+    public void setNum_doc_ref(String num_doc_ref) {
+        this.num_doc_ref = num_doc_ref;
+    }
+
+    public String getMes_doc_ref() {
+        return mes_doc_ref;
+    }
+
+    public void setMes_doc_ref(String mes_doc_ref) {
+        this.mes_doc_ref = mes_doc_ref;
+    }
+
+    public String getEner_injet() {
+        return ener_injet;
+    }
+
+    public void setEner_injet(String ener_injet) {
+        this.ener_injet = ener_injet;
+    }
+
+    public String getOutras_ded() {
+        return outras_ded;
+    }
+
+    public void setOutras_ded(String outras_ded) {
+        this.outras_ded = outras_ded;
     }
 }

@@ -10,6 +10,7 @@ import lombok.EqualsAndHashCode;
  *
  */
 @EqualsAndHashCode
+@Deprecated
 public class Registro0210 {
 
     private final String reg = "0210";
