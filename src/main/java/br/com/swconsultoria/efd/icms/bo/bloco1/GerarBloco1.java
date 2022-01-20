@@ -178,10 +178,20 @@ public class GerarBloco1 {
         }
 
         // REGISTRO1600
-        if (!Util.isEmpty(bloco1.getRegistro1600())) {
+        if (!Util.versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())
+                && !Util.isEmpty(bloco1.getRegistro1600())) {
             bloco1.getRegistro1600().forEach(registro1600 -> {
                 GerarRegistro1600.gerar(registro1600, sb);
                 efdIcms.getContadoresBloco1().incrementar(Bloco1Enum.Registro1600);
+            });
+        }
+
+        // REGISTRO1601
+        if (Util.versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                !Util.isEmpty(bloco1.getRegistro1601())) {
+            bloco1.getRegistro1601().forEach(registro1601 -> {
+                GerarRegistro1601.gerar(registro1601, sb);
+                efdIcms.getContadoresBloco1().incrementar(Bloco1Enum.Registro1601);
             });
         }
 

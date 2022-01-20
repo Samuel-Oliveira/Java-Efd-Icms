@@ -36,6 +36,6 @@ public class TesteEfdIcms {
         efdIcms.setBlocoK(BlocoKTest.preencheBlocoK());
         sb = GerarEfdIcms.gerar(efdIcms, sb);
         System.out.println(sb.toString());
-        Util.criarPastaArquivo("/d/Teste", "efd.txt", sb.toString());
+        Util.criarPastaArquivo("d:/Teste", "efd.txt", sb.toString());
     }
 }

@@ -26,6 +26,7 @@ public class Bloco1 {
     private List<Registro1400> registro1400;
     private List<Registro1500> registro1500;
     private List<Registro1600> registro1600;
+    private List<Registro1601> registro1601;
     private List<Registro1700> registro1700;
     private Registro1800 registro1800;
     private List<Registro1900> registro1900;
@@ -176,6 +177,16 @@ public class Bloco1 {
             registro1600 = new ArrayList<Registro1600>();
         }
         return registro1600;
+    }
+
+    /**
+     * @return the registro1601
+     */
+    public List<Registro1601> getRegistro1601() {
+        if (registro1601 == null) {
+            registro1601 = new ArrayList<Registro1601>();
+        }
+        return registro1601;
     }
 
     /**
