@@ -97,7 +97,7 @@ public final class Util {
 
     public static String getCodVersao(EfdIcms efdIcms) {
         if (versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
-            return "012";
+            return "016";
         } else if (versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             return "015";
         } else if (versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {

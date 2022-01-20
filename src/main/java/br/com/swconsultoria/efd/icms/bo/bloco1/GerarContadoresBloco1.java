@@ -103,6 +103,10 @@ public class GerarContadoresBloco1 {
         if (cont > 0) {
             bloco9.getRegistro9900().add(New9900("1600", cont));
         }
+        cont = efdIcms.getContadoresBloco1().getContRegistro1601();
+        if (cont > 0) {
+            bloco9.getRegistro9900().add(New9900("1601", cont));
+        }
         cont = efdIcms.getContadoresBloco1().getContRegistro1700();
         if (cont > 0) {
             bloco9.getRegistro9900().add(New9900("1700", cont));

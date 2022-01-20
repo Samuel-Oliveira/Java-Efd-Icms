@@ -5,12 +5,14 @@ package br.com.swconsultoria.efd.icms.registros.contadores;
 
 import br.com.swconsultoria.efd.icms.registros.bloco1.Bloco1Enum;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 
 /**
  * @author Samuel Oliveira, Sidnei Klein
  *
  */
 @EqualsAndHashCode
+@Getter
 public class ContadoresBloco1 {
 
     //Bloco 1
@@ -35,6 +37,7 @@ public class ContadoresBloco1 {
     private int contRegistro1500 = 0;
     private int contRegistro1510 = 0;
     private int contRegistro1600 = 0;
+    private int contRegistro1601 = 0;
     private int contRegistro1700 = 0;
     private int contRegistro1710 = 0;
     private int contRegistro1800 = 0;
@@ -120,6 +123,9 @@ public class ContadoresBloco1 {
             case Registro1600:
                 contRegistro1600++;
                 break;
+            case Registro1601:
+                contRegistro1601++;
+                break;
             case Registro1700:
                 contRegistro1700++;
                 break;
@@ -169,260 +175,5 @@ public class ContadoresBloco1 {
                 break;
         }
     }
-
-    /**
-     * @return the contRegistro1001
-     */
-    public int getContRegistro1001() {
-        return contRegistro1001;
-    }
-
-    /**
-     * @return the contRegistro1010
-     */
-    public int getContRegistro1010() {
-        return contRegistro1010;
-    }
-
-    /**
-     * @return the contRegistro1100
-     */
-    public int getContRegistro1100() {
-        return contRegistro1100;
-    }
-
-    /**
-     * @return the contRegistro1105
-     */
-    public int getContRegistro1105() {
-        return contRegistro1105;
-    }
-
-    /**
-     * @return the contRegistro1110
-     */
-    public int getContRegistro1110() {
-        return contRegistro1110;
-    }
-
-    /**
-     * @return the contRegistro1200
-     */
-    public int getContRegistro1200() {
-        return contRegistro1200;
-    }
-
-    /**
-     * @return the contRegistro1210
-     */
-    public int getContRegistro1210() {
-        return contRegistro1210;
-    }
-
-    /**
-     * @return the contRegistro1300
-     */
-    public int getContRegistro1300() {
-        return contRegistro1300;
-    }
-
-    /**
-     * @return the contRegistro1310
-     */
-    public int getContRegistro1310() {
-        return contRegistro1310;
-    }
-
-    public int getContRegistro1250() {
-        return contRegistro1250;
-    }
-
-    public int getContRegistro1255() {
-        return contRegistro1255;
-    }
-
-    /**
-     * @return the contRegistro1320
-     */
-    public int getContRegistro1320() {
-        return contRegistro1320;
-    }
-
-    /**
-     * @return the contRegistro1350
-     */
-    public int getContRegistro1350() {
-        return contRegistro1350;
-    }
-
-    /**
-     * @return the contRegistro1360
-     */
-    public int getContRegistro1360() {
-        return contRegistro1360;
-    }
-
-    /**
-     * @return the contRegistro1370
-     */
-    public int getContRegistro1370() {
-        return contRegistro1370;
-    }
-
-    /**
-     * @return the contRegistro1390
-     */
-    public int getContRegistro1390() {
-        return contRegistro1390;
-    }
-
-    /**
-     * @return the contRegistro1391
-     */
-    public int getContRegistro1391() {
-        return contRegistro1391;
-    }
-
-    /**
-     * @return the contRegistro1400
-     */
-    public int getContRegistro1400() {
-        return contRegistro1400;
-    }
-
-    /**
-     * @return the contRegistro1500
-     */
-    public int getContRegistro1500() {
-        return contRegistro1500;
-    }
-
-    /**
-     * @return the contRegistro1510
-     */
-    public int getContRegistro1510() {
-        return contRegistro1510;
-    }
-
-    /**
-     * @return the contRegistro1600
-     */
-    public int getContRegistro1600() {
-        return contRegistro1600;
-    }
-
-    /**
-     * @return the contRegistro1700
-     */
-    public int getContRegistro1700() {
-        return contRegistro1700;
-    }
-
-    /**
-     * @return the contRegistro1710
-     */
-    public int getContRegistro1710() {
-        return contRegistro1710;
-    }
-
-    /**
-     * @return the contRegistro1800
-     */
-    public int getContRegistro1800() {
-        return contRegistro1800;
-    }
-
-    /**
-     * @return the contRegistro1900
-     */
-    public int getContRegistro1900() {
-        return contRegistro1900;
-    }
-
-    /**
-     * @return the contRegistro1910
-     */
-    public int getContRegistro1910() {
-        return contRegistro1910;
-    }
-
-    /**
-     * @return the contRegistro1920
-     */
-    public int getContRegistro1920() {
-        return contRegistro1920;
-    }
-
-    /**
-     * @return the contRegistro1921
-     */
-    public int getContRegistro1921() {
-        return contRegistro1921;
-    }
-
-    /**
-     * @return the contRegistro1922
-     */
-    public int getContRegistro1922() {
-        return contRegistro1922;
-    }
-
-    /**
-     * @return the contRegistro1923
-     */
-    public int getContRegistro1923() {
-        return contRegistro1923;
-    }
-
-    /**
-     * @return the contRegistro1925
-     */
-    public int getContRegistro1925() {
-        return contRegistro1925;
-    }
-
-    /**
-     * @return the contRegistro1926
-     */
-    public int getContRegistro1926() {
-        return contRegistro1926;
-    }
-
-    /**
-     * @return the contRegistro1960
-     */
-    public int getContRegistro1960() {
-        return contRegistro1960;
-    }
-
-    /**
-     * @return the contRegistro1970
-     */
-    public int getContRegistro1970() {
-        return contRegistro1970;
-    }
-
-    /**
-     * @return the contRegistro1975
-     */
-    public int getContRegistro1975() {
-        return contRegistro1975;
-    }
-
-    /**
-     * @return the contRegistro1980
-     */
-    public int getContRegistro1980() {
-        return contRegistro1980;
-    }
-
-    /**
-     * @return the contRegistro1990
-     */
-    public int getContRegistro1990() {
-        return contRegistro1990;
-    }
-
-
 
 }
