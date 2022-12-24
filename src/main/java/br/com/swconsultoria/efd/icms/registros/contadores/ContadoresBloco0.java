@@ -5,12 +5,13 @@ package br.com.swconsultoria.efd.icms.registros.contadores;
 
 import br.com.swconsultoria.efd.icms.registros.bloco0.Bloco0Enum;
 import lombok.EqualsAndHashCode;
+import lombok.Getter;
 
 /**
  * @author Samuel Oliveira
- *
  */
 @EqualsAndHashCode
+@Getter
 public class ContadoresBloco0 {
 
     //Bloco 0
@@ -28,6 +29,7 @@ public class ContadoresBloco0 {
     private int contRegistro0206 = 0;
     private int contRegistro0210 = 0;
     private int contRegistro0220 = 0;
+    private int contRegistro0221 = 0;
     private int contRegistro0300 = 0;
     private int contRegistro0305 = 0;
     private int contRegistro0400 = 0;
@@ -84,6 +86,9 @@ public class ContadoresBloco0 {
             case Registro0220:
                 contRegistro0220++;
                 break;
+            case Registro0221:
+                contRegistro0221++;
+                break;
             case Registro0300:
                 contRegistro0300++;
                 break;
@@ -108,160 +113,6 @@ public class ContadoresBloco0 {
             default:
                 break;
         }
-    }
-
-    /**
-     * @return the contRegistro0000
-     */
-    public int getContRegistro0000() {
-        return contRegistro0000;
-    }
-
-    /**
-     * @return the contRegistro0001
-     */
-    public int getContRegistro0001() {
-        return contRegistro0001;
-    }
-
-    /**
-     * @return the contRegistro0002
-     */
-    public int getContRegistro0002() {
-        return contRegistro0002;
-    }
-
-    /**
-     * @return the contRegistro0005
-     */
-    public int getContRegistro0005() {
-        return contRegistro0005;
-    }
-
-    /**
-     * @return the contRegistro0015
-     */
-    public int getContRegistro0015() {
-        return contRegistro0015;
-    }
-
-    /**
-     * @return the contRegistro0100
-     */
-    public int getContRegistro0100() {
-        return contRegistro0100;
-    }
-
-    /**
-     * @return the contRegistro0150
-     */
-    public int getContRegistro0150() {
-        return contRegistro0150;
-    }
-
-    /**
-     * @return the contRegistro0190
-     */
-    public int getContRegistro0190() {
-        return contRegistro0190;
-    }
-
-    /**
-     * @return the contRegistro0200
-     */
-    public int getContRegistro0200() {
-        return contRegistro0200;
-    }
-
-    /**
-     * @return the contRegistro0300
-     */
-    public int getContRegistro0300() {
-        return contRegistro0300;
-    }
-
-    /**
-     * @return the contRegistro0400
-     */
-    public int getContRegistro0400() {
-        return contRegistro0400;
-    }
-
-    /**
-     * @return the contRegistro0450
-     */
-    public int getContRegistro0450() {
-        return contRegistro0450;
-    }
-
-    /**
-     * @return the contRegistro0460
-     */
-    public int getContRegistro0460() {
-        return contRegistro0460;
-    }
-
-    /**
-     * @return the contRegistro0500
-     */
-    public int getContRegistro0500() {
-        return contRegistro0500;
-    }
-
-    /**
-     * @return the contRegistro0600
-     */
-    public int getContRegistro0600() {
-        return contRegistro0600;
-    }
-
-    /**
-     * @return the contRegistro0990
-     */
-    public int getContRegistro0990() {
-        return contRegistro0990;
-    }
-
-    /**
-     * @return the contRegistro0175
-     */
-    public int getContRegistro0175() {
-        return contRegistro0175;
-    }
-
-    /**
-     * @return the contRegistro0205
-     */
-    public int getContRegistro0205() {
-        return contRegistro0205;
-    }
-
-    /**
-     * @return the contRegistro0206
-     */
-    public int getContRegistro0206() {
-        return contRegistro0206;
-    }
-
-    /**
-     * @return the contRegistro0210
-     */
-    public int getContRegistro0210() {
-        return contRegistro0210;
-    }
-
-    /**
-     * @return the contRegistro0220
-     */
-    public int getContRegistro0220() {
-        return contRegistro0220;
-    }
-
-    /**
-     * @return the contRegistro0305
-     */
-    public int getContRegistro0305() {
-        return contRegistro0305;
     }
 
 }

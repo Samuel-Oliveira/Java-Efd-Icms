@@ -11,7 +11,6 @@ import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira, Yuri Lemes
- *
  */
 public class GerarBlocoC {
 
@@ -588,6 +587,25 @@ public class GerarBlocoC {
                         efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC850);
                     });
                 }
+
+                // REGISTROC855
+                if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                        !Util.isEmpty(registroC800.getRegistroC855())) {
+                    registroC800.getRegistroC855().forEach(registroC855 -> {
+                        GerarRegistroC855.gerar(registroC855, sb);
+                        efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC855);
+
+                        // REGISTROC857
+                        if (!Util.isEmpty(registroC855.getRegistroC857())) {
+                            registroC855.getRegistroC857().forEach(registroC857 -> {
+                                GerarRegistroC857.gerar(registroC857, sb);
+                                efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC857);
+
+                            });
+                        }
+
+                    });
+                }
             });
         }
 
@@ -619,6 +637,25 @@ public class GerarBlocoC {
                     registroC860.getRegistroC890().forEach(registroC890 -> {
                         GerarRegistroC890.gerar(registroC890, sb);
                         efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC890);
+                    });
+                }
+
+                // REGISTROC895
+                if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                        !Util.isEmpty(registroC860.getRegistroC895())) {
+                    registroC860.getRegistroC895().forEach(registroC895 -> {
+                        GerarRegistroC895.gerar(registroC895, sb);
+                        efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC895);
+
+                        // REGISTROC897
+                        if (!Util.isEmpty(registroC895.getRegistroC897())) {
+                            registroC895.getRegistroC897().forEach(registroC897 -> {
+                                GerarRegistroC897.gerar(registroC897, sb);
+                                efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC897);
+
+                            });
+                        }
+
                     });
                 }
 

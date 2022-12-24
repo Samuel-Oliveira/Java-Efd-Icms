@@ -206,7 +206,7 @@ public class GerarContadoresBlocoE {
             bloco9.getRegistro9900().add(registro9900);
         }
         int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin())
-                + Integer.valueOf(blocoE.getRegistroE990().getQtd_lin_e());
+                + Integer.parseInt(blocoE.getRegistroE990().getQtd_lin_e());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

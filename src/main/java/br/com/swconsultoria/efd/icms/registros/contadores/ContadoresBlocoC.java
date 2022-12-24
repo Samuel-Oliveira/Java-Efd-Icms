@@ -84,10 +84,14 @@ public class ContadoresBlocoC {
     private int contRegistroC810 = 0;
     private int contRegistroC815 = 0;
     private int contRegistroC850 = 0;
+    private int contRegistroC855 = 0;
+    private int contRegistroC857 = 0;
     private int contRegistroC860 = 0;
     private int contRegistroC870 = 0;
     private int contRegistroC880 = 0;
     private int contRegistroC890 = 0;
+    private int contRegistroC895 = 0;
+    private int contRegistroC897 = 0;
     private int contRegistroC990 = 0;
 
     public void incrementar(BlocoCEnum bloco) {
@@ -314,6 +318,12 @@ public class ContadoresBlocoC {
             case RegistroC850:
                 setContRegistroC850(getContRegistroC850() + 1);
                 break;
+            case RegistroC855:
+                setContRegistroC855(getContRegistroC855() + 1);
+                break;
+            case RegistroC857:
+                setContRegistroC857(getContRegistroC857() + 1);
+                break;
             case RegistroC791:
                 setContRegistroC791(getContRegistroC791() + 1);
                 break;
@@ -328,6 +338,12 @@ public class ContadoresBlocoC {
                 break;
             case RegistroC890:
                 setContRegistroC890(getContRegistroC890() + 1);
+                break;
+            case RegistroC895:
+                setContRegistroC895(getContRegistroC895() + 1);
+                break;
+            case RegistroC897:
+                setContRegistroC897(getContRegistroC897() + 1);
                 break;
             default:
                 break;
@@ -1306,6 +1322,38 @@ public class ContadoresBlocoC {
      */
     public void setContRegistroC850(int contRegistroC850) {
         this.contRegistroC850 = contRegistroC850;
+    }
+
+    public int getContRegistroC855() {
+        return contRegistroC855;
+    }
+
+    public void setContRegistroC855(int contRegistroC855) {
+        this.contRegistroC855 = contRegistroC855;
+    }
+
+    public int getContRegistroC857() {
+        return contRegistroC857;
+    }
+
+    public void setContRegistroC857(int contRegistroC857) {
+        this.contRegistroC857 = contRegistroC857;
+    }
+
+    public int getContRegistroC895() {
+        return contRegistroC895;
+    }
+
+    public void setContRegistroC895(int contRegistroC895) {
+        this.contRegistroC895 = contRegistroC895;
+    }
+
+    public int getContRegistroC897() {
+        return contRegistroC897;
+    }
+
+    public void setContRegistroC897(int contRegistroC897) {
+        this.contRegistroC897 = contRegistroC897;
     }
 
     /**

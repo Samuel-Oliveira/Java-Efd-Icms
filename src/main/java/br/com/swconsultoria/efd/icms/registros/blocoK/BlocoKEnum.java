@@ -5,11 +5,11 @@ package br.com.swconsultoria.efd.icms.registros.blocoK;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public enum BlocoKEnum {
 
     RegistroK001,
+    RegistroK010,
     RegistroK100,
     RegistroK200,
     RegistroK210,

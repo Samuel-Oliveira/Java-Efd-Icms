@@ -11,7 +11,6 @@ import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public class GerarContadoresBlocoK {
 
@@ -28,6 +27,18 @@ public class GerarContadoresBlocoK {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+
+        // REGISTROK010
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoK().getContRegistroK010();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("K010");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
+
         cont = efdIcms.getContadoresBlocoK().getContRegistroK100();
         if (cont > 0) {
             registro9900 = new Registro9900();

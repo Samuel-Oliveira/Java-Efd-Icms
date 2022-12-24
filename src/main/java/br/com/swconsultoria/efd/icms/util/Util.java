@@ -15,6 +15,7 @@ public final class Util {
     private static final LocalDate dataVersao2020 = LocalDate.of(2019, 12, 31);
     private static final LocalDate dataVersao2021 = LocalDate.of(2020, 12, 31);
     private static final LocalDate dataVersao2022 = LocalDate.of(2021, 12, 31);
+    private static final LocalDate dataVersao2023 = LocalDate.of(2022, 12, 31);
 
     /**
      * Construtor privado para garantir o Singleton.
@@ -69,6 +70,10 @@ public final class Util {
         return strToDate(dataStr).isAfter(dataVersao2022);
     }
 
+    public static boolean versao2023(String dataStr) {
+        return strToDate(dataStr).isAfter(dataVersao2023);
+    }
+
     private static LocalDate strToDate(String dataStr) {
         return LocalDate.of(Integer.parseInt(dataStr.substring(4, 8)), Integer.parseInt(dataStr.substring(2, 4)), Integer.parseInt(dataStr.substring(0, 2)));
     }
@@ -96,7 +101,9 @@ public final class Util {
     }
 
     public static String getCodVersao(EfdIcms efdIcms) {
-        if (versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+        if (versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            return "017";
+        } else if (versao2022(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             return "016";
         } else if (versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
             return "015";

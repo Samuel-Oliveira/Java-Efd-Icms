@@ -22,6 +22,7 @@ public class RegistroC860 {
     private String doc_fim;
     private List<RegistroC870> registroC870;
     private List<RegistroC890> registroC890;
+    private List<RegistroC895> registroC895;
 
     /**
      * @return the cod_mod
@@ -105,7 +106,7 @@ public class RegistroC860 {
      */
     public List<RegistroC890> getRegistroC890() {
         if (registroC890 == null) {
-            registroC890 = new ArrayList<RegistroC890>();
+            registroC890 = new ArrayList<>();
         }
         return this.registroC890;
     }
@@ -115,9 +116,16 @@ public class RegistroC860 {
      */
     public List<RegistroC870> getRegistroC870() {
         if (registroC870 == null) {
-            registroC870 = new ArrayList<RegistroC870>();
+            registroC870 = new ArrayList<>();
         }
         return this.registroC870;
+    }
+
+    public List<RegistroC895> getRegistroC895() {
+        if (registroC895 == null) {
+            registroC895 = new ArrayList<>();
+        }
+        return this.registroC895;
     }
 
 }

@@ -11,7 +11,6 @@ import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira, Yuri Lemes
- *
  */
 public class GerarBloco0 {
 
@@ -123,6 +122,14 @@ public class GerarBloco0 {
                     registro0200.getRegistro0220().forEach(registro0220 -> {
                         GerarRegistro0220.gerar(efdIcms, registro0220, sb);
                         efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0220);
+                    });
+                }
+
+                if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                        !Util.isEmpty(registro0200.getRegistro0221())) {
+                    registro0200.getRegistro0221().forEach(registro0221 -> {
+                        GerarRegistro0221.gerar(efdIcms, registro0221, sb);
+                        efdIcms.getContadoresBloco0().incrementar(Bloco0Enum.Registro0221);
                     });
                 }
 

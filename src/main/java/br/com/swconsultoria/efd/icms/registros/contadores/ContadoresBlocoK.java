@@ -15,6 +15,7 @@ public class ContadoresBlocoK {
 
     //Bloco K
     private int contRegistroK001 = 0;
+    private int contRegistroK010 = 0;
     private int contRegistroK100 = 0;
     private int contRegistroK200 = 0;
     private int contRegistroK210 = 0;
@@ -44,6 +45,9 @@ public class ContadoresBlocoK {
         switch (bloco) {
             case RegistroK001:
                 contRegistroK001++;
+                break;
+            case RegistroK010:
+                contRegistroK010++;
                 break;
             case RegistroK100:
                 contRegistroK100++;
@@ -115,6 +119,13 @@ public class ContadoresBlocoK {
      */
     public int getContRegistroK001() {
         return contRegistroK001;
+    }
+
+    /**
+     * @return the contRegistroK010
+     */
+    public int getContRegistroK010() {
+        return contRegistroK010;
     }
 
     /**

@@ -11,7 +11,6 @@ import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira, Yuri Lemes, Sidnei Klein
- *
  */
 public class GerarBlocoD {
 
@@ -319,6 +318,68 @@ public class GerarBlocoD {
                                 GerarRegistroD697.gerar(registroD697, sb);
                                 efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD697);
                             });
+                        }
+                    });
+                }
+            });
+        }
+
+        //REGISTROD700
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                !Util.isEmpty(blocoD.getRegistroD700())) {
+            blocoD.getRegistroD700().forEach(registroD700 -> {
+                GerarRegistroD700.gerar(registroD700, sb);
+                efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD700);
+
+                // REGISTROD730
+                if (!Util.isEmpty(registroD700.getRegistroD730())) {
+                    registroD700.getRegistroD730().forEach(registroD730 -> {
+                        GerarRegistroD730.gerar(registroD730, sb);
+                        efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD730);
+
+                        // REGISTROD731
+                        if (!Util.isEmpty(registroD730.getRegistroD731())) {
+                            GerarRegistroD731.gerar(registroD730.getRegistroD731(), sb);
+                            efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD731);
+                        }
+                    });
+                }
+
+                // REGISTROD735
+                if (!Util.isEmpty(registroD700.getRegistroD735())) {
+                    registroD700.getRegistroD735().forEach(registroD735 -> {
+                        GerarRegistroD735.gerar(registroD735, sb);
+                        efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD735);
+
+                        // REGISTROD737
+                        if (!Util.isEmpty(registroD735.getRegistroD737())) {
+                            registroD735.getRegistroD737().forEach(registroD737 -> {
+                                GerarRegistroD737.gerar(registroD737, sb);
+                                efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD737);
+                            });
+                        }
+                    });
+                }
+            });
+        }
+
+        //REGISTROD750
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                !Util.isEmpty(blocoD.getRegistroD750())) {
+            blocoD.getRegistroD750().forEach(registroD750 -> {
+                GerarRegistroD750.gerar(registroD750, sb);
+                efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD750);
+
+                // REGISTROD730
+                if (!Util.isEmpty(registroD750.getRegistroD760())) {
+                    registroD750.getRegistroD760().forEach(registroD760 -> {
+                        GerarRegistroD760.gerar(registroD760, sb);
+                        efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD760);
+
+                        // REGISTROD731
+                        if (!Util.isEmpty(registroD760.getRegistroD761())) {
+                            GerarRegistroD761.gerar(registroD760.getRegistroD761(), sb);
+                            efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD761);
                         }
                     });
                 }

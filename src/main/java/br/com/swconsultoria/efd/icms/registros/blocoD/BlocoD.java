@@ -24,6 +24,8 @@ public class BlocoD {
     private List<RegistroD500> registroD500;
     private List<RegistroD600> registroD600;
     private List<RegistroD695> registroD695;
+    private List<RegistroD700> registroD700;
+    private List<RegistroD750> registroD750;
 
     /**
      * @return the registroD001
@@ -58,7 +60,7 @@ public class BlocoD {
      */
     public List<RegistroD100> getRegistroD100() {
         if (registroD100 == null) {
-            registroD100 = new ArrayList<RegistroD100>();
+            registroD100 = new ArrayList<>();
         }
         return registroD100;
     }
@@ -68,7 +70,7 @@ public class BlocoD {
      */
     public List<RegistroD300> getRegistroD300() {
         if (registroD300 == null) {
-            registroD300 = new ArrayList<RegistroD300>();
+            registroD300 = new ArrayList<>();
         }
         return registroD300;
     }
@@ -78,7 +80,7 @@ public class BlocoD {
      */
     public List<RegistroD350> getRegistroD350() {
         if (registroD350 == null) {
-            registroD350 = new ArrayList<RegistroD350>();
+            registroD350 = new ArrayList<>();
         }
         return registroD350;
     }
@@ -88,7 +90,7 @@ public class BlocoD {
      */
     public List<RegistroD400> getRegistroD400() {
         if (registroD400 == null) {
-            registroD400 = new ArrayList<RegistroD400>();
+            registroD400 = new ArrayList<>();
         }
         return registroD400;
     }
@@ -98,7 +100,7 @@ public class BlocoD {
      */
     public List<RegistroD500> getRegistroD500() {
         if (registroD500 == null) {
-            registroD500 = new ArrayList<RegistroD500>();
+            registroD500 = new ArrayList<>();
         }
         return registroD500;
     }
@@ -108,7 +110,7 @@ public class BlocoD {
      */
     public List<RegistroD600> getRegistroD600() {
         if (registroD600 == null) {
-            registroD600 = new ArrayList<RegistroD600>();
+            registroD600 = new ArrayList<>();
         }
         return registroD600;
     }
@@ -118,9 +120,23 @@ public class BlocoD {
      */
     public List<RegistroD695> getRegistroD695() {
         if (registroD695 == null) {
-            registroD695 = new ArrayList<RegistroD695>();
+            registroD695 = new ArrayList<>();
         }
         return registroD695;
+    }
+
+    public List<RegistroD700> getRegistroD700() {
+        if (registroD700 == null) {
+            registroD700 = new ArrayList<>();
+        }
+        return registroD700;
+    }
+
+    public List<RegistroD750> getRegistroD750() {
+        if (registroD750 == null) {
+            registroD750 = new ArrayList<>();
+        }
+        return registroD750;
     }
 
 }

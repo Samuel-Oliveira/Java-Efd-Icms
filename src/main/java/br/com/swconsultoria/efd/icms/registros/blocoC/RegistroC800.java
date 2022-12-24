@@ -33,6 +33,7 @@ public class RegistroC800 {
     private String vl_cofins_st;
     private List<RegistroC810> registroC810;
     private List<RegistroC850> registroC850;
+    private List<RegistroC855> registroC855;
 
     /**
      * @return the cod_mod
@@ -270,7 +271,7 @@ public class RegistroC800 {
      */
     public List<RegistroC810> getRegistroC810() {
         if (registroC810 == null) {
-            registroC810 = new ArrayList<RegistroC810>();
+            registroC810 = new ArrayList<>();
         }
         return registroC810;
     }
@@ -280,9 +281,19 @@ public class RegistroC800 {
      */
     public List<RegistroC850> getRegistroC850() {
         if (registroC850 == null) {
-            registroC850 = new ArrayList<RegistroC850>();
+            registroC850 = new ArrayList<>();
         }
         return registroC850;
+    }
+
+    /**
+     * @return the registroC850
+     */
+    public List<RegistroC855> getRegistroC855() {
+        if (registroC855 == null) {
+            registroC855 = new ArrayList<>();
+        }
+        return registroC855;
     }
 
 }

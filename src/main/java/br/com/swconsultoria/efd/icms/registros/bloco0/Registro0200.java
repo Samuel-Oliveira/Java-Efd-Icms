@@ -29,6 +29,7 @@ public class Registro0200 {
     private Registro0206 registro0206;
     private List<Registro0210> registro0210;
     private List<Registro0220> registro0220;
+    private List<Registro0221> registro0221;
 
     /**
      * @return the reg
@@ -233,6 +234,16 @@ public class Registro0200 {
             registro0220 = new ArrayList<Registro0220>();
         }
         return this.registro0220;
+    }
+
+    /**
+     * @return the registro0220
+     */
+    public List<Registro0221> getRegistro0221() {
+        if (registro0221 == null) {
+            registro0221 = new ArrayList<Registro0221>();
+        }
+        return this.registro0221;
     }
 
     /**

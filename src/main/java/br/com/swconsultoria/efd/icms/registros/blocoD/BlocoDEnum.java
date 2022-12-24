@@ -48,6 +48,14 @@ public enum BlocoDEnum {
     RegistroD695,
     RegistroD696,
     RegistroD697,
+    RegistroD700,
+    RegistroD730,
+    RegistroD731,
+    RegistroD735,
+    RegistroD737,
+    RegistroD750,
+    RegistroD760,
+    RegistroD761,
     RegistroD990
 
 }

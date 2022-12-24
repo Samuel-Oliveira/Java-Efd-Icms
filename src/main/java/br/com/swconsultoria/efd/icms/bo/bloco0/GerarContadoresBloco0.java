@@ -12,7 +12,6 @@ import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public class GerarContadoresBloco0 {
 
@@ -159,6 +158,18 @@ public class GerarContadoresBloco0 {
 
         }
 
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            // Quantidade de Registros 0221
+            cont = efdIcms.getContadoresBloco0().getContRegistro0221();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("0221");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+
+            }
+        }
+
         // Qnt Registros Registro0300
         cont = efdIcms.getContadoresBloco0().getContRegistro0300();
         if (cont > 0) {
@@ -237,7 +248,7 @@ public class GerarContadoresBloco0 {
 
         }
 
-        int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin()) + Integer.valueOf(bloco0.getRegistro0990().getQtd_lin_0());
+        int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin()) + Integer.parseInt(bloco0.getRegistro0990().getQtd_lin_0());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

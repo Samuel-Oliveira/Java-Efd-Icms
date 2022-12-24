@@ -7,6 +7,7 @@ import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Bloco9;
 import br.com.swconsultoria.efd.icms.registros.bloco9.Registro9900;
 import br.com.swconsultoria.efd.icms.registros.blocoD.BlocoD;
+import br.com.swconsultoria.efd.icms.util.Util;
 
 /**
  * @author Samuel Oliveira
@@ -287,6 +288,64 @@ public class GerarContadoresBlocoD {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD700();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D700");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD730();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D730");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD731();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D731");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD735();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D735");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD737();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D737");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD750();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D750");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD760();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D760");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoD().getContRegistroD761();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("D761");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoD().getContRegistroD990();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -295,8 +354,8 @@ public class GerarContadoresBlocoD {
             bloco9.getRegistro9900().add(registro9900);
         }
 
-        int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())
-                + Integer.valueOf(blocoD.getRegistroD990().getQtd_lin_d());
+        int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin())
+                + Integer.parseInt(blocoD.getRegistroD990().getQtd_lin_d());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

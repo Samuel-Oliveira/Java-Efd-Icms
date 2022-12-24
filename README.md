@@ -1,10 +1,11 @@
-# Java-Efd-Icms [![Build Status](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms.svg?branch=master)](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms) [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.08.2/jar)
+# Java-Efd-Icms [![Build Status](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms.svg?branch=master)](https://travis-ci.org/Samuel-Oliveira/Java-Efd-Icms) [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.12.1/jar)
 Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) em ambientes Java de Forma Facilitada.
 
 ## Dúvidas, Sugestões ou Consultoria
-Entre no Discord do Projeto: https://discord.gg/ZXpqnaV
 
-## Gostou do Projeto? Dê sua colaboração: [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TX9K693QQYA6W)
+[![Java Brasil](https://discordapp.com/api/guilds/519583346066587676/widget.png?style=banner2)](https://discord.gg/ZXpqnaV)
+
+## Gostou do Projeto? Dê sua colaboração pelo Pix: 01713390108 <img src="https://swconsultoria.com.br/pix.png" width="200">
 
 A Lib abstrai toda a geração dos registros, sendo necessario apenas o preenchimento dos mesmos.
 Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são calculados e gerados automaticamente pela Lib.
@@ -12,7 +13,7 @@ Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são ca
 
 Para Iniciar : 
 - Caso use Libs baixe o
-  java-efd-icms-3.08.2.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.08.2.jar) e o
+  java-efd-icms-3.12.1.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.12.1.jar) e o
   adicione às bibliotecas de Seu Projeto.
 
 - Aqui Você encontra um Exemplo para preencher e Gerar (https://github.com/Samuel-Oliveira/teste-efd-icms).
@@ -23,7 +24,7 @@ Para Iniciar :
 <dependency>
   <groupId>br.com.swconsultoria</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>3.08.2</version>
+  <version>3.12.1</version>
 </dependency>
 ```
 
@@ -31,6 +32,10 @@ Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um T
 ________________________________________________________________________________________________
 
 # Historico de Versões
+
+## v3.12.1 - 24/12/2022
+
+- Adicionado Correções e novos registros relacionado ao manual 3.1.2
 
 ## v3.08.2 - 20-01-2022
 

@@ -571,6 +571,22 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC855();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C855");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC857();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C857");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
         cont = efdIcms.getContadoresBlocoC().getContRegistroC860();
         if (cont > 0) {
             registro9900 = new Registro9900();
@@ -585,6 +601,24 @@ public class GerarContadoresBlocoC {
             registro9900.setQtd_reg_blc(String.valueOf(cont));
             bloco9.getRegistro9900().add(registro9900);
         }
+
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC895();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C895");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+            cont = efdIcms.getContadoresBlocoC().getContRegistroC897();
+            if (cont > 0) {
+                registro9900 = new Registro9900();
+                registro9900.setReg_blc("C897");
+                registro9900.setQtd_reg_blc(String.valueOf(cont));
+                bloco9.getRegistro9900().add(registro9900);
+            }
+        }
+
         cont = efdIcms.getContadoresBlocoC().getContRegistroC990();
         if (cont > 0) {
             registro9900 = new Registro9900();

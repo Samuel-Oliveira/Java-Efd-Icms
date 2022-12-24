@@ -83,9 +83,13 @@ public enum BlocoCEnum {
     RegistroC810,
     RegistroC815,
     RegistroC850,
+    RegistroC855,
+    RegistroC857,
     RegistroC860,
     RegistroC870,
     RegistroC880,
     RegistroC890,
+    RegistroC895,
+    RegistroC897,
     RegistroC990
 }

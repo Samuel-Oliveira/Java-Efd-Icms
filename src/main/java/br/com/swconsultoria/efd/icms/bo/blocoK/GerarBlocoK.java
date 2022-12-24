@@ -1,6 +1,3 @@
-/**
- *
- */
 package br.com.swconsultoria.efd.icms.bo.blocoK;
 
 import br.com.swconsultoria.efd.icms.registros.EfdIcms;
@@ -23,6 +20,13 @@ public class GerarBlocoK {
         if (!Util.isEmpty(blocoK.getRegistroK001())) {
             GerarRegistroK001.gerar(blocoK.getRegistroK001(), sb);
             efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK001);
+        }
+
+        // REGISTROK010
+        if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
+                !Util.isEmpty(blocoK.getRegistroK010())) {
+            GerarRegistroK010.gerar(blocoK.getRegistroK010(), sb);
+            efdIcms.getContadoresBlocoK().incrementar(BlocoKEnum.RegistroK010);
         }
 
         // REGISTROK100

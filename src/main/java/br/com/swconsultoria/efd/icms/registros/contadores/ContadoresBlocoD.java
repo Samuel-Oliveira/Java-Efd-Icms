@@ -53,6 +53,14 @@ public class ContadoresBlocoD {
     private int contRegistroD695 = 0;
     private int contRegistroD696 = 0;
     private int contRegistroD697 = 0;
+    private int contRegistroD700 = 0;
+    private int contRegistroD730 = 0;
+    private int contRegistroD731 = 0;
+    private int contRegistroD735 = 0;
+    private int contRegistroD737 = 0;
+    private int contRegistroD750 = 0;
+    private int contRegistroD760 = 0;
+    private int contRegistroD761 = 0;
     private int contRegistroD990 = 0;
 
     public void incrementar(BlocoDEnum bloco) {
@@ -176,6 +184,30 @@ public class ContadoresBlocoD {
                 break;
             case RegistroD697:
                 contRegistroD697++;
+                break;
+            case RegistroD700:
+                contRegistroD700++;
+                break;
+            case RegistroD730:
+                contRegistroD730++;
+                break;
+            case RegistroD731:
+                contRegistroD731++;
+                break;
+            case RegistroD735:
+                contRegistroD735++;
+                break;
+            case RegistroD737:
+                contRegistroD737++;
+                break;
+            case RegistroD750:
+                contRegistroD750++;
+                break;
+            case RegistroD760:
+                contRegistroD760++;
+                break;
+            case RegistroD761:
+                contRegistroD761++;
                 break;
             default:
                 break;
@@ -462,4 +494,35 @@ public class ContadoresBlocoD {
         return contRegistroD990;
     }
 
+    public int getContRegistroD700() {
+        return contRegistroD700;
+    }
+
+    public int getContRegistroD730() {
+        return contRegistroD730;
+    }
+
+    public int getContRegistroD731() {
+        return contRegistroD731;
+    }
+
+    public int getContRegistroD735() {
+        return contRegistroD735;
+    }
+
+    public int getContRegistroD737() {
+        return contRegistroD737;
+    }
+
+    public int getContRegistroD750() {
+        return contRegistroD750;
+    }
+
+    public int getContRegistroD760() {
+        return contRegistroD760;
+    }
+
+    public int getContRegistroD761() {
+        return contRegistroD761;
+    }
 }

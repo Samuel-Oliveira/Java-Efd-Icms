@@ -74,8 +74,8 @@ public class GerarContadoresBlocoG {
 
         }
 
-        int somatorio = Integer.valueOf(bloco9.getRegistro9999().getQtd_lin())
-                + Integer.valueOf(blocoG.getRegistroG990().getQtd_lin_g());
+        int somatorio = Integer.parseInt(bloco9.getRegistro9999().getQtd_lin())
+                + Integer.parseInt(blocoG.getRegistroG990().getQtd_lin_g());
         bloco9.getRegistro9999().setQtd_lin(String.valueOf(somatorio));
 
         efdIcms.setBloco9(bloco9);

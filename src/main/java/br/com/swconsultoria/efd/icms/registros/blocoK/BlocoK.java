@@ -10,14 +10,22 @@ import java.util.List;
 
 /**
  * @author Samuel Oliveira / Yuri
- *
  */
 @EqualsAndHashCode
 public class BlocoK {
 
     private RegistroK001 registroK001;
+    private RegistroK010 registroK010;
     private List<RegistroK100> registroK100;
     private RegistroK990 registroK990;
+
+    public RegistroK010 getRegistroK010() {
+        return registroK010;
+    }
+
+    public void setRegistroK010(RegistroK010 registroK010) {
+        this.registroK010 = registroK010;
+    }
 
     /**
      * @return the registroK001
