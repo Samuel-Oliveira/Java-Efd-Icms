@@ -232,6 +232,16 @@ public class GerarBlocoC {
                     });
                 }
 
+                if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+                    // REGISTROC185
+                    if (!Util.isEmpty(registroC100.getRegistroC185())) {
+                        registroC100.getRegistroC185().forEach(registroC185 -> {
+                            GerarRegistroC185.gerar(registroC185, sb);
+                            efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC185);
+                        });
+                    }
+                }
+
                 if (Util.versao2021(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
                     // REGISTROC186
                     if (!Util.isEmpty(registroC100.getRegistroC186())) {
@@ -254,16 +264,6 @@ public class GerarBlocoC {
                             efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC191);
                         }
                     });
-                }
-
-                if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
-                    // REGISTROC185
-                    if (!Util.isEmpty(registroC100.getRegistroC185())) {
-                        registroC100.getRegistroC185().forEach(registroC185 -> {
-                            GerarRegistroC185.gerar(registroC185, sb);
-                            efdIcms.getContadoresBlocoC().incrementar(BlocoCEnum.RegistroC185);
-                        });
-                    }
                 }
 
                 // REGISTROC195
