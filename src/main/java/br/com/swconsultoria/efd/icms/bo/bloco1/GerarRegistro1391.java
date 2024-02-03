@@ -37,6 +37,11 @@ public class GerarRegistro1391 {
             sb.append("|").append(Util.preencheRegistro(registro1391.getTp_residuo()));
             sb.append("|").append(Util.preencheRegistro(registro1391.getQtd_residuo()));
         }
+        if (Util.versao2024(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            sb.append("|").append(Util.preencheRegistro(registro1391.getQtd_residuo_ddg()));
+            sb.append("|").append(Util.preencheRegistro(registro1391.getQtd_residuo_wdg()));
+            sb.append("|").append(Util.preencheRegistro(registro1391.getQtd_residuo_cana()));
+        }
         sb.append("|").append('\n');
 
         return sb;

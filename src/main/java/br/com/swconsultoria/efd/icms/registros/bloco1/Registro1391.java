@@ -31,6 +31,9 @@ public class Registro1391 {
     private String cod_item;
     private String tp_residuo;
     private String qtd_residuo;
+    private String qtd_residuo_ddg;
+    private String qtd_residuo_wdg;
+    private String qtd_residuo_cana;
 
     public String getCod_item() {
         return cod_item;
@@ -287,4 +290,27 @@ public class Registro1391 {
         return reg;
     }
 
+    public String getQtd_residuo_ddg() {
+        return qtd_residuo_ddg;
+    }
+
+    public void setQtd_residuo_ddg(String qtd_residuo_ddg) {
+        this.qtd_residuo_ddg = qtd_residuo_ddg;
+    }
+
+    public String getQtd_residuo_wdg() {
+        return qtd_residuo_wdg;
+    }
+
+    public void setQtd_residuo_wdg(String qtd_residuo_wdg) {
+        this.qtd_residuo_wdg = qtd_residuo_wdg;
+    }
+
+    public String getQtd_residuo_cana() {
+        return qtd_residuo_cana;
+    }
+
+    public void setQtd_residuo_cana(String qtd_residuo_cana) {
+        this.qtd_residuo_cana = qtd_residuo_cana;
+    }
 }
