@@ -12,7 +12,7 @@ public class GerarRegistroC855 {
 
         sb.append("|").append(Util.preencheRegistro(registroC855.getReg()));
         sb.append("|").append(Util.preencheRegistro(registroC855.getCod_obs()));
-        sb.append("|").append(Util.preencheRegistro(registroC855.getCod_obs()));
+        sb.append("|").append(Util.preencheRegistro(registroC855.getTxt_compl()));
         sb.append("|").append('\n');
 
         return sb;

@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class RegistroC895 {
 
-    private final String reg = "C890";
+    private final String reg = "C895";
     private String cod_obs;
     private String txt_compl;
     private List<RegistroC897> registroC897;
