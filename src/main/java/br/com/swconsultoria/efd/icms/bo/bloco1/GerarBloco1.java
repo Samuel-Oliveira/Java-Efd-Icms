@@ -233,7 +233,7 @@ public class GerarBloco1 {
                         if (!Util.isEmpty(registro1910.getRegistro1920())) {
                             Registro1920 registro1920 = registro1910.getRegistro1920();
                             GerarRegistro1920.gerar(registro1920, sb);
-                            efdIcms.getContadoresBloco1().incrementar(Bloco1Enum.Registro1910);
+                            efdIcms.getContadoresBloco1().incrementar(Bloco1Enum.Registro1920);
 
                             // REGISTRO1921
                             if (!Util.isEmpty(registro1920.getRegistro1921())) {
