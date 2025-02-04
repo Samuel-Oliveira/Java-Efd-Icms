@@ -4,27 +4,27 @@
 package br.com.swconsultoria.efd.icms;
 
 import br.com.swconsultoria.efd.icms.bo.GerarEfdIcms;
-import br.com.swconsultoria.efd.icms.exception.EfdException;
 import br.com.swconsultoria.efd.icms.registros.EfdIcms;
-import br.com.swconsultoria.efd.icms.util.Util;
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 /**
  * @author Samuel Oliveira
- *
  */
 public class TesteEfdIcms {
 
-	public static void main(String[] args) {
-		try {
-			testaBlocos();
-		} catch (EfdException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private static void testaBlocos() throws EfdException {
-		StringBuilder sb = new StringBuilder();
-		EfdIcms efdIcms = new EfdIcms();
+    @Test
+    public void testaBlocos() {
+        StringBuilder sb = new StringBuilder();
+        EfdIcms efdIcms = new EfdIcms();
 
         efdIcms.setBloco0(Bloco0Test.preencheBloco0());
         efdIcms.setBloco1(Bloco1Test.preencheBloco1());
@@ -34,8 +34,21 @@ public class TesteEfdIcms {
         efdIcms.setBlocoG(BlocoGTest.preencheBlocoG());
         efdIcms.setBlocoH(BlocoHTest.preencheBlocoH());
         efdIcms.setBlocoK(BlocoKTest.preencheBlocoK());
-        sb = GerarEfdIcms.gerar(efdIcms, sb);
+        GerarEfdIcms.gerar(efdIcms, sb);
         System.out.println(sb.toString());
-        Util.criarPastaArquivo("d:/Teste", "efd.txt", sb.toString());
+
+        InputStream resourceAsStream = TesteEfdIcms.class.getResourceAsStream("/efd.txt");
+        String spedEsperado;
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(Objects.requireNonNull(resourceAsStream), StandardCharsets.UTF_8))) {
+            spedEsperado = reader.lines().collect(Collectors.joining("\n"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+        String actual = sb.toString().replace("\r\n", "\n");
+        String expected = spedEsperado.replace("\r\n", "\n");
+
+        Assert.assertEquals(expected, actual);
     }
 }

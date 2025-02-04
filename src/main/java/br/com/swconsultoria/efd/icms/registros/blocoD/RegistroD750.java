@@ -30,6 +30,7 @@ public class RegistroD750 {
     private String vl_icms;
     private String vl_pis;
     private String vl_cofins;
+    private String ded;
 
     private List<RegistroD760> registroD760;
 
@@ -155,6 +156,14 @@ public class RegistroD750 {
 
     public void setVl_cofins(String vl_cofins) {
         this.vl_cofins = vl_cofins;
+    }
+
+    public String getDed() {
+        return ded;
+    }
+
+    public void setDed(String ded) {
+        this.ded = ded;
     }
 
     public List<RegistroD760> getRegistroD760() {

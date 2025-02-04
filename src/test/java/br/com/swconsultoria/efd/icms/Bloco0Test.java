@@ -28,8 +28,8 @@ public class Bloco0Test {
     public static Bloco0 preencheRegistro0000(Bloco0 bloco0) {
         Registro0000 registro0000 = new Registro0000();
         registro0000.setCod_fin("0");
-        registro0000.setDt_ini("01012024");
-        registro0000.setDt_fin("31012024");
+        registro0000.setDt_ini("01012025");
+        registro0000.setDt_fin("31012025");
         registro0000.setNome("NOME");
         registro0000.setCnpj("99999999999999");
         registro0000.setUf("GO");

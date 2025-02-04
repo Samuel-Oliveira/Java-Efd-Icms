@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.16.2-SNAPSHOT</version>
+    <version>3.18.1-SNAPSHOT</version>
     <name>Java Efd Icms</name>
     <description>API Java para gerar arquivo do Efd Icms</description>
     <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
@@ -64,6 +64,12 @@
             <artifactId>lombok</artifactId>
             <version>1.18.20</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>

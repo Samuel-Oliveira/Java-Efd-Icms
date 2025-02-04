@@ -328,7 +328,7 @@ public class GerarBlocoD {
         if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
                 !Util.isEmpty(blocoD.getRegistroD700())) {
             blocoD.getRegistroD700().forEach(registroD700 -> {
-                GerarRegistroD700.gerar(registroD700, sb);
+                GerarRegistroD700.gerar(efdIcms, registroD700, sb);
                 efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD700);
 
                 // REGISTROD730
@@ -367,7 +367,7 @@ public class GerarBlocoD {
         if (Util.versao2023(efdIcms.getBloco0().getRegistro0000().getDt_ini()) &&
                 !Util.isEmpty(blocoD.getRegistroD750())) {
             blocoD.getRegistroD750().forEach(registroD750 -> {
-                GerarRegistroD750.gerar(registroD750, sb);
+                GerarRegistroD750.gerar(efdIcms, registroD750, sb);
                 efdIcms.getContadoresBlocoD().incrementar(BlocoDEnum.RegistroD750);
 
                 // REGISTROD730

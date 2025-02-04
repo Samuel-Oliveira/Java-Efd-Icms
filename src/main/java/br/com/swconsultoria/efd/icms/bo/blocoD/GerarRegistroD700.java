@@ -1,11 +1,12 @@
 package br.com.swconsultoria.efd.icms.bo.blocoD;
 
+import br.com.swconsultoria.efd.icms.registros.EfdIcms;
 import br.com.swconsultoria.efd.icms.registros.blocoD.RegistroD700;
 import br.com.swconsultoria.efd.icms.util.Util;
 
 public class GerarRegistroD700 {
 
-    public static StringBuilder gerar(RegistroD700 registroD700, StringBuilder sb) {
+    public static StringBuilder gerar(EfdIcms efdIcms, RegistroD700 registroD700, StringBuilder sb) {
 
         sb.append("|").append(Util.preencheRegistro(registroD700.getReg()));
         sb.append("|").append(Util.preencheRegistro(registroD700.getInd_oper()));
@@ -38,6 +39,9 @@ public class GerarRegistroD700 {
         sb.append("|").append(Util.preencheRegistro(registroD700.getNum_doc_ref()));
         sb.append("|").append(Util.preencheRegistro(registroD700.getMes_doc_ref()));
         sb.append("|").append(Util.preencheRegistro(registroD700.getCod_mun_dest()));
+        if (Util.versao2025(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
+            sb.append("|").append(Util.preencheRegistro(registroD700.getDed()));
+        }
         sb.append("|").append('\n');
 
         return sb;

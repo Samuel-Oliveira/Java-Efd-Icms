@@ -45,6 +45,7 @@ public class RegistroD700 {
     private String num_doc_ref;
     private String mes_doc_ref;
     private String cod_mun_dest;
+    private String ded;
     private List<RegistroD730> registroD730;
     private List<RegistroD735> registroD735;
 
@@ -290,6 +291,14 @@ public class RegistroD700 {
 
     public void setCod_mun_dest(String cod_mun_dest) {
         this.cod_mun_dest = cod_mun_dest;
+    }
+
+    public String getDed() {
+        return ded;
+    }
+
+    public void setDed(String ded) {
+        this.ded = ded;
     }
 
     public List<RegistroD730> getRegistroD730() {
