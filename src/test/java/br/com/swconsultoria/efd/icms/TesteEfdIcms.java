@@ -5,8 +5,7 @@ package br.com.swconsultoria.efd.icms;
 
 import br.com.swconsultoria.efd.icms.bo.GerarEfdIcms;
 import br.com.swconsultoria.efd.icms.registros.EfdIcms;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,6 +14,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 import java.util.stream.Collectors;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * @author Samuel Oliveira
@@ -35,7 +36,7 @@ public class TesteEfdIcms {
         efdIcms.setBlocoH(BlocoHTest.preencheBlocoH());
         efdIcms.setBlocoK(BlocoKTest.preencheBlocoK());
         GerarEfdIcms.gerar(efdIcms, sb);
-        System.out.println(sb.toString());
+        System.out.println(sb);
 
         InputStream resourceAsStream = TesteEfdIcms.class.getResourceAsStream("/efd.txt");
         String spedEsperado;
@@ -49,6 +50,6 @@ public class TesteEfdIcms {
         String actual = sb.toString().replace("\r\n", "\n");
         String expected = spedEsperado.replace("\r\n", "\n");
 
-        Assert.assertEquals(expected, actual);
+        assertEquals(expected, actual);
     }
 }
