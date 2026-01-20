@@ -1,4 +1,4 @@
-# Java-Efd-Icms [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.18.1/jar)
+# Java-Efd-Icms [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.21.1/jar)
 Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) em ambientes Java de Forma Facilitada.
 
 ## Dúvidas, Sugestões ou Consultoria
@@ -10,21 +10,20 @@ Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) 
 A Lib abstrai toda a geração dos registros, sendo necessario apenas o preenchimento dos mesmos.
 Os Registros de Quantidade de Linhas e quantidades de Registros(Bloco 9) são calculados e gerados automaticamente pela Lib.
 
-
 Para Iniciar : 
-- Caso use Libs baixe o
-  java-efd-icms-3.18.1.jar (https://github.com/Samuel-Oliveira/Java-Efd-Icms/raw/master/java-efd-icms-3.18.1.jar) e o
-  adicione às bibliotecas de Seu Projeto.
-
 - Aqui Você encontra um Exemplo para preencher e Gerar (https://github.com/Samuel-Oliveira/teste-efd-icms).
 - Link Com video explicativo no Youtube: https://www.youtube.com/watch?v=IXUld0HW3A0
 
-- Caso use Maven :
-```
+- External Jar: Baixe e adicione às bibliotecas de seu Projeto.
+  - https://github.com/Samuel-Oliveira/Java_NFe/releases
+
+- Maven :
+
+```xml
 <dependency>
   <groupId>br.com.swconsultoria</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>3.18.1</version>
+  <version>3.21.1</version>
 </dependency>
 ```
 
@@ -32,6 +31,10 @@ Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um T
 ________________________________________________________________________________________________
 
 # Historico de Versões
+
+## v3.21.1 - 20/01/2026
+
+- Novos registros relacionado ao manual 3.2.1 e Layout 2026
 
 ## v3.18.1 - 04/02/2025
 

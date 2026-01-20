@@ -24,6 +24,7 @@ public class Registro1310 {
     private String val_aj_perda;
     private String val_aj_ganho;
     private String fech_fisico;
+    private String cap_tanque;
     private List<Registro1320> registro1320;
 
     /**
@@ -150,6 +151,14 @@ public class Registro1310 {
      */
     public void setFech_fisico(String fech_fisico) {
         this.fech_fisico = fech_fisico;
+    }
+
+    public String getCap_tanque() {
+        return cap_tanque;
+    }
+
+    public void setCap_tanque(String cap_tanque) {
+        this.cap_tanque = cap_tanque;
     }
 
     /**

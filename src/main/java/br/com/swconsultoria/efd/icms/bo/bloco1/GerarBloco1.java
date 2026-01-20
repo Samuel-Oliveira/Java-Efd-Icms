@@ -98,7 +98,7 @@ public class GerarBloco1 {
                 // REGISTRO1310
                 if (!Util.isEmpty(registro1300.getRegistro1310())) {
                     registro1300.getRegistro1310().forEach(registro1310 -> {
-                        GerarRegistro1310.gerar(registro1310, sb);
+                        GerarRegistro1310.gerar(efdIcms, registro1310, sb);
                         efdIcms.getContadoresBloco1().incrementar(Bloco1Enum.Registro1310);
 
                         // REGISTRO1320
