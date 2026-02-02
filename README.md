@@ -15,7 +15,7 @@ Para Iniciar :
 - Link Com video explicativo no Youtube: https://www.youtube.com/watch?v=IXUld0HW3A0
 
 - External Jar: Baixe e adicione às bibliotecas de seu Projeto.
-  - https://github.com/Samuel-Oliveira/Java_NFe/releases
+  - https://github.com/Samuel-Oliveira/Java-Efd-Icms/releases
 
 - Maven :
 
