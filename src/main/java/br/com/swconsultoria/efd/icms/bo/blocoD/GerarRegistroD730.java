@@ -17,6 +17,7 @@ public class GerarRegistroD730 {
         sb.append("|").append(Util.preencheRegistro(registroD730.getVl_opr()));
         sb.append("|").append(Util.preencheRegistro(registroD730.getVl_bc_icms()));
         sb.append("|").append(Util.preencheRegistro(registroD730.getVl_icms()));
+        sb.append("|").append(Util.preencheRegistro(registroD730.getVl_red_bc()));
         sb.append("|").append(Util.preencheRegistro(registroD730.getCod_obs()));
         sb.append("|").append('\n');
 
