@@ -15,40 +15,37 @@ import br.com.swconsultoria.efd.icms.util.Util;
  */
 public class GerarBlocoH {
 
-    private static StringBuilder sb = null;
-
     public static StringBuilder gerar(EfdIcms efdIcms, StringBuilder sbr) {
         BlocoH blocoH = efdIcms.getBlocoH();
-        sb = sbr;
         // REGISTROH001
         if (!Util.isEmpty(blocoH.getRegistroH001())) {
-            GerarRegistroH001.gerar(blocoH.getRegistroH001(), sb);
+            GerarRegistroH001.gerar(blocoH.getRegistroH001(), sbr);
             efdIcms.getContadoresBlocoH().incrementar(BlocoHEnum.RegistroH001);
         }
 
         // REGISTROH005
         if (!Util.isEmpty(blocoH.getRegistroH005())) {
             blocoH.getRegistroH005().forEach(registroH005 -> {
-                GerarRegistroH005.gerar(registroH005, sb);
+                GerarRegistroH005.gerar(registroH005, sbr);
                 efdIcms.getContadoresBlocoH().incrementar(BlocoHEnum.RegistroH005);
 
                 // REGISTROH010
                 if (!Util.isEmpty(registroH005.getRegistroH010())) {
                     registroH005.getRegistroH010().forEach(registroH010 -> {
-                        GerarRegistroH010.gerar(registroH010, sb);
+                        GerarRegistroH010.gerar(registroH010, sbr);
                         efdIcms.getContadoresBlocoH().incrementar(BlocoHEnum.RegistroH010);
 
                         if (Util.versao2020(efdIcms.getBloco0().getRegistro0000().getDt_ini())) {
                             // REGISTROH030
                             if (!Util.isEmpty(registroH010.getRegistroH030())) {
-                                GerarRegistroH030.gerar(registroH010.getRegistroH030(), sb);
+                                GerarRegistroH030.gerar(registroH010.getRegistroH030(), sbr);
                                 efdIcms.getContadoresBlocoH().incrementar(BlocoHEnum.RegistroH030);
                             }
                         }
                         // REGISTROH020
                         if (!Util.isEmpty(registroH010.getRegistroH020())) {
                             registroH010.getRegistroH020().forEach(registroH020 -> {
-                                GerarRegistroH020.gerar(registroH020, sb);
+                                GerarRegistroH020.gerar(registroH020, sbr);
                                 efdIcms.getContadoresBlocoH().incrementar(BlocoHEnum.RegistroH020);
                             });
                         }
@@ -63,9 +60,9 @@ public class GerarBlocoH {
             registroH990.setQtd_lin_h(String.valueOf(efdIcms.getContadoresBlocoH().getContRegistroH990() + 1));
 
             blocoH.setRegistroH990(registroH990);
-            GerarRegistroH990.gerar(blocoH.getRegistroH990(), sb);
+            GerarRegistroH990.gerar(blocoH.getRegistroH990(), sbr);
         }
 
-        return sb;
+        return sbr;
     }
 }

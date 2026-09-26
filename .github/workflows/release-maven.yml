@@ -25,13 +25,6 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Set release version
-        run: |
-          VERSION="${{ github.event.inputs.version }}"
-          echo "RELEASE_VERSION=$VERSION" >> $GITHUB_ENV
-          mvn versions:set -DnewVersion=$VERSION
-          mvn versions:commit
-
       - name: Build and test with Java 8
         run: |
           mvn clean compile test -B

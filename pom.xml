@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.com.swconsultoria</groupId>
     <artifactId>java-efd-icms</artifactId>
-    <version>3.21.1</version>
+    <version>3.21.2</version>
     <name>Java Efd Icms</name>
     <description>API Java para gerar arquivo do Efd Icms</description>
     <url>https://github.com/Samuel-Oliveira/Java-Efd-Icms</url>
@@ -110,6 +110,11 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

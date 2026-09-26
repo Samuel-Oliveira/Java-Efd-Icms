@@ -1,4 +1,4 @@
-# Java-Efd-Icms [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.21.1/jar)
+# Java-Efd-Icms [![MIT License](https://img.shields.io/github/license/Samuel-Oliveira/Java-Efd-Icms.svg) ](https://github.com/Samuel-Oliveira/Java-Efd-Icms/blob/master/LICENSE) [![Maven Central](https://img.shields.io/maven-central/v/br.com.swconsultoria/java-efd-icms.svg?label=Maven%20Central)](https://search.maven.org/artifact/br.com.swconsultoria/java-efd-icms/3.21.2/jar)
 Projeto Para implementação de Efd-Icms(Escrituação Fiscal Digital Icms/Pis) em ambientes Java de Forma Facilitada.
 
 ## Dúvidas, Sugestões ou Consultoria
@@ -23,7 +23,7 @@ Para Iniciar :
 <dependency>
   <groupId>br.com.swconsultoria</groupId>
   <artifactId>java-efd-icms</artifactId>
-  <version>3.21.1</version>
+  <version>3.21.2</version>
 </dependency>
 ```
 
@@ -31,6 +31,11 @@ Veja a Wiki https://github.com/Samuel-Oliveira/Java-Efd-Icms/wiki, para ter um T
 ________________________________________________________________________________________________
 
 # Historico de Versões
+
+## v3.21.2 - 26/09/2026
+
+- Correção de thread-safety: removido o estado `static` compartilhado entre chamadas nas classes internas de geração dos blocos. Duas gerações concorrentes na mesma JVM não corrompem mais uma a saída da outra. Para uso sequencial (o único cenário anterior), a saída não muda em nenhum byte.
+- Registro D730 passa a emitir o campo `VL_RED_BC`. O campo já existia em `RegistroD730` (com getter), mas o gerador da linha não o escrevia, enquanto D190, D300, D590, D610, D690 e D696 já o emitiam. Contribuição de @MauricioCarrion (PR #10).
 
 ## v3.21.1 - 20/01/2026
 
